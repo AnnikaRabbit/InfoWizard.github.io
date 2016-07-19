@@ -21,12 +21,11 @@
 	var CreateDistricts = [];
 
 	CreateDistricts.push(new DistrictDB("Minneapolis","14","56"));
+	CreateDistricts.push(new DistrictDB("Como Zoo","8","22"));
 	CreateDistricts.push(new DistrictDB("Centennial Lakes","8","22"));
 	CreateDistricts.push(new DistrictDB("Normandale Lake","3","11"));
-	CreateDistricts.push(new DistrictDB("Harvard","14","56"));
-	CreateDistricts.push(new DistrictDB("Rockford Lakes","8","22"));
-	CreateDistricts.push(new DistrictDB("Shoktown Lake","3","11"));
-	CreateDistricts.push(new DistrictDB("Kale","14","56"));
-	CreateDistricts.push(new DistrictDB("Mumbai Lakes","8","22"));
-	CreateDistricts.push(new DistrictDB("Chennai Lake","3","11"));
+	CreateDistricts.push(new DistrictDB("Saint Paul","14","56"));
+	CreateDistricts.push(new DistrictDB("Eden Prairie","8","22"));
+	CreateDistricts.push(new DistrictDB("Lake Calhoun","3","11"));
+	CreateDistricts.push(new DistrictDB("Minnesota Zoo","14","56"));
 

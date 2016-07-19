@@ -66,13 +66,13 @@ body {
 }
 
 #aboutMe p {
-	display:inline-block;
 	font-size:2vh;
 	padding:1vh;
 }
 
 #aboutMe a {
 	font-size:2vh;
+	text-decoration: none;
 }
 
 #closeAbout {
@@ -138,13 +138,13 @@ body {
 #tweetMe p {
 	font-size:2vh;
 	color:white;
-	padding:10px 0 20px 0;
+	padding:10px 0 15px 0;
 }
 
 #join p {
 	font-size:2vh;
 	color:white;
-	padding:10px 0 20px 0;
+	padding:10px 0 15px 0;
 }
 
 #containerDistrict {
@@ -396,28 +396,32 @@ body {
 
 @media screen and (orientation:landscape) {
 	#containerDistrict {
-		display:none;
+		display:none !important;
 	}
 	
 	#siteNav {
-		display:none;
+		display:none !important;
 	}
 	
 	#aboutOverlay {
-		display:block;
+		display:block !important;
 	}
 	
 	#closeAbout {
-		display:none;
+		display:none !important;
+	}
+	
+	#menuInfo > p {
+		font-size:2vh !important;
 	}
 	
 	#join, #tweetMe {
-		width:20vw;
+		width:20vw !important;
 	}
 	
 	#join p, #tweetMe p {
-		font-size:5vh;
-		padding:5px 0 15px 0;
+		font-size:5vh !important;
+		padding:5px 0 10px 0 !important;
 	}
 }
 

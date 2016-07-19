@@ -72,6 +72,7 @@ body {
 }
 
 #aboutMe a {
+	text-decoration: none;
 	font-size:2vh;
 }
 
@@ -299,32 +300,36 @@ body {
 
 @media screen and (orientation:landscape) {
 	#containerTrainer {
-		display:none;
+		display:none !important;
 	}
 	
 	#banner {
-		display:none;
+		display:none !important;
 	}
 	
 	#siteNav {
-		display:none;
+		display:none !important;
 	}
 	
 	#aboutOverlay {
-		display:block;
+		display:block !important;
 	}
 	
 	#closeAbout {
-		display:none;
+		display:none !important;
+	}
+	
+	#menuInfo p {
+		font-size:2vh !important;
 	}
 	
 	#join, #tweetMe {
-		width:20vw;
+		width:20vw !important;
 	}
 	
 	#join p, #tweetMe p {
-		font-size:5vh;
-		padding:5px 0 15px 0;
+		font-size:5vh !important;
+		padding:5px 0 10px 0 !important;
 	}
 }
 

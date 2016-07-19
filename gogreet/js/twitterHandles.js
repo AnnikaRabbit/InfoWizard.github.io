@@ -29,29 +29,22 @@
 	
 	var Trainers = [];
 
-	Trainers.push(new PlayerDB("NicholasPersa","Mystic","Minneapolis","Ace Trainer Female"));
+	Trainers.push(new PlayerDB("NicholasPersa","Mystic","Centennial Lakes","Ace Trainer Female"));
 	Trainers.push(new PlayerDB("LauraLundahl","Mystic","Centennial Lakes","Ace Trainer Male"));
 	Trainers.push(new PlayerDB("Charles","Valor","Centennial Lakes","Hiker"));
 	Trainers.push(new PlayerDB("Peter","Instinct","Centennial Lakes","Camper"));
 	Trainers.push(new PlayerDB("Jeff","Valor","Centennial Lakes","Ace Trainer Male"));
-	Trainers.push(new PlayerDB("NicholasPersa","Mystic","Centennial Lakes","Ace Trainer Female"));
 	Trainers.push(new PlayerDB("Frank","Mystic","Centennial Lakes","Black Belt"));
-	Trainers.push(new PlayerDB("Jeff","Mystic","Centennial Lakes","Black Belt"));
-	Trainers.push(new PlayerDB("LauraLundahl","Valor","Centennial Lakes","Hiker"));
-	Trainers.push(new PlayerDB("NicholasPersa","Instinct","Centennial Lakes","Ace Trainer"));
 	Trainers.push(new PlayerDB("PeteRose","Valor","Centennial Lakes","Ace Trainer"));
-	Trainers.push(new PlayerDB("PeteRose","Mystic","Centennial Lakes","Ace Trainer"));
-	Trainers.push(new PlayerDB("PeteRose","Valor","Centennial Lakes","Ace Trainer"));
-	Trainers.push(new PlayerDB("PeteRose","Instinct","Centennial Lakes","Ace Trainer"));
-	Trainers.push(new PlayerDB("PeteRose","Valor","Centennial Lakes","Ace Trainer"));
-	Trainers.push(new PlayerDB("PeteRose","Instinct","Centennial Lakes","Ace Trainer"));
-	Trainers.push(new PlayerDB("PeteRose","Instinct","Centennial Lakes","Ace Trainer"));
-	Trainers.push(new PlayerDB("PeteRose","Instinct","Centennial Lakes","Ace Trainer"));
-	Trainers.push(new PlayerDB("PeteRose","Instinct","Centennial Lakes","Ace Trainer"));
-	Trainers.push(new PlayerDB("PeteRose","Instinct","Centennial Lakes","Ace Trainer"));
-	Trainers.push(new PlayerDB("PeteRose","Instinct","Centennial Lakes","Ace Trainer"));
-	Trainers.push(new PlayerDB("PeteRose","Instinct","Centennial Lakes","Ace Trainer"));
-	Trainers.push(new PlayerDB("PeteRose","Instinct","Centennial Lakes","Ace Trainer"));
+
+	Trainers.push(new PlayerDB("NicholasPersa","Mystic","Minneapolis","Ace Trainer Female"));
+	Trainers.push(new PlayerDB("LauraLundahl","Mystic","Minneapolis","Ace Trainer Male"));
+	Trainers.push(new PlayerDB("Charles","Valor","Minneapolis","Hiker"));
+	Trainers.push(new PlayerDB("Peter","Instinct","Minneapolis","Camper"));
+	Trainers.push(new PlayerDB("Jeff","Valor","Minneapolis","Ace Trainer Male"));
+	Trainers.push(new PlayerDB("Frank","Mystic","Minneapolis","Black Belt"));
+	Trainers.push(new PlayerDB("PeteRose","Valor","Minneapolis","Ace Trainer"));
+
 
 
 
