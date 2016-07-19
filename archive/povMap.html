@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		
+		<link rel="stylesheet" type="text/css" href="css/archive.css">
+			<link rel="stylesheet" href="css/odometer.css" />
+			<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel='stylesheet' type='text/css'>
+				
+				<script src="js/jquery.min.js"></script>
+				<script src="js/odometer.js"></script>
+				<script src="js/velocity.js"></script>
+				<script src="js/velocity.ui.js"></script>
+				<script src="js/Loading.js"></script>
+				<script src="js/povMap.js"></script>
+				
+	</head>
+	
+	<body>
+		
+		<!--Main container-->
+		<div id="pageHome" class="twenty wrap">
+			
+			<!--Radar grid thingy-->
+			<div id="mapOverlay">
+				
+				<!--Details for map grid-->
+				<div id="mapBackground"></div>
+				<svg id="svg"><line id="line1"/></svg>
+				<div id="milesBox">
+					<div id="miles" class="odometer"></div>
+					<p id="odoTitle">Miles</p>
+				</div>
+				
+				<!--Radar rings with extra commented out-->
+				<div id="outerCircle" class="eighteen heightEighteen">
+					<div class="povCircle eighteen heightEighteen"></div>
+					<div class="povCircle sixteen heightSixteen"></div>
+					<!--<div class="povCircle fifteen heightFifteen"></div>-->
+					<div class="povCircle fourteen heightFourteen"></div>
+					<!--<div class="povCircle thirteen heightThirteen"></div>-->
+					<div class="povCircle twelve heightTwelve"></div>
+					<!--<div class="povCircle eleven heightEleven"></div>-->
+					<div class="povCircle ten heightTen"></div>
+					<!--<div class="povCircle nine heightNine"></div>-->
+					<div class="povCircle eight heightEight"></div>
+					<!--<div class="povCircle seven heightSeven"></div>-->
+					<div class="povCircle six heightSix"></div>
+					<!--<div class="povCircle five heightFive"></div>-->
+					<div class="povCircle four heightFour"></div>
+					<!--<div class="povCircle three heightThree"></div>-->
+					<div class="povCircle two heightTwo"></div>
+					<!--<div id="centerCircle" class="povCircle one heightOne"></div>-->
+					
+					
+					<!--Radar Icons-->
+					<div class="imgCircle ringOne" data-location="Home" data-page="Lantern" data-miles=".5">
+						<img src="image/Icon/homeIcon.jpg" />
+					</div>
+					
+					<div class="imgCircle ringTwo" data-location="Centerfold/Centerfold" data-page="Beacon" data-miles="1.5">
+						<img src="image/Icon/introIcon.jpg" />
+					</div>
+					
+					<div class="imgCircle ringThree" data-location="About" data-page="Guidepost" data-miles="3.2">
+						<img src="image/Icon/aboutIcon.jpg" />
+						<!--<p class="viewedText">&#10003;</p>-->
+					</div>
+					
+					<div class="imgCircle ringFour" data-location="Lakeville" data-page="Sentinel" data-miles="13.9">
+						<img src="image/Icon/LakevilleIcon.jpg" />
+					</div>
+					
+					<div class="imgCircle ringFive" data-location="Traffic/Traffic" data-page="Indication" data-miles="2.3">
+						<img src="image/Icon/TrafficIcon.jpg" />
+					</div>
+					
+					<div class="imgCircle ringSix" data-location="Close/Close" data-page="Landmark" data-miles="1.5">
+						<img src="image/Icon/CloseIcon.jpg" />
+					</div>
+					
+					<div class="imgCircle ringSeven" data-location="Across" data-page="Crest" data-miles="11.3">
+						<img src="image/Icon/AcrossIcon.jpg" />
+					</div>
+					
+					<div class="imgCircle ringEight" data-location="Airport" data-page="Handpost" data-miles="8.2">
+						<img src="image/Icon/AirportIcon.jpg" />
+					</div>
+					
+					<div class="imgCircle ringNine" data-location="Power" data-page="Pagoda" data-miles="7.6">
+						<img src="image/Icon/PowerIcon.jpg" />
+					</div>
+					
+					<div class="imgCircle ringTen" data-location="Hillside" data-page="Visage" data-miles="10">
+						<img src="image/Icon/HillsideIcon.jpg" />
+					</div>
+					
+					<div class="imgCircle ringEleven" data-location="Business" data-page="Peephole" data-miles="7.1">
+						<img src="image/Icon/BusinessIcon.jpg" />
+					</div>
+					
+					<div class="imgCircle ringTwelve" data-location="Hyland" data-page="Patrol" data-miles="10">
+						<img src="image/Icon/HylandIcon.jpg" />
+					</div>
+					
+					<div class="imgCircle ringThirteen" data-location="Ways" data-page="Watchtower" data-miles="5">
+						<img src="image/Icon/WaysIcon.jpg" />
+					</div>
+					
+					<div class="imgCircle ringFourteen" data-location="Skyline" data-page="Observatory" data-miles="5">
+						<img src="image/Icon/SkylineIcon.jpg" />
+					</div>
+					
+					<div class="imgCircle ringFifteen" data-location="City" data-page="Outlook" data-miles="14.1">
+						<img src="image/Icon/CityIcon.jpg" />
+					</div>
+
+				</div>
+				
+				
+				<div id="homeTitle" class="mapTitle">
+					<h1 class="mapText">Map</h1>
+				</div>
+				
+				<!--Navigation-->
+				<div id="povNavBar" class="two">
+					<a href="index.html"><div id="homeTab" class="two"><p class="povNavText">Home</p></div></a>
+					<a href="about.html"><div id="aboutTab" class="two"><p class="povNavText">About</p></div></a>
+					<div class="two pov mapPovPhase"><p class="buttonText mapPov">POV</p></div>
+				</div>
+			</div>
+			
+			<!--POV SCREEN OVERLAY-->
+			<div id="screenOverlay">
+				
+				<div id="homeTitle" class="title povPage">
+					<h1 id="pageTitle" class="povTitle">Beacon</h1>
+				</div>
+				
+				<!--Photo Container-->
+				<div id="povBackground"></div>
+				
+				<div id="miniUI" class="two"></div>
+				
+				<!--Navigation-->
+				<div id="povUI" class="">
+					<div id="poemContain"></div>
+					<div id="milesFrom" class="five"><p id="distance">2.7 Miles</p></div>
+					<div id="povTab" class="three pov"><p class="buttonText">POV</p></div>
+					<div id="hidePoem"><p>Hide Menu</p></div>
+				</div>
+			</div>
+			
+		</div>
+		
+</body>
+	
+</html>
