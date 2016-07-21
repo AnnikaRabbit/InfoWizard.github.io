@@ -13,12 +13,15 @@
 	PlayerDB.prototype.getHandle = function (){
 		return this.handle
 	};
+
 	PlayerDB.prototype.getTeam = function (){
 		return this.team
 	};
+
 	PlayerDB.prototype.getDistrict = function (){
 		return this.district
 	};
+
 	PlayerDB.prototype.getCosmetic = function (){
 		return this.cosmetic
 	};
@@ -28,6 +31,10 @@
 	};
 	
 	var Trainers = [];
+
+	Trainers.push(new PlayerDB("JasonTurdBasket", "Harmony", "Mystery Travelers", "Wobbuffet"));
+
+	Trainers.push(new PlayerDB("DeezPlays", "Mystic", "Ontario", "Pikachu"));
 
 	Trainers.push(new PlayerDB("NicholasPersa","Mystic","Centennial Lakes","Ace Trainer Female"));
 	Trainers.push(new PlayerDB("LauraLundahl","Mystic","Centennial Lakes","Ace Trainer Male"));

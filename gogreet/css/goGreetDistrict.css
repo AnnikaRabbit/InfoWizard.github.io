@@ -3,7 +3,7 @@
 
 body {
 	position:relative;
-	background: url("../images/GoGreetBackground.png") no-repeat center center fixed;
+	background: url("../images/LargeMap.png") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -149,10 +149,62 @@ body {
 
 #containerDistrict {
 	position:relative;
+	display:none;
 	height:100vh;
 	width:100vw;
 	margin-top:12vh;
 	overflow:visible;
+}
+
+#MysteryTravelers {
+	position:absolute;
+	top:10vh;
+	left:5vw;
+}
+
+#Ontario {
+	position:absolute;
+	top:20vh;
+	left:70vw;
+}
+
+#ComoZoo {
+	position:absolute;
+	top:40vh;
+	left:60vw;
+}
+
+#Minneapolis {
+	position:absolute;
+	top:42vh;
+	left:20vw;
+}
+
+#CentennialLakes {
+	position:absolute;
+	top:60vh;
+	left:50vw;
+}
+
+.badge {
+	background:white;
+	border-radius:10px;
+	border:1px solid gray;
+}
+
+.badge p {
+	margin:0;
+	padding:20px;
+	font-size:2vh;
+}
+
+.activeBadge {
+	background:rgb(148, 189, 209);
+	border-color:white;
+}
+
+.activeBadge p {
+	color:white;
 }
 
 .district {
@@ -177,13 +229,13 @@ body {
 	height:100%;
 }
 
-.mysticTower, .valorTower, .instinctTower {
+/*.mysticTower, .valorTower, .instinctTower {
 	position:relative;
 	display:inline-block;
 	top:50%;
 	width:33.334%;
 	height:100%;
-}
+}*/
 
 .mysticTower {
 	background:rgba(117,166,224,1);
@@ -242,156 +294,212 @@ body {
 	transform:translateX(-50%);
 }
 
-
-/*#banner {
-	position:relative;
-	width:85%;
-	left:50%;
-	margin-bottom:1vh;
-	-webkit-transform:translateX(-50%);
-	transform:translateX(-50%);
-}
-
-#banner img {
+#districtInfo {
+	position:fixed;
+	bottom:0vh;
 	width:100%;
-}
-
-#banner p {
-	display:inline-block;
-	position:absolute;
-	top:45%;
-	left:50%;
-	margin:0;
-	-webkit-transform:translateX(-50%) translateY(-50%);
-	transform:translateX(-50%) translateY(-50%);
-	color:white;
-	font-size:2.8vh;
-	white-space:nowrap;
-}
-
-
-#containerTrainer {
-	position:relative;
-	background: rgba(0,0,0,0);
-	width:55vh;
-	left:50%;
-	-webkit-transform:translateX(-50%);
-	transform:translateX(-50%);
-}
-
-.trainer {
-	position:relative;
-	display:inline-block;
-	width:18vh;
-	margin-top:4vh;
-	background:rgba(210,199,176,1);
-	border:2px solid black;
-	border-radius:10px;
+	height:15vh;
+	background:rgba(203,117,117,1);
+	border:3px solid black;
 	box-sizing:border-box;
 }
 
-.trainer:nth-child(3n + 2){
-	margin:4vh .5vh 0 .5vh;
-}
-
-.aceTrainer_M, .aceTrainer_F  {
-	position:relative;
-	left:50%;
-	height:10vh;
-	width:10vh;
-	-webkit-transform:translateX(-50%);
-	transform:translateX(-50%);
-}
-
-.aceTrainer_M img, .aceTrainer_F img {
-	width:100%;
-}
-
-.team {
+#gemFace {
 	position:absolute;
-	left:50%;
-	top:-3vh;
-	width:6vh;
-	height:6vh;
-	border-radius:100%;
-	background:white;
-	-webkit-transform:translateX(-50%);
-	transform:translateX(-50%);
+	display:inline-block;
+	top:-5vh;
+	left:1vh;
+	height:10vh;
+	border-radius:15px;
+	border:3px solid black;
+	background:rgba(221,58,58,1);
+	box-sizing:border-box;
+	z-index:151;
 }
 
-.team img {
+#gemFace img {
 	position:relative;
-	width:100%;
-	-webkit-transform:scale(1.4);
-	transform:scale(1.4);
+	top:2%;
+	left:3%;
+	height:100%;
+	padding:5px;
+	box-sizing:border-box;
 }
 
-.instinctLogo {
-	top:25%;
-	-webkit-transform:scale(1.8) !important;
-	transform:scale(1.8) !important;
+#gemPanel {
+	position:absolute;
+	display:inline-block;
+	left:9vh;
+	top:-2vh;
+	height:3vh;
+	background:lightgrey;
+	border-radius:100px;
+	border:3px solid black;
+	padding:0px 15px 0 35px;
+	z-index:150;
 }
 
-.valorLogo {
-	top:3%;
-	left:2%;
+#gemPanel img {
+	height:100%;
+	padding:5px 5px;
+	box-sizing:border-box;
 }
 
-.trainer h1, .trainer h3{
+#indicatorPanel {
+	position:relative;
+	display:inline-block;
+	height:100%;
+	width:16vw;
+	border:3px solid black;
+	border-width:0 3px 0 0;
+	background:lightgrey;
+	z-index:149;
+}
+
+#indicatorPanel div {
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:8vw;
+	border:3px solid black;
+	border-width:0 3px 0 0;
+	background:rgba(221,58,58,1);
+}
+
+#indicatorPanel img {
+	position:absolute;
+	top:65%;
+	left:50%;
+	width:3.75vh;
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+#enterSocial {
+	position:absolute;
+	right:0;
+	bottom:68%;
+	width:30vw;
+	padding:5px 5px 70px 5px;
+	background:lightgrey;
 	text-align:center;
+	border-radius:40px;
+	border:3px solid black;
 }
 
-.trainer h1, .trainer h3 {
-	position:relative;
-	left:50%;
-	bottom:50%;
-	margin:0;
-	-webkit-transform:translateX(-50%);
-	transform:translateX(-50%);
+#enterSocial p {
+	font-size:2vh;
 }
 
-.trainer h1 {
-	margin-top:5.3vh;
-}
-
-.trainerInfo ul {
-	position:relative;
-	bottom:0;
+#messageWindow {
+	position:absolute;
+	top:0;
+	left:0;
+	background:white;
 	width:100%;
+	height:100%;
+	z-index:148;
+}
+
+#messageContent {
+	margin-left:16vw;
+	height:100%;
+}
+
+#messageData {
+	position:absolute;
+	top:0;
+	display:inline-block;
+	width:26vw;
+	height:100%;
+	background:rgb(148, 189, 209);
+	text-align:left;
+	box-sizing:border-box;
+	border:2px solid black;
+	border-width: 0 2px 0 0;
+}
+
+#messageData p {
+	position:relative;
+	top:20%;
+	left:15%;
+	font-size:29px;
+	display:block;
+	color:rgb(0, 68, 102);
+	margin:0;
+	padding:5px;
+	box-sizing:border-box;
+}
+
+#messageData p:nth-child(1) {
+}
+
+#messageData p:nth-child(3) {
+}
+
+#towerBlock {
+	display:inline-block;
+	position:absolute;
+	left:42vw;
+	height:100%;
+	width:58vw;
+	background:rgba(0,0,0,.77);
+}
+
+#mysticTower, #valorTower, #instinctTower {
+	position:relative;
+	display:block;
 	margin:0;
 	padding:0;
+	height:33.35%;
+	width:40vw;
+	box-sizing:border-box;
+	vertical-align:top;
 }
 
-.trainerInfo ul li {
+#iconHolder {
+	position:absolute;
+	display:inline-block;
+	right:0;
+	top:0;
+	width:18vw;
+	height:100%;
+}
+
+#iconHolder img {
 	position:relative;
-	background:white;
-	border-radius:10px;
-	border:1px solid black;
-	margin:.4vh;
+	display:block;
+	height:33.3%;
+	margin-left:.7vh;
+}
+#iconHolder img:nth-child(3) {
+	margin-left:.45vh;
 }
 
-.trainerInfo p {
-	display:block !important;
-	width:100%;
-	font-size:1.43vh;
-	margin:0;
-	padding:3px;
+#messageCap {
+	position:absolute;
+	right:0;
+	top:0;
+	width:8vw;
+	height:100%;
+	background:rgba(221,58,58,1);
 }
 
-.trainerInfo a {
-	margin:0;
-	padding:3px;
-}
-
-.timePosted {
+#messageCap img {
 	position:relative;
+	top:13%;
+	left:50%;
+	width:6vw;
+	height:6vw;
+	margin:0;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
-.interact a {
-	font-size:1.43vh;
+#messageCap img:nth-child(3) {
+	left:42%;
 }
-
-*/
 
 
 @media screen and (orientation:landscape) {
@@ -423,6 +531,11 @@ body {
 		font-size:5vh !important;
 		padding:5px 0 10px 0 !important;
 	}
+	
+	#districtInfo {
+		display:none;
+	}
+
 }
 
 

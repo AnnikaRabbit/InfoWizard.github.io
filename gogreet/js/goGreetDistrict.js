@@ -5,49 +5,72 @@ $(document).ready(function(){
 //	}
 //	
 //	var whiteSpace = $('#containerTrainer').html().replace(/\r|\n/gm, "");
-	for(i = 0; i < CreateDistricts.length; i++){
+
+
 	
-		var location = CreateDistricts[i].location.split(' ').join('');
-		var gyms = CreateDistricts[i].gyms;
-		var stops = CreateDistricts[i].stops;
-		
-		$("#containerDistrict").append('<div id='+location+' class="district"><div id='+'"'+location+'Team" class="teamTower"><div id='+'"'+location+'Mystic" class="mysticTower"></div><!----><div id='+'"'+location+'Valor" class="valorTower"></div><!----><div id='+'"'+location+'Instinct" class="instinctTower"></div></div><a href="TrainerTemplate.html#'+CreateDistricts[i].location+'"><img src="images/DistrictLocation.png" /></a><div><p id="gymCount">'+gyms+' Gyms</p><p id="stopCount">'+stops+' Stops</p><p id="'+location+'Count">0 Trainers</p></div><p>'+CreateDistricts[i].location+'</p></div>');
-		
-		$("#"+location+"Mystic").css("height", "0");
-		$("#"+location+"Valor").css("height", "0");
-		$("#"+location+"Instinct").css("height", "0");
-		var displacement = i * 15;
-		$("#"+location).css("top", displacement+"%");
-	}
+//	for(i = 0; i < CreateDistricts.length; i++){
+//	
+//		var location = CreateDistricts[i].location.split(' ').join('');
+//		var gyms = CreateDistricts[i].gyms;
+//		var stops = CreateDistricts[i].stops;
+//		
+//		$("#containerDistrict").append('<div id='+location+' class="district"><div id='+'"'+location+'Team" class="teamTower"><div id='+'"'+location+'Mystic" class="mysticTower"></div><!----><div id='+'"'+location+'Valor" class="valorTower"></div><!----><div id='+'"'+location+'Instinct" class="instinctTower"></div></div><a href="TrainerTemplate.html#'+CreateDistricts[i].location+'"><img src="images/DistrictLocation.png" /></a><div><p id="gymCount">'+gyms+' Gyms</p><p id="stopCount">'+stops+' Stops</p><p id="'+location+'Count">0 Trainers</p></div><p>'+CreateDistricts[i].location+'</p></div>');
+//		
+//		$("#"+location+"Mystic").css("height", "0");
+//		$("#"+location+"Valor").css("height", "0");
+//		$("#"+location+"Instinct").css("height", "0");
+//		var displacement = i * 15;
+//		$("#"+location).css("top", displacement+"%");
+//	}
 	
 	var districtObjects = [];
 	var districtNames = []
 	
 	
 	for(i = 0; i < Trainers.length; i++){
-		
+		console.log(i);
 		if( !($.inArray(Trainers[i].getDistrict(), districtNames) > -1) )
 		{
 			var district = Trainers[i].getDistrict();
 			districtNames.push(district);
-			districtObjects.push({"name":district,"count":0, "mystic":0, "valor":0, "instinct":0});
+			
+			var gyms = 0;
+			var stops = 0;
+			for(j = 0; j < CreateDistricts.length; j++){
+				if(CreateDistricts[j].getLocation() == district){
+					gyms = CreateDistricts[j].gyms;
+					stops = CreateDistricts[j].stops;
+				}
+			}
+			
+			districtObjects.push({"name":district,"count":0, "mystic":0, "valor":0, "instinct":0, "gyms":gyms, "stops":stops});
 		}
 		
 		var counted = false;
 		var districtIndex = 0;
 		
 		while(counted == false){
-		
+			
 			if(districtObjects[districtIndex].name == Trainers[i].getDistrict()){
-				if(Trainers[i].getTeam() == "Mystic"){
+			
+				if(Trainers[i].getTeam() == "Mystic" || Trainers[i].getTeam() == "Harmony" ){
 					districtObjects[districtIndex].mystic += 1;
 				}
+				
 				else if(Trainers[i].getTeam() == "Valor"){
 					districtObjects[districtIndex].valor += 1;
+					//console.log(Trainers[i].getHandle()+", "+Trainers[i].getTeam()+", "+Trainers[i].getDistrict() );
+					//console.log(districtObjects[districtIndex].name +" valor");
+
 				}
-				else{
+				
+				else if(Trainers[i].getTeam() == "Instinct"){
+					//console.log(districtObjects[districtIndex].name +" instinct");
+
 					districtObjects[districtIndex].instinct += 1;
 				}
+				
+				else{}
 				
 				districtObjects[districtIndex].count += 1;
 				counted = true;
@@ -57,25 +80,62 @@ $(document).ready(function(){
 	}
 	
 	//console.log(districtObjects);
+	$(".badge").click(function() {
 	
-	for(i = 0; i < districtObjects.length; i++){
-		var location = districtObjects[i].name.split(' ').join('');
-		var totalCount = districtObjects[i].count;
-		var mysticCount = 100 * (districtObjects[i].mystic / totalCount);
-		var valorCount = 100 * (districtObjects[i].valor / totalCount);
-		var instinctCount = 100 * (districtObjects[i].instinct / totalCount);
+		$(".badge").removeClass("activeBadge");
+		$(this).addClass("activeBadge");
 
-		$("#"+location+"Count").html(districtObjects[i].count + " Trainers");
-		$("#"+location+"Mystic").css("height", mysticCount+"%");
-		$("#"+location+"Valor").css("height", valorCount+"%");
-		$("#"+location+"Instinct").css("height", instinctCount+"%");
-		
-		var topScale = Math.max(mysticCount, valorCount, instinctCount);
-		topScale = 100 - topScale;
-		$("#"+location+"Mystic").css("top", topScale+"%");
-		$("#"+location+"Valor").css("top", topScale+"%");
-		$("#"+location+"Instinct").css("top", topScale+"%");
-	}
+		for(i = 0; i < districtObjects.length; i++){
+			
+			console.log(districtObjects[i].instinct);
+			if($(this).data("location") == districtObjects[i].name){
+				var location = districtObjects[i].name;//.split(' ').join('');
+				var totalCount = districtObjects[i].count;
+				var mysticCount = 40 * (districtObjects[i].mystic / totalCount);
+				var valorCount = 40 * (districtObjects[i].valor / totalCount);
+				var instinctCount = 40 * (districtObjects[i].instinct / totalCount);
+				
+				
+				$("#gymCount").html("Gyms: "+districtObjects[i].gyms);
+				$("#stopCount").html("Stops: "+districtObjects[i].stops);
+				$("#trainerCount").html("Trainers: "+districtObjects[i].count);
+				$("#mysticTower").css("width", mysticCount+"vw");
+				$("#valorTower").css("width", valorCount+"vw");
+				$("#instinctTower").css("width", instinctCount+"vw");
+				
+				$("#enterSocial").data("location", location);
+				
+			}
+//			var topScale = Math.max(mysticCount, valorCount, instinctCount);
+//			topScale = 100 - topScale;
+//			$("#"+location+"Mystic").css("top", topScale+"%");
+//			$("#"+location+"Valor").css("top", topScale+"%");
+//			$("#"+location+"Instinct").css("top", topScale+"%");
+		}
+	});
+	
+	$("#enterSocial").click(function() {
+		var location = $("#enterSocial").data("location");
+		window.location.href = "TrainerTemplate.html#"+location;
+	});
+//	for(i = 0; i < districtObjects.length; i++){
+//		var location = districtObjects[i].name.split(' ').join('');
+//		var totalCount = districtObjects[i].count;
+//		var mysticCount = 100 * (districtObjects[i].mystic / totalCount);
+//		var valorCount = 100 * (districtObjects[i].valor / totalCount);
+//		var instinctCount = 100 * (districtObjects[i].instinct / totalCount);
+//
+//		$("#"+location+"Count").html(districtObjects[i].count + " Trainers");
+//		$("#"+location+"Mystic").css("height", mysticCount+"%");
+//		$("#"+location+"Valor").css("height", valorCount+"%");
+//		$("#"+location+"Instinct").css("height", instinctCount+"%");
+//		
+//		var topScale = Math.max(mysticCount, valorCount, instinctCount);
+//		topScale = 100 - topScale;
+//		$("#"+location+"Mystic").css("top", topScale+"%");
+//		$("#"+location+"Valor").css("top", topScale+"%");
+//		$("#"+location+"Instinct").css("top", topScale+"%");
+//	}
 	
 	$("#burgerMenu").click(function(){
 		document.getElementById("aboutOverlay").style.display = "inline-block";

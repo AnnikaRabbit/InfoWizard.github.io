@@ -199,7 +199,7 @@ body {
 	margin:4vh .5vh 0 .5vh;
 }
 
-.aceTrainer_M, .aceTrainer_F, .blackBelt_M, .camper_M, .hiker_M  {
+.aceTrainer_M, .aceTrainer_F, .blackBelt_M, .camper_M, .hiker_M, .pikachu, .wobbuffet  {
 	position:relative;
 	left:50%;
 	height:10vh;
@@ -208,8 +208,16 @@ body {
 	transform:translateX(-50%);
 }
 
-.aceTrainer_M img, .aceTrainer_F img, .blackBelt_M img, .camper_M img, .hiker_M img {
+.aceTrainer_M img, .aceTrainer_F img, .blackBelt_M img, .camper_M img, .hiker_M img, .pikachu img, .wobbuffet img {
 	width:100%;
+}
+
+.pikachu {
+	height:7.25vh;
+}
+
+.wobbuffet {
+	margin-bottom:.5vh;
 }
 
 .team {

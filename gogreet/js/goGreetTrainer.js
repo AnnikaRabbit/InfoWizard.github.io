@@ -40,6 +40,18 @@ $(document).ready(function(){
 				var iconClass = "hiker_M";
 			}
 			
+			else if(Trainers[i].cosmetic == "Pikachu"){
+				var iconType = "Pikachu.png";
+				var iconName = "Special Trainer";
+				var iconClass = "pikachu";
+			}
+			
+			else if(Trainers[i].cosmetic == "Wobbuffet"){
+				var iconType = "Wobbuffet.png";
+				var iconName = "Tricky Trainer";
+				var iconClass = "wobbuffet";
+			}
+			
 			$("#containerTrainer").append('<div class="trainer"><div class="team"><img  class="'+Trainers[i].team.toLowerCase()+'Logo" src="images/'+Trainers[i].team.toLowerCase()+'.png" /></div><h1>'+iconName+'</h1><div class="'+iconClass+'"><img src="images/playerIcons/'+iconType+'" /></div><h2>'+Trainers[i].handle+'</h2><div id="'+Trainers[i].handle+'" class="trainerInfo"></div></div>');
 		
 		}
