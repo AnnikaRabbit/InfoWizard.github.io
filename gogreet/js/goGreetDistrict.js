@@ -1,27 +1,16 @@
 $(document).ready(function(){
 	
-//	for(i = 0; i < 20; i ++){
-//		$("#containerDistrict").append('<div class="district"><div class=""><img  class="'+teamIcon[i%3]+'Logo" src="images/'+teamIcon[i%3]+'.png" /></div><h1>Ace Trainer</h1><div class="aceTrainer_F"><img src="images/AceTrainer_F.png" /></div><h3>'+twitterHandles[i%4]+'</h3><div id="'+twitterHandles[i%4]+'" class="trainerInfo"></div></div>');
-//	}
-//	
 //	var whiteSpace = $('#containerTrainer').html().replace(/\r|\n/gm, "");
 
 
 	
-//	for(i = 0; i < CreateDistricts.length; i++){
-//	
-//		var location = CreateDistricts[i].location.split(' ').join('');
-//		var gyms = CreateDistricts[i].gyms;
-//		var stops = CreateDistricts[i].stops;
-//		
-//		$("#containerDistrict").append('<div id='+location+' class="district"><div id='+'"'+location+'Team" class="teamTower"><div id='+'"'+location+'Mystic" class="mysticTower"></div><!----><div id='+'"'+location+'Valor" class="valorTower"></div><!----><div id='+'"'+location+'Instinct" class="instinctTower"></div></div><a href="TrainerTemplate.html#'+CreateDistricts[i].location+'"><img src="images/DistrictLocation.png" /></a><div><p id="gymCount">'+gyms+' Gyms</p><p id="stopCount">'+stops+' Stops</p><p id="'+location+'Count">0 Trainers</p></div><p>'+CreateDistricts[i].location+'</p></div>');
-//		
-//		$("#"+location+"Mystic").css("height", "0");
-//		$("#"+location+"Valor").css("height", "0");
-//		$("#"+location+"Instinct").css("height", "0");
-//		var displacement = i * 15;
-//		$("#"+location).css("top", displacement+"%");
-//	}
+	for(i = 0; i < CreateDistricts.length; i++){
+
+		var location = CreateDistricts[i].location.split(' ').join('');
+		var name = CreateDistricts[i].location;
+
+		$("#containerDistrict").append('<div id="'+location+'" class="badge" data-location="'+name+'"><p>'+name+'</p></div>');
+	}
 	
 	var districtObjects = [];
 	var districtNames = []
@@ -59,14 +48,9 @@ $(document).ready(function(){
 				
 				else if(Trainers[i].getTeam() == "Valor"){
 					districtObjects[districtIndex].valor += 1;
-					//console.log(Trainers[i].getHandle()+", "+Trainers[i].getTeam()+", "+Trainers[i].getDistrict() );
-					//console.log(districtObjects[districtIndex].name +" valor");
-
 				}
 				
 				else if(Trainers[i].getTeam() == "Instinct"){
-					//console.log(districtObjects[districtIndex].name +" instinct");
-
 					districtObjects[districtIndex].instinct += 1;
 				}
 				
@@ -79,15 +63,14 @@ $(document).ready(function(){
 		}
 	}
 	
-	//console.log(districtObjects);
 	$(".badge").click(function() {
 	
 		$(".badge").removeClass("activeBadge");
 		$(this).addClass("activeBadge");
+		$("#enterSocial").addClass("activeSocial");
 
 		for(i = 0; i < districtObjects.length; i++){
 			
-			console.log(districtObjects[i].instinct);
 			if($(this).data("location") == districtObjects[i].name){
 				var location = districtObjects[i].name;//.split(' ').join('');
 				var totalCount = districtObjects[i].count;
@@ -106,11 +89,6 @@ $(document).ready(function(){
 				$("#enterSocial").data("location", location);
 				
 			}
-//			var topScale = Math.max(mysticCount, valorCount, instinctCount);
-//			topScale = 100 - topScale;
-//			$("#"+location+"Mystic").css("top", topScale+"%");
-//			$("#"+location+"Valor").css("top", topScale+"%");
-//			$("#"+location+"Instinct").css("top", topScale+"%");
 		}
 	});
 	
@@ -118,32 +96,18 @@ $(document).ready(function(){
 		var location = $("#enterSocial").data("location");
 		window.location.href = "TrainerTemplate.html#"+location;
 	});
-//	for(i = 0; i < districtObjects.length; i++){
-//		var location = districtObjects[i].name.split(' ').join('');
-//		var totalCount = districtObjects[i].count;
-//		var mysticCount = 100 * (districtObjects[i].mystic / totalCount);
-//		var valorCount = 100 * (districtObjects[i].valor / totalCount);
-//		var instinctCount = 100 * (districtObjects[i].instinct / totalCount);
-//
-//		$("#"+location+"Count").html(districtObjects[i].count + " Trainers");
-//		$("#"+location+"Mystic").css("height", mysticCount+"%");
-//		$("#"+location+"Valor").css("height", valorCount+"%");
-//		$("#"+location+"Instinct").css("height", instinctCount+"%");
-//		
-//		var topScale = Math.max(mysticCount, valorCount, instinctCount);
-//		topScale = 100 - topScale;
-//		$("#"+location+"Mystic").css("top", topScale+"%");
-//		$("#"+location+"Valor").css("top", topScale+"%");
-//		$("#"+location+"Instinct").css("top", topScale+"%");
-//	}
 	
 	$("#burgerMenu").click(function(){
 		document.getElementById("aboutOverlay").style.display = "inline-block";
 		document.getElementById("siteNav").style.display = "none";
+		document.getElementById("containerDistrict").style.display = "none";
+		document.getElementById("districtInfo").style.display = "none";
 	});
 	$("#closeAbout").click(function(){
 		document.getElementById("aboutOverlay").style.display = "none";
 		document.getElementById("siteNav").style.display = "inline-block";
+		document.getElementById("containerDistrict").style.display = "block";
+		document.getElementById("districtInfo").style.display = "block";
 	});
 	
 	$("#join").click(function(){
@@ -152,7 +116,7 @@ $(document).ready(function(){
 	
 		if($(this).hasClass("clicked")){
 		
-			$("#menuInfo").html('<p>So you want a player icon and name?</p><p>Just tweet me using the button below which player icon you want, the team your on, and where you most frequently play: I will add your Twitter handle to the social nexus GoGreet and find or create a play region for you.</p> <p>By joining, you can participate in what other players are saying more easily and collaborate with friends to take on gyms.</p><p>Poke Go fan-site. Not officially affiliated with Pokemon Go or Niantic Labs.</p><a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Flocalhost%3A4000%2FTrainerTemplate.html&amp;ref_src=twsrc%5Etfw&amp;screen_name=NicholasPersa&amp;tw_p=tweetbutton" target="_blank"><div id="tweetMe"><p>Tweet Me</p></div></a>');
+			$("#menuInfo").html('<p>So you want a player icon and name?</p><p>Just tweet me using the button below which player icon you want, your team, and where you most frequently play: I will add your Twitter handle to the social nexus GoGreet and find or create a play region for you.</p> <p>By joining, you can participate in what other players are saying more easily and collaborate with friends to take on gyms.</p><p>Poke Go fan-site. Not officially affiliated with Pokemon Go or Niantic Labs.</p><a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Flocalhost%3A4000%2FTrainerTemplate.html&amp;ref_src=twsrc%5Etfw&amp;screen_name=NicholasPersa&amp;tw_p=tweetbutton" target="_blank"><div id="tweetMe"><p>Tweet Me</p></div></a>');
 			
 			$("#join").html('<p>Return</p>');
 			

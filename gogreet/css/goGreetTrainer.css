@@ -21,13 +21,45 @@ body {
 }
 
 #siteNav img {
+	position:relative;
 	width:100%;
+	z-index:150;
+}
+
+#tweetOut {
+	position:absolute;
+	display:inline-block;
+	top:-5vh;
+	right:20vw;
+	height:5vh;
+	width:35vw;
+	border-radius:10px;
+	background:rgb(208,2,27);/*rgb(85,172,238);*/
+	box-sizing:border-box;
+	z-index:140;
+	text-align:center;
+}
+
+#tweetOut a {
+	text-decoration:none;
+}
+
+#tweetOut p {
+	position:absolute;
+	display:block;
+	color:white;
+	font-size:2.2vh;
+	margin:0;
+	top:50%;
+	left:50%;
+	-webkit-transform:translateY(-50%) translateX(-50%);
+	transform:translateY(-50%) translateX(-50%);
 }
 
 #burgerMenu img {
 	position:absolute;
-	top: 38%;
-    left: 3%;
+	top: 48.25%;
+	left: 3%;
     width: 17%;
 	-webkit-transform:translateY(-50%);
 	transform:translateY(-50%);
@@ -158,6 +190,7 @@ body {
 
 #banner img {
 	width:100%;
+	opacity:.8;
 }
 
 #banner p {
@@ -280,7 +313,9 @@ body {
 	background:white;
 	border-radius:10px;
 	border:1px solid black;
+	white-space:normal;
 	margin:.4vh;
+	overflow:hidden;
 }
 
 .trainerInfo p {

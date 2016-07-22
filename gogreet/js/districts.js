@@ -23,6 +23,5 @@
 	CreateDistricts.push(new DistrictDB("Mystery Travelers","0","0"));
 	CreateDistricts.push(new DistrictDB("Minneapolis","14","56"));
 	CreateDistricts.push(new DistrictDB("Centennial Lakes","8","22"));
-	CreateDistricts.push(new DistrictDB("Mall of America","14","56"));
 	CreateDistricts.push(new DistrictDB("Ontario","14","56"));
 

@@ -5,8 +5,6 @@ $(document).ready(function(){
 	$("#bannerTitle").html(filter);
 	
 	for(i = 0; i < Trainers.length; i ++){
-	
-		//var filter = $("#containerTrainer").data("location");
 		
 		if(Trainers[i].getDistrict() == filter){
 		
@@ -52,7 +50,7 @@ $(document).ready(function(){
 				var iconClass = "wobbuffet";
 			}
 			
-			$("#containerTrainer").append('<div class="trainer"><div class="team"><img  class="'+Trainers[i].team.toLowerCase()+'Logo" src="images/'+Trainers[i].team.toLowerCase()+'.png" /></div><h1>'+iconName+'</h1><div class="'+iconClass+'"><img src="images/playerIcons/'+iconType+'" /></div><h2>'+Trainers[i].handle+'</h2><div id="'+Trainers[i].handle+'" class="trainerInfo"></div></div>');
+			$("#containerTrainer").append('<div class="trainer" data-time=""><div class="team"><img  class="'+Trainers[i].team.toLowerCase()+'Logo" src="images/'+Trainers[i].team.toLowerCase()+'.png" /></div><h1>'+iconName+'</h1><div class="'+iconClass+'"><img src="images/playerIcons/'+iconType+'" /></div><h2>'+Trainers[i].handle+'</h2><div id="'+Trainers[i].handle+'" class="trainerInfo"></div></div>');
 		
 		}
 	}
@@ -61,8 +59,6 @@ $(document).ready(function(){
 	
 	
 	for(i = 0; i < Trainers.length; i++){
-	
-		//var filter = $("#containerTrainer").data("location");
 		
 		if(Trainers[i].getDistrict() == filter){
 			
@@ -72,16 +68,42 @@ $(document).ready(function(){
 				"maxTweets": 1,
 				"showImages": false,
 				"enableLinks": false,
-				"showUser": false
+				"showUser": false,
+				"showRetweet":true,
+				"showInteraction":true
 			};
 			
 			twitterFetcher.fetch(config);
 		}
 	}
 	
+		// The basic check
+	if(document.readyState === 'complete') {
+			// good to go!
+		done();
+	}
+	
+		// Polling for the sake of my intern tests
+	var interval = setInterval(function() {
+		if(document.readyState === 'complete') {
+			clearInterval(interval);
+			done();
+		}
+	}, 10);
+	
+	function done () {
+		$('#containerTrainer .trainer').sort(function(a,b) {
+			return $(a).data('time') < $(b).data('time');
+		}).appendTo('#containerTrainer');
+	}
+	
 	$("#burgerMenu").click(function(){
 		document.getElementById("aboutOverlay").style.display = "inline-block";
 		document.getElementById("siteNav").style.display = "none";
+		
+		$(".trainer").each(function(){
+					 console.log($(this).data());
+				 });
 	});
 	$("#closeAbout").click(function(){
 		document.getElementById("aboutOverlay").style.display = "none";
@@ -94,7 +116,7 @@ $(document).ready(function(){
 	
 		if($(this).hasClass("clicked")){
 		
-			$("#menuInfo").html('<p>So you want a player icon and name?</p><p>Just tweet me using the button below which player icon you want, the team your on, and where you most frequently play: I will add your Twitter handle to the social nexus GoGreet and find or create a play region for you.</p> <p>By joining, you can participate in what other players are saying more easily and collaborate with friends to take on gyms.</p><p>Poke Go fan-site. Not officially affiliated with Pokemon Go or Niantic Labs.</p><a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Flocalhost%3A4000%2FTrainerTemplate.html&amp;ref_src=twsrc%5Etfw&amp;screen_name=NicholasPersa&amp;tw_p=tweetbutton" target="_blank"><div id="tweetMe"><p>Tweet Me</p></div></a>');
+			$("#menuInfo").html('<p>So you want a player icon and name?</p><p>Just tweet me using the button below which player icon you want, your team, and where you most frequently play: I will add your Twitter handle to the social nexus GoGreet and find or create a play region for you.</p> <p>By joining, you can participate in what other players are saying more easily and collaborate with friends to take on gyms.</p><p>Poke Go fan-site. Not officially affiliated with Pokemon Go or Niantic Labs.</p><a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Flocalhost%3A4000%2FTrainerTemplate.html&amp;ref_src=twsrc%5Etfw&amp;screen_name=NicholasPersa&amp;tw_p=tweetbutton" target="_blank"><div id="tweetMe"><p>Tweet Me</p></div></a>');
 			
 			$("#join").html('<p>Return</p>');
 			
