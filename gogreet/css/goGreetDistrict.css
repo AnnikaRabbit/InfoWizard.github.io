@@ -155,36 +155,6 @@ body {
 	overflow:visible;
 }
 
-#MysteryTravelers {
-	position:absolute;
-	top:10vh;
-	left:5vw;
-}
-
-#Ontario {
-	position:absolute;
-	top:20vh;
-	left:70vw;
-}
-
-#ComoZoo {
-	position:absolute;
-	top:40vh;
-	left:60vw;
-}
-
-#Minneapolis {
-	position:absolute;
-	top:42vh;
-	left:20vw;
-}
-
-#CentennialLakes {
-	position:absolute;
-	top:60vh;
-	left:50vw;
-}
-
 .badge {
 	background:white;
 	border-radius:10px;
@@ -561,6 +531,57 @@ body {
 	}
 
 }
+
+
+#MysteryTravelers {
+	position:absolute;
+	top:10vh;
+	left:5vw;
+}
+
+#Ontario {
+	position:absolute;
+	top:20vh;
+	left:70vw;
+}
+
+#ComoZoo {
+	position:absolute;
+	top:40vh;
+	left:60vw;
+}
+
+#Minneapolis {
+	position:absolute;
+	top:42vh;
+	left:20vw;
+}
+
+#CentennialLakes {
+	position:absolute;
+	top:60vh;
+	left:50vw;
+}
+
+#California {
+	position:absolute;
+	top:20vh;
+	left:3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

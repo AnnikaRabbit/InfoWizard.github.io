@@ -4,6 +4,7 @@ $(document).ready(function(){
 	
 	$("#bannerTitle").html(filter);
 	
+	
 	for(i = 0; i < Trainers.length; i ++){
 		
 		if(Trainers[i].getDistrict() == filter){
@@ -51,6 +52,8 @@ $(document).ready(function(){
 			}
 			
 			$("#containerTrainer").append('<div class="trainer" data-time=""><div class="team"><img  class="'+Trainers[i].team.toLowerCase()+'Logo" src="images/'+Trainers[i].team.toLowerCase()+'.png" /></div><h1>'+iconName+'</h1><div class="'+iconClass+'"><img src="images/playerIcons/'+iconType+'" /></div><h2>'+Trainers[i].handle+'</h2><div id="'+Trainers[i].handle+'" class="trainerInfo"></div></div>');
+			
+			$(".trainer").hide();
 		
 		}
 	}
@@ -77,13 +80,7 @@ $(document).ready(function(){
 		}
 	}
 	
-		// The basic check
-	if(document.readyState === 'complete') {
-			// good to go!
-		done();
-	}
-	
-		// Polling for the sake of my intern tests
+	// Polling for the sake of my intern tests
 	var interval = setInterval(function() {
 		if(document.readyState === 'complete') {
 			clearInterval(interval);
@@ -92,9 +89,19 @@ $(document).ready(function(){
 	}, 10);
 	
 	function done () {
-		$('#containerTrainer .trainer').sort(function(a,b) {
-			return $(a).data('time') < $(b).data('time');
-		}).appendTo('#containerTrainer');
+		var html = $('#containerTrainer .trainer').sort(function(a,b) {
+			if($(a).data('time') > $(b).data('time')){
+				return -1;
+			}
+			if($(a).data('time') < $(b).data('time')){
+				return 1;
+			}
+			return 0;
+		});
+		
+		$("#containerTrainer").append(html);
+		$(".trainer").fadeIn(1400);
+		$("#loadingBall").fadeOut(1400);
 	}
 	
 	$("#burgerMenu").click(function(){

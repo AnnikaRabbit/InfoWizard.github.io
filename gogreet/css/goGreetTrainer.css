@@ -12,6 +12,53 @@ body {
 	margin:0;
 }
 
+#loadingBall {
+	position:absolute;
+	display:block;
+	top:50vh;
+	left:50vw;
+	width:20vw;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#loadingBall img {
+	width:100%;
+	-webkit-animation-name: ballShake;
+	animation-name: ballShake;
+	-webkit-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-delay: .5s;
+	animation-delay: .5s;
+}
+
+#loadingBall p {
+	position:absolute;
+	display:inline-block;
+	top:100%;
+	left:50%;
+	font-size:4vh;
+	color:white;
+	padding:15px 50px;
+	border-radius:100px;
+	background:black;
+	white-space:nowrap;
+	text-transform:uppercase;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+@-webkit-keyframes ballShake{
+	from{-webkit-transform:rotate(15deg);
+	transform: rotate(15deg);}
+	50%{-webkit-transform:rotate(-15deg);
+	transform: rotate(-15deg);}
+	to{-webkit-transform:rotate(15deg);
+	transform: rotate(15deg);}
+}
+
 #siteNav {
 	position:fixed;
 	right:-1%;

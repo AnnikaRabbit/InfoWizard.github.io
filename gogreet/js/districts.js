@@ -20,8 +20,9 @@
 	
 	var CreateDistricts = [];
 
-	CreateDistricts.push(new DistrictDB("Mystery Travelers","0","0"));
+	CreateDistricts.push(new DistrictDB("Mystery Travelers","-","-"));
 	CreateDistricts.push(new DistrictDB("Minneapolis","14","56"));
 	CreateDistricts.push(new DistrictDB("Centennial Lakes","8","22"));
-	CreateDistricts.push(new DistrictDB("Ontario","14","56"));
+	CreateDistricts.push(new DistrictDB("Ontario","-","-"));
+	CreateDistricts.push(new DistrictDB("California","-","-"));
 

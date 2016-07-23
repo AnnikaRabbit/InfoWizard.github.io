@@ -32,7 +32,7 @@
 	
 	var Trainers = [];
 
-	Trainers.push(new PlayerDB("JasonTurdBasket", "Harmony", "Mystery Travelers", "Wobbuffet"));
+	Trainers.push(new PlayerDB("JasonTurdBasket", "Harmony", "California", "Wobbuffet"));
 
 	Trainers.push(new PlayerDB("DeezPlays", "Mystic", "Ontario", "Pikachu"));
 

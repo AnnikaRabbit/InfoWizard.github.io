@@ -17,7 +17,7 @@ $(document).ready(function(){
 	
 	
 	for(i = 0; i < Trainers.length; i++){
-		console.log(i);
+
 		if( !($.inArray(Trainers[i].getDistrict(), districtNames) > -1) )
 		{
 			var district = Trainers[i].getDistrict();
