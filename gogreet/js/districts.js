@@ -25,4 +25,5 @@
 	CreateDistricts.push(new DistrictDB("Centennial Lakes","8","22"));
 	CreateDistricts.push(new DistrictDB("Ontario","-","-"));
 	CreateDistricts.push(new DistrictDB("California","-","-"));
+	CreateDistricts.push(new DistrictDB("U of MN TC","-","-"));
 

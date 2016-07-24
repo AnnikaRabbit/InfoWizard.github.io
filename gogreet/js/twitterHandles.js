@@ -36,7 +36,8 @@
 
 	Trainers.push(new PlayerDB("DeezPlays", "Mystic", "Ontario", "Pikachu"));
 
-	Trainers.push(new PlayerDB("NicholasPersa","Mystic","Centennial Lakes","Ace Trainer Female"));
+	Trainers.push(new PlayerDB("NicholasPersa","Mystic","Centennial Lakes","Ace Trainer Male"));
+	Trainers.push(new PlayerDB("TheSecretWorm","Mystic","Centennial Lakes","Ace Trainer Female"));
 	Trainers.push(new PlayerDB("LauraLundahl","Mystic","Centennial Lakes","Ace Trainer Male"));
 	Trainers.push(new PlayerDB("Charles","Valor","Centennial Lakes","Hiker"));
 	Trainers.push(new PlayerDB("Peter","Instinct","Centennial Lakes","Camper"));
@@ -51,6 +52,9 @@
 	Trainers.push(new PlayerDB("Jeff","Valor","Minneapolis","Ace Trainer Male"));
 	Trainers.push(new PlayerDB("Frank","Mystic","Minneapolis","Black Belt"));
 	Trainers.push(new PlayerDB("PeteRose","Valor","Minneapolis","Ace Trainer"));
+
+	//UMN
+	Trainers.push(new PlayerDB("Amudrasil","Mystic","U of MN TC","Flaaffy"));
 
 
 

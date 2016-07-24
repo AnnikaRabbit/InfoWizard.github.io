@@ -322,7 +322,7 @@ body {
 	margin:4vh .5vh 0 .5vh;
 }
 
-.aceTrainer_M, .aceTrainer_F, .blackBelt_M, .camper_M, .hiker_M, .pikachu, .wobbuffet  {
+.aceTrainer_M, .aceTrainer_F, .blackBelt_M, .camper_M, .hiker_M, .pikachu, .wobbuffet, .flaaffy  {
 	position:relative;
 	left:50%;
 	height:10vh;
@@ -331,7 +331,7 @@ body {
 	transform:translateX(-50%);
 }
 
-.aceTrainer_M img, .aceTrainer_F img, .blackBelt_M img, .camper_M img, .hiker_M img, .pikachu img, .wobbuffet img {
+.aceTrainer_M img, .aceTrainer_F img, .blackBelt_M img, .camper_M img, .hiker_M img, .pikachu img, .wobbuffet img, .flaaffy img {
 	width:100%;
 }
 
