@@ -104,17 +104,32 @@ $(document).ready(function(){
 		$("#loadingBall").fadeOut(1400);
 	}
 	
+	$(document).mouseup(function(e){
+	
+		var menu = $('#aboutOverlay');
+		if (!menu.is(e.target) // The target of the click isn't the container.
+		&& menu.has(e.target).length === 0) // Nor a child element of the container
+		{
+			//menu.hide();
+			$("#closeAbout").click();
+		}
+	});
+	
 	$("#burgerMenu").click(function(){
+		menuShowing = true;
 		document.getElementById("aboutOverlay").style.display = "inline-block";
 		document.getElementById("siteNav").style.display = "none";
-		
-		$(".trainer").each(function(){
-					 console.log($(this).data());
-				 });
+		document.getElementById("containerTrainer").style.display = "none";
 	});
 	$("#closeAbout").click(function(){
+		menuShowing = false;
 		document.getElementById("aboutOverlay").style.display = "none";
-		document.getElementById("siteNav").style.display = "inline-block";
+		document.getElementById("siteNav").style.display = "block";
+		document.getElementById("containerTrainer").style.display = "block";
+	});
+	
+	$("#backButton").click(function() {
+		window.history.back();
 	});
 	
 	$("#join").click(function(){

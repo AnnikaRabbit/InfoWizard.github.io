@@ -62,7 +62,7 @@ body {
 #siteNav {
 	position:fixed;
 	right:-1%;
-	top:89vh;
+	bottom:0vh;
 	width:55%;
 	z-index:150;
 }
@@ -116,6 +116,32 @@ body {
 	-webkit-filter:hue-rotate(290deg);
 	filter:hue-rotate(290deg);
 }*/
+
+#backButton {
+	position:absolute;
+	display:inline-block;
+	top:-5vh;
+	right:2vw;
+	height:5vh;
+	width:17vw;
+	border-radius:10px;
+	background:rgba(0,0,0,.85);/*rgb(85,172,238);*/
+	box-sizing:border-box;
+	z-index:140;
+	text-align:center;
+}
+
+#backButton p {
+	position:absolute;
+	display:block;
+	color:white;
+	font-size:2.2vh;
+	margin:0;
+	top:50%;
+	left:50%;
+	-webkit-transform:translateY(-50%) translateX(-50%);
+	transform:translateY(-50%) translateX(-50%);
+}
 
 #aboutOverlay {
 	position:fixed;
@@ -194,6 +220,7 @@ body {
 	position:relative;
 	left:50%;
 	width:40vw;
+	height:5vh;
 	margin:2vh 0;
 	background:red;
 	text-align:center;
@@ -206,6 +233,7 @@ body {
 	position:relative;
 	left:50%;
 	width:40vw;
+	height:5vh;
 	margin:2vh 0;
 	background:rgb(85,172,238);
 	text-align:center;
@@ -215,15 +243,30 @@ body {
 }
 
 #tweetMe p {
-	font-size:2vh;
 	color:white;
-	padding:10px 0 20px 0;
+	position:absolute;
+	display:block;
+	color:white;
+	font-size:2.2vh;
+	margin:0;
+	top:50%;
+	left:50%;
+	white-space:nowrap;
+	-webkit-transform:translateY(-50%) translateX(-50%);
+	transform:translateY(-50%) translateX(-50%);
 }
 
 #join p {
-	font-size:2vh;
 	color:white;
-	padding:10px 0 20px 0;
+	position:absolute;
+	display:block;
+	color:white;
+	font-size:2.2vh;
+	margin:0;
+	top:50%;
+	left:50%;
+	-webkit-transform:translateY(-50%) translateX(-50%);
+	transform:translateY(-50%) translateX(-50%);
 }
 
 #banner {
@@ -414,11 +457,11 @@ body {
 	
 	#join, #tweetMe {
 		width:20vw !important;
+		height:10vh !important;
 	}
 	
 	#join p, #tweetMe p {
 		font-size:5vh !important;
-		padding:5px 0 10px 0 !important;
 	}
 }
 
