@@ -26,4 +26,5 @@
 	CreateDistricts.push(new DistrictDB("Ontario","-","-"));
 	CreateDistricts.push(new DistrictDB("California","-","-"));
 	CreateDistricts.push(new DistrictDB("U of MN TC","-","-"));
+	CreateDistricts.push(new DistrictDB("Uptown","-","-"));
 

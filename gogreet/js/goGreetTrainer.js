@@ -57,6 +57,12 @@ $(document).ready(function(){
 				var iconClass = "flaaffy";
 			}
 			
+			else if(Trainers[i].cosmetic == "Swimmer Female"){
+				var iconType = "Swimmer_F.png";
+				var iconName = "Swimmer";
+				var iconClass = "swimmer_F";
+			}
+			
 			$("#containerTrainer").append('<div class="trainer" data-time=""><div class="team"><img  class="'+Trainers[i].team.toLowerCase()+'Logo" src="images/'+Trainers[i].team.toLowerCase()+'.png" /></div><h1>'+iconName+'</h1><div class="'+iconClass+'"><img src="images/playerIcons/'+iconType+'" /></div><h2>'+Trainers[i].handle+'</h2><div id="'+Trainers[i].handle+'" class="trainerInfo"></div></div>');
 			
 			$(".trainer").hide();

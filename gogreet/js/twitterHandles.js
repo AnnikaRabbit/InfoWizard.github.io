@@ -56,6 +56,10 @@
 	//UMN
 	Trainers.push(new PlayerDB("Amudrasil","Mystic","U of MN TC","Flaaffy"));
 
+	//Uptown
+	Trainers.push(new PlayerDB("snuffles312","Valor","Uptown","Swimmer Female"));
+
+
 
 
 

@@ -559,8 +559,8 @@ body {
 
 #CentennialLakes {
 	position:absolute;
-	top:60vh;
-	left:50vw;
+	top:65vh;
+	left:40vw;
 }
 
 #California {
@@ -573,6 +573,12 @@ body {
 	position:absolute;
 	top:35vh;
 	left:41vw;
+}
+
+#Uptown {
+	position:absolute;
+	top:55vh;
+	left:11vw;
 }
 
 
