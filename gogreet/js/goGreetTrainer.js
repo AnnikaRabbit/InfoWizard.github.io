@@ -4,11 +4,10 @@ $(document).ready(function(){
 	
 	$("#bannerTitle").html(filter);
 	
+	if(filter == "All Trainers") {
 	
-	for(i = 0; i < Trainers.length; i ++){
-		
-		if(Trainers[i].getDistrict() == filter){
-		
+		for(i = 0; i < Trainers.length; i ++){
+			
 			if(Trainers[i].cosmetic == "Ace Trainer Female"){
 				var iconType = "AceTrainer_F.png";
 				var iconName = "Ace Trainer";
@@ -66,23 +65,108 @@ $(document).ready(function(){
 			$("#containerTrainer").append('<div class="trainer" data-time=""><div class="team"><img  class="'+Trainers[i].team.toLowerCase()+'Logo" src="images/'+Trainers[i].team.toLowerCase()+'.png" /></div><h1>'+iconName+'</h1><div class="'+iconClass+'"><img src="images/playerIcons/'+iconType+'" /></div><h2>'+Trainers[i].handle+'</h2><div id="'+Trainers[i].handle+'" class="trainerInfo"></div></div>');
 			
 			$(".trainer").hide();
-		
+		}
+	}
+	else {
+		for(i = 0; i < Trainers.length; i ++){
+			
+			if(Trainers[i].getDistrict() == filter){
+				
+				if(Trainers[i].cosmetic == "Ace Trainer Female"){
+					var iconType = "AceTrainer_F.png";
+					var iconName = "Ace Trainer";
+					var iconClass = "aceTrainer_F";
+				}
+				
+				else if(Trainers[i].cosmetic == "Ace Trainer Male"){
+					var iconType = "AceTrainer_M.png";
+					var iconName = "Ace Trainer";
+					var iconClass = "aceTrainer_M";
+				}
+				
+				else if(Trainers[i].cosmetic == "Black Belt"){
+					var iconType = "BlackBelt_M.png";
+					var iconName = "Black Belt";
+					var iconClass = "blackBelt_M";
+				}
+				
+				else if(Trainers[i].cosmetic == "Camper"){
+					var iconType = "Camper_M.png";
+					var iconName = "Camper";
+					var iconClass = "camper_M";
+				}
+				
+				else if(Trainers[i].cosmetic == "Hiker"){
+					var iconType = "Hiker_M.png";
+					var iconName = "Hiker";
+					var iconClass = "hiker_M";
+				}
+				
+				else if(Trainers[i].cosmetic == "Pikachu"){
+					var iconType = "Pikachu.png";
+					var iconName = "Special Trainer";
+					var iconClass = "pikachu";
+				}
+				
+				else if(Trainers[i].cosmetic == "Wobbuffet"){
+					var iconType = "Wobbuffet.png";
+					var iconName = "Tricky Trainer";
+					var iconClass = "wobbuffet";
+				}
+				
+				else if(Trainers[i].cosmetic == "Flaaffy"){
+					var iconType = "Flaaffy.png";
+					var iconName = "Cute Trainer";
+					var iconClass = "flaaffy";
+				}
+				
+				else if(Trainers[i].cosmetic == "Swimmer Female"){
+					var iconType = "Swimmer_F.png";
+					var iconName = "Swimmer";
+					var iconClass = "swimmer_F";
+				}
+				
+				$("#containerTrainer").append('<div class="trainer" data-time=""><div class="team"><img  class="'+Trainers[i].team.toLowerCase()+'Logo" src="images/'+Trainers[i].team.toLowerCase()+'.png" /></div><h1>'+iconName+'</h1><div class="'+iconClass+'"><img src="images/playerIcons/'+iconType+'" /></div><h2>'+Trainers[i].handle+'</h2><div id="'+Trainers[i].handle+'" class="trainerInfo"></div></div>');
+				
+				$(".trainer").hide();
+				
+			}
 		}
 	}
 	
 	var whiteSpace = $('#containerTrainer').html().replace(/\r|\n/gm, "");
 	
-	
-	for(i = 0; i < Trainers.length; i++){
+	if(filter != "All Trainers"){
 		
-		if(Trainers[i].getDistrict() == filter){
+		for(i = 0; i < Trainers.length; i++){
+			
+			if(Trainers[i].getDistrict() == filter){
+				
+				var config = {
+					"profile": {"screenName": Trainers[i].handle},
+					"domId": Trainers[i].handle,
+					"maxTweets": 1,
+					"showImages": false,
+					"enableLinks": true,
+					"showUser": false,
+					"showRetweet":true,
+					"showInteraction":true
+				};
+				
+				twitterFetcher.fetch(config);
+			}
+		}
+	}
+	else{
+	
+		for(i = 0; i < Trainers.length; i++){
 			
 			var config = {
 				"profile": {"screenName": Trainers[i].handle},
 				"domId": Trainers[i].handle,
 				"maxTweets": 1,
 				"showImages": false,
-				"enableLinks": false,
+				"enableLinks": true,
 				"showUser": false,
 				"showRetweet":true,
 				"showInteraction":true
@@ -141,7 +225,8 @@ $(document).ready(function(){
 	});
 	
 	$("#backButton").click(function() {
-		window.history.back();
+		//window.history.back();
+		window.location.href = "index.html";
 	});
 	
 	$("#join").click(function(){

@@ -319,6 +319,12 @@
           }
           var op = '';
           if (parseLinks) {
+			
+			  var dateWS = times[n].getAttribute('datetime').split('T').join('');
+					dateWS = dateWS.split(':').join('');
+					dateWS = parseInt(dateWS.split('-').join(''));
+					$("#"+domNode).parent().data("time",dateWS);
+					
             if (targetBlank) {
               targetLinksToNewWindow(tweets[n]);
               if (printUser) {
@@ -348,10 +354,10 @@
 				if (printTime) {
 					op += '<p class="timePosted">' + times[n].textContent + '</p>';
 					
-					var dateWS = times[n].getAttribute('datetime').split('T').join('');
-					dateWS = dateWS.split(':').join('');
-					dateWS = parseInt(dateWS.split('-').join(''));
-					$("#"+domNode).parent().data("time",dateWS);
+//					var dateWS = times[n].getAttribute('datetime').split('T').join('');
+//					dateWS = dateWS.split(':').join('');
+//					dateWS = parseInt(dateWS.split('-').join(''));
+//					$("#"+domNode).parent().data("time",dateWS);
 				}
 
             } else {

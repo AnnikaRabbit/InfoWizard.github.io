@@ -65,29 +65,34 @@ $(document).ready(function(){
 	
 	$(".badge").click(function() {
 	
-		$(".badge").removeClass("activeBadge");
-		$(this).addClass("activeBadge");
-		$("#enterSocial").addClass("activeSocial");
-
-		for(i = 0; i < districtObjects.length; i++){
+		if($(this).hasClass("activeBadge")){
+			$("#enterSocial").click();
+		}
+		else{
+			$(".badge").removeClass("activeBadge");
+			$(this).addClass("activeBadge");
+			$("#enterSocial").addClass("activeSocial");
 			
-			if($(this).data("location") == districtObjects[i].name){
-				var location = districtObjects[i].name;//.split(' ').join('');
-				var totalCount = districtObjects[i].count;
-				var mysticCount = 40 * (districtObjects[i].mystic / totalCount);
-				var valorCount = 40 * (districtObjects[i].valor / totalCount);
-				var instinctCount = 40 * (districtObjects[i].instinct / totalCount);
+			for(i = 0; i < districtObjects.length; i++){
 				
-				
-				$("#gymCount").html("Gyms: "+districtObjects[i].gyms);
-				$("#stopCount").html("Stops: "+districtObjects[i].stops);
-				$("#trainerCount").html("Trainers: "+districtObjects[i].count);
-				$("#mysticTower").css("width", mysticCount+"vw");
-				$("#valorTower").css("width", valorCount+"vw");
-				$("#instinctTower").css("width", instinctCount+"vw");
-				
-				$("#enterSocial").data("location", location);
-				
+				if($(this).data("location") == districtObjects[i].name){
+					var location = districtObjects[i].name;//.split(' ').join('');
+					var totalCount = districtObjects[i].count;
+					var mysticCount = 40 * (districtObjects[i].mystic / totalCount);
+					var valorCount = 40 * (districtObjects[i].valor / totalCount);
+					var instinctCount = 40 * (districtObjects[i].instinct / totalCount);
+					
+					
+					$("#gymCount").html("Gyms: "+districtObjects[i].gyms);
+					$("#stopCount").html("Stops: "+districtObjects[i].stops);
+					$("#trainerCount").html("Trainers: "+districtObjects[i].count);
+					$("#mysticTower").css("width", mysticCount+"vw");
+					$("#valorTower").css("width", valorCount+"vw");
+					$("#instinctTower").css("width", instinctCount+"vw");
+					
+					$("#enterSocial").data("location", location);
+					
+				}
 			}
 		}
 	});

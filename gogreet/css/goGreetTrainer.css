@@ -418,11 +418,16 @@ body {
 
 .trainerInfo a {
 	margin:0;
+	font-size:1.43vh;
 	padding:3px;
 }
 
-.timePosted {
+.timePosted a {
 	position:relative;
+	text-decoration:none !important;
+	color:black;
+	pointer-events:none;
+	cursor:default;
 }
 
 .interact a {
