@@ -38,11 +38,14 @@ $(document).ready(function(){
 	clicked = false;
 	fainting = false;
 	faintingFrame = 0;
+	invulnerable = 0;
 	score = 0;
 	ReadCookie();
 	
-	backgroundMusic = document.getElementById("bkMusic");
-	backgroundMusic.play();
+	//lowLag.init();
+	//lowLag.load("sound/Electro Cabello.mp3", "bkMusic");
+	//backgroundMusic = document.getElementById("bkMusic");
+	//backgroundMusic.play();
 	//slip = document.getElementById("slip");
 
 	function FaintAnim () {
@@ -168,9 +171,12 @@ $(document).ready(function(){
 	}
 	
 	function CheckBucketClick(){
-	
-		if(Math.random() > .85){
 		
+		invulnerable++;
+	
+		if(Math.random() > .85 && invulnerable > 7){
+		
+			invulnerable = 0;
 			$("#bucket").off("click");
 			document.getElementById("messageBox").style.display = "none";
 			
@@ -204,6 +210,7 @@ $(document).ready(function(){
 	
 	$("#presentBox").click(function(){
 	 
+	 //lowLag.play("bkMusic");
 	 $("#boxLid").removeClass("lidShake");
 	 
 		 //open up the lid fully
