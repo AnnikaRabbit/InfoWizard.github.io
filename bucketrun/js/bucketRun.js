@@ -174,7 +174,7 @@ $(document).ready(function(){
 		
 		invulnerable++;
 	
-		if(Math.random() > .85 && invulnerable > 7){
+		if(Math.random() > .65 && invulnerable > 4){
 		
 			invulnerable = 0;
 			$("#bucket").off("click");
