@@ -39,6 +39,8 @@ $(document).ready(function(){
 	fainting = false;
 	faintingFrame = 0;
 	invulnerable = 0;
+	difficulty = .1;
+	speed = 3000;
 	score = 0;
 	ReadCookie();
 	
@@ -47,6 +49,19 @@ $(document).ready(function(){
 	//backgroundMusic = document.getElementById("bkMusic");
 	//backgroundMusic.play();
 	//slip = document.getElementById("slip");
+	
+	function AdjustDifficulty() {
+		speed = 500 + Math.abs(3000 - (score * score));
+		difficulty = .1 + ( 2 * (score / 100));
+		
+		if(speed < 1000){
+			speed = 1000;
+		}
+		if(difficulty > .8){
+			difficulty = .75;
+		}
+		//console.log([speed, difficulty]);
+	}
 
 	function FaintAnim () {
 	
@@ -92,6 +107,7 @@ $(document).ready(function(){
 			clearInterval(characterController);
 			faintController = setInterval(FaintAnim, 200);
 			score++;
+			AdjustDifficulty();
 			WriteCookie();
 			$("#counter").html("Buckets Caught: "+score);
 		}
@@ -151,6 +167,8 @@ $(document).ready(function(){
 	}
 	
 	function BucketRun () {
+	
+		$("#bucket").stop();
 		idle = 0;
 		runningFrame = 0;
 		width = 100 * Math.random() - 45;
@@ -166,7 +184,7 @@ $(document).ready(function(){
 			movingLeft = false;
 		}
 		
-		$("#bucket").animate({top:height+"vh", left:width+"vw"},1000, function(){/*idle=1;*/});
+		$("#bucket").animate({top:height+"vh", left:width+"vw"},speed, function(){/*idle=1;*/});
 		
 	}
 	
@@ -174,7 +192,7 @@ $(document).ready(function(){
 		
 		invulnerable++;
 	
-		if(Math.random() > .65 && invulnerable > 4){
+		if(Math.random() > difficulty && invulnerable > 3){
 		
 			invulnerable = 0;
 			$("#bucket").off("click");
