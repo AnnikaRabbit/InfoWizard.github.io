@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link rel="stylesheet" href="css/magic.css">
+	<link rel="stylesheet" href="css/bucketRun.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+
+</head>
+
+<body>
+	<div id="gameContainer">
+		<header><h1 id="title">Unleash the BUCKET</h1></header>
+		<p id="messageBox"></p>
+		<p id="winState"></p>
+		
+		<div id="presentBox">
+			<img id="boxLid" class="lidShake" src="images/boxLid.png"/>
+			<img id="boxBottom" src="images/boxBottom.png"/>
+			<img id="bucket" src="images/bucket/jump/jump-up.png"/>
+		</div>
+		<footer><h1 id="counter">Buckets Caught: 0</h1></footer>
+	
+	</div>
+	<audio id="bkMusic" loop>
+		<source src="sound/Electro Cabello.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="slip">
+		<source src="sound/slip.wav" type="audio/wav">
+	</audio>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bucketRun.js"></script>
+
+</body>
+
+</html>

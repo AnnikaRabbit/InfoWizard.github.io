@@ -1,0 +1,155 @@
+
+
+body {
+	margin:0;
+	height:100vh;
+	width:100vw;
+	overflow:hidden;
+}
+
+
+#gameContainer {
+	position:relative;
+	height:100vh;
+	width:100vw;
+	background:rgba(74,144,226,1);
+	overflow:hidden;
+}
+
+header {
+	margin:0;
+}
+
+header h1 {
+	margin:0;
+	width:100vw;
+	text-align:center;
+	padding:1vh 0;
+	background:white;
+	font-size:5vh;
+	font-family:"Anton";
+}
+
+footer h1 {
+	position:absolute;
+	display:none;
+	bottom:0;
+	margin:0;
+	width:100vw;
+	text-align:center;
+	padding:1vh 0;
+	background:white;
+	font-size:3.5vh;
+	font-family:"Anton";
+}
+
+#messageBox, #winState {
+	position:absolute;
+	top:15%;
+	margin:0;
+	width:100vw;
+	text-align:center;
+	padding:1vh 0;
+	color:black;
+	font-size:5vh;
+	font-family:"Anton";
+}
+
+#presentBox {
+	position:absolute;
+	display:inline-block;
+	top:50%;
+	left:50%;
+	width:45vw;
+	height:25vh;
+	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%);
+}
+
+#presentBox img:first-child {
+	position:relative;
+	display:block;
+	top:10%;
+	width:100%;
+	z-index:150;
+}
+
+#presentBox img:nth-child(2) {
+	position:relative;
+	width:93%;
+	padding:0 3.5%;
+	z-index:149;
+}
+
+.lidShake {
+	-webkit-animation-name: lidShake;
+	animation-name: lidShake;
+	-webkit-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes lidShake {
+	0%{-webkit-transform:rotate(5deg);transform: rotate(5deg);}
+	5%{-webkit-transform:rotate(-5deg);transform: rotate(-5deg);}
+	10%{-webkit-transform:rotate(5deg);transform: rotate(5deg);}
+	15%{-webkit-transform:rotate(5deg);transform: rotate(-5deg);}
+	20%{-webkit-transform:rotate(-5deg);transform: rotate(0deg);}
+	100%{-webkit-transform:rotate(5deg);transform: rotate(0deg);}
+}
+
+#bucket {
+	position:absolute;
+	display:none;
+	top:0;
+	left:25%;
+	height:70%;
+	z-index:151;
+}
+
+.regular {
+    -webkit-transform: scaleX(1) !important;
+    -o-transform: scaleX(1) !important;
+    -moz-transform: scaleX(1) !important;
+    transform: scaleX(1) !important;
+}
+.flipped {
+    -webkit-transform: scaleX(-1) !important;
+    -o-transform: scaleX(-1) !important;
+    -moz-transform: scaleX(-1) !important;
+    transform: scaleX(-1) !important;
+	filter:FlipH;
+	-webkit-filter:"FlipH";
+	-ms-filter: "FlipH";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
