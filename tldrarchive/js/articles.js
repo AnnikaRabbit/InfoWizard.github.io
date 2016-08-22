@@ -43,6 +43,8 @@
 	articleItems.push(new Article("Curios & Expectations","https://quip.com/qkzuA49NDga3",800,["development"],"games"));
 	articleItems.push(new Article("Value & Time","https://quip.com/H2baAhJrk5ls",800,["development"],"games"));
 	articleItems.push(new Article("Community Building","https://quip.com/xYDXA00uNx1b",801,["development"],"games"));
+	articleItems.push(new Article("Game Frameworks","https://quip.com/aFk0AMZfCm8a",801,["development"],"games"));
+	articleItems.push(new Article("Phases in Games","https://quip.com/uZ3EASv7m08b",700,["development"],"games"));
 
 	//EDUCATION
 	articleItems.push(new Article("Good Question Game","https://quip.com/iUDRAFpLiDT5",500,["games"],"education"));
@@ -73,8 +75,8 @@
 	articleItems.push(new Article("Listen, then Talk","https://quip.com/M64BABTzXwTT",300,["psychology"],"psychology"));
 	articleItems.push(new Article("Motivation Ryan 06","https://quip.com/rfhrAHPJqIsH",800,["psychology"],"psychology"));
 
-
-
+	//INFORMATICS
+	articleItems.push(new Article("Participatory Development","https://quip.com/uiYlA1wXQms9",800,["informatics"],"informatics"));
 
 
 
