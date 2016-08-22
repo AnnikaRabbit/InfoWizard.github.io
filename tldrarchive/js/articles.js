@@ -77,6 +77,7 @@
 
 	//INFORMATICS
 	articleItems.push(new Article("Participatory Development","https://quip.com/uiYlA1wXQms9",800,["informatics"],"informatics"));
+	articleItems.push(new Article("Arithmetic Development","https://quip.com/VJEmAVbv2aOW",800,["informatics"],"informatics"));
 
 
 
