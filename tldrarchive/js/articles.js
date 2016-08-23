@@ -56,7 +56,6 @@
 	articleItems.push(new Article("Typography General","https://quip.com/gZ5pAFe10EIn",500,["design"],"design"));
 	
 	//BUSINESS
-	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",1000,["business"],"business"));
 	articleItems.push(new Article("Job Description","https://quip.com/JN4LADIMxLuj",1000,["games"],"business"));
 	articleItems.push(new Article("Y Moon: Strengths","https://quip.com/E6m1AKQ4j93x",800,["business"],"business"));
 	articleItems.push(new Article("Team Composition","https://quip.com/iWE7AaCWOAVP",400,["business"],"business"));
@@ -79,6 +78,9 @@
 	articleItems.push(new Article("Participatory Development","https://quip.com/uiYlA1wXQms9",800,["informatics"],"informatics"));
 	articleItems.push(new Article("Arithmetic Development","https://quip.com/VJEmAVbv2aOW",800,["informatics"],"informatics"));
 
+	//TLDR
+	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",1000,["tldr"],"tldr"));
+	articleItems.push(new Article("TLDR Archive","https://quip.com/EZBEAmBUMlUr",1000,["tldr"],"tldr"));
 
 
 
