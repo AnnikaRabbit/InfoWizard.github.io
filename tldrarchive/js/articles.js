@@ -80,7 +80,7 @@
 
 	//TLDR
 	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",1000,["tldr"],"tldr"));
-	articleItems.push(new Article("TLDR Archive","https://quip.com/EZBEAmBUMlUr",1000,["tldr"],"tldr"));
+	articleItems.push(new Article("As We May Think","https://quip.com/EZBEAmBUMlUr",1000,["tldr"],"tldr"));
 
 
 
