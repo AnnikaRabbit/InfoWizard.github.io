@@ -227,6 +227,18 @@ a {
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
+.gogreet{
+	background-image: url("../image/GoGreet.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.bucketrun{
+	background-image: url("../image/BucketRun.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
 
 
 .inactive {
@@ -495,7 +507,7 @@ a {
 	}
 	#rocket {
 		width:60%;
-		top:40%;
+		top:30%;
 	}
 	#navigation {
 		width:50%;
@@ -608,7 +620,7 @@ a {
 	}
 	#rocket {
 		width:30%;
-		top:40%;
+		top:30%;
 	}
 	#navigation {
 		width:30%;
