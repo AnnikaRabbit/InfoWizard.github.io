@@ -42,7 +42,7 @@
 	articleItems.push(new Article("Rare & Shiny","https://quip.com/LdPXA0CzbjmC",800,["development"],"games"));
 	articleItems.push(new Article("Curios & Expectations","https://quip.com/qkzuA49NDga3",800,["development"],"games"));
 	articleItems.push(new Article("Value & Time","https://quip.com/H2baAhJrk5ls",800,["development"],"games"));
-	articleItems.push(new Article("Community Building","https://quip.com/xYDXA00uNx1b",801,["development"],"games"));
+	articleItems.push(new Article("Identity Networks","https://quip.com/xYDXA00uNx1b",801,["development"],"games"));
 	articleItems.push(new Article("Game Frameworks","https://quip.com/aFk0AMZfCm8a",801,["development"],"games"));
 	articleItems.push(new Article("Phases in Games","https://quip.com/uZ3EASv7m08b",700,["development"],"games"));
 
