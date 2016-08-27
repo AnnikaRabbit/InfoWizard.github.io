@@ -45,6 +45,7 @@
 	articleItems.push(new Article("Identity Networks","https://quip.com/xYDXA00uNx1b",801,["development"],"games"));
 	articleItems.push(new Article("Game Frameworks","https://quip.com/aFk0AMZfCm8a",801,["development"],"games"));
 	articleItems.push(new Article("Phases in Games","https://quip.com/uZ3EASv7m08b",700,["development"],"games"));
+	articleItems.push(new Article("Yu-kai Design Document","https://quip.com/hbT7AdIi28A9",800,["development"],"games"));
 
 	//EDUCATION
 	articleItems.push(new Article("Good Question Game","https://quip.com/iUDRAFpLiDT5",500,["games"],"education"));
@@ -81,6 +82,7 @@
 	//TLDR
 	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",1000,["tldr"],"tldr"));
 	articleItems.push(new Article("As We May Think","https://quip.com/EZBEAmBUMlUr",1000,["tldr"],"tldr"));
+	articleItems.push(new Article("Mother of All Demos","https://quip.com/47M5A3CR4jcz",1000,["tldr"],"tldr"));
 
 
 
