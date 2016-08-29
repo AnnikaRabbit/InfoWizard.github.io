@@ -75,14 +75,16 @@
 	articleItems.push(new Article("Listen, then Talk","https://quip.com/M64BABTzXwTT",300,["psychology"],"psychology"));
 	articleItems.push(new Article("Motivation Ryan 06","https://quip.com/rfhrAHPJqIsH",800,["psychology"],"psychology"));
 
-	//INFORMATICS
-	articleItems.push(new Article("Participatory Development","https://quip.com/uiYlA1wXQms9",800,["informatics"],"informatics"));
-	articleItems.push(new Article("Arithmetic Development","https://quip.com/VJEmAVbv2aOW",800,["informatics"],"informatics"));
+	//SOCIOCULTURAL
+	articleItems.push(new Article("Participatory Development","https://quip.com/uiYlA1wXQms9",800,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Arithmetic Development","https://quip.com/VJEmAVbv2aOW",800,["constructionism"],"sociocultural"));
+	articleItems.push(new Article("Development X Culture","https://quip.com/ueM5AXQHJR7u",800,["sociocultural"],"sociocultural"));
 
 	//TLDR
 	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",1000,["tldr"],"tldr"));
 	articleItems.push(new Article("As We May Think","https://quip.com/EZBEAmBUMlUr",1000,["tldr"],"tldr"));
 	articleItems.push(new Article("Mother of All Demos","https://quip.com/47M5A3CR4jcz",1000,["tldr"],"tldr"));
+	articleItems.push(new Article("Augmenting Intellect","https://quip.com/lkZbAKCZSWql",1000,["tldr"],"tldr"));
 
 
 
