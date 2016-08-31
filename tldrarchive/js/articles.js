@@ -76,9 +76,14 @@
 	articleItems.push(new Article("Motivation Ryan 06","https://quip.com/rfhrAHPJqIsH",800,["psychology"],"psychology"));
 
 	//SOCIOCULTURAL
-	articleItems.push(new Article("Participatory Development","https://quip.com/uiYlA1wXQms9",800,["sociocultural"],"sociocultural"));
-	articleItems.push(new Article("Arithmetic Development","https://quip.com/VJEmAVbv2aOW",800,["constructionism"],"sociocultural"));
-	articleItems.push(new Article("Development X Culture","https://quip.com/ueM5AXQHJR7u",800,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Participatory Development","https://quip.com/uiYlA1wXQms9",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Arithmetic Development","https://quip.com/VJEmAVbv2aOW",700,["constructionism"],"sociocultural"));
+	articleItems.push(new Article("Culture X Development","https://quip.com/ueM5AXQHJR7u",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Cultural Membership","https://quip.com/4VcEAaqvMpp1",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Transformative Participation","https://quip.com/tphQAtC3yehl",700,["sociocultural"],"sociocultural"));
+
+	//HCI Methodology
+	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
 
 	//TLDR
 	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",1000,["tldr"],"tldr"));
