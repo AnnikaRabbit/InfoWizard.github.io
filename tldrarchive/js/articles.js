@@ -33,19 +33,19 @@
 	articleItems.push(new Article("M Herman: Rules","https://quip.com/7PuuA7Yl7ufc",800,["development"],"games"));
 	articleItems.push(new Article("Ludwig Game Art","https://quip.com/QWw2AaVe90Kl",500,["design"],"games"));
 	articleItems.push(new Article("Mechanics Basics","https://quip.com/WaX1AvaGgz9K",800,["development"],"games"));
-	articleItems.push(new Article("Accomplishment","https://quip.com/QhhzAai1oAe8",800,["core drives"],"games"));
-	articleItems.push(new Article("Which Way to Win","https://quip.com/pg3cAKnl4OTb",800,["core drives"],"games"));
-	articleItems.push(new Article("Chou's Techniques","https://quip.com/PapOARw86ebe",800,["core drives"],"games"));
-	articleItems.push(new Article("Epic Purpose","https://quip.com/nuFuAeH8xBLw",800,["core drives"],"games"));
-	articleItems.push(new Article("Fit Investment","https://quip.com/bLWCA3nNGjFe",800,["core drives"],"games"));
-	articleItems.push(new Article("Community","https://quip.com/i0WbAA7vsTFa",801,["core drives"],"games"));
-	articleItems.push(new Article("Rare & Shiny","https://quip.com/LdPXA0CzbjmC",800,["core drives"],"games"));
-	articleItems.push(new Article("Curios & Expectations","https://quip.com/qkzuA49NDga3",800,["core drives"],"games"));
+	articleItems.push(new Article("Accomplishment","https://quip.com/QhhzAai1oAe8",800,["core-drives"],"games"));
+	articleItems.push(new Article("Which Way to Win","https://quip.com/pg3cAKnl4OTb",800,["core-drives"],"games"));
+	articleItems.push(new Article("Chou's Techniques","https://quip.com/PapOARw86ebe",800,["core-drives"],"games"));
+	articleItems.push(new Article("Epic Purpose","https://quip.com/nuFuAeH8xBLw",800,["core-drives"],"games"));
+	articleItems.push(new Article("Fit Investment","https://quip.com/bLWCA3nNGjFe",800,["core-drives"],"games"));
+	articleItems.push(new Article("Community","https://quip.com/i0WbAA7vsTFa",801,["core-drives"],"games"));
+	articleItems.push(new Article("Rare & Shiny","https://quip.com/LdPXA0CzbjmC",800,["core-drives"],"games"));
+	articleItems.push(new Article("Curios & Expectations","https://quip.com/qkzuA49NDga3",800,["core-drives"],"games"));
 	articleItems.push(new Article("Value & Time","https://quip.com/H2baAhJrk5ls",800,["development"],"games"));
-	articleItems.push(new Article("Identity Networks","https://quip.com/xYDXA00uNx1b",801,["core drives"],"games"));
-	articleItems.push(new Article("Game Frameworks","https://quip.com/aFk0AMZfCm8a",801,["core drives"],"games"));
-	articleItems.push(new Article("Phases in Games","https://quip.com/uZ3EASv7m08b",700,["core drives"],"games"));
-	articleItems.push(new Article("Yu-kai Design Document","https://quip.com/hbT7AdIi28A9",800,["core drives"],"games"));
+	articleItems.push(new Article("Identity Networks","https://quip.com/xYDXA00uNx1b",801,["core-drives"],"games"));
+	articleItems.push(new Article("Game Frameworks","https://quip.com/aFk0AMZfCm8a",801,["core-drives"],"games"));
+	articleItems.push(new Article("Phases in Games","https://quip.com/uZ3EASv7m08b",700,["core-drives"],"games"));
+	articleItems.push(new Article("Yu-kai Design Document","https://quip.com/hbT7AdIi28A9",800,["core-drives"],"games"));
 
 	//EDUCATION
 	articleItems.push(new Article("Good Question Game","https://quip.com/iUDRAFpLiDT5",500,["games"],"education"));
