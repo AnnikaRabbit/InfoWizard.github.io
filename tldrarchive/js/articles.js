@@ -31,7 +31,6 @@
 	//GAMES
 	articleItems.push(new Article("Arrowhead: Magicka","https://quip.com/4T9fAuWAeWx0",600,["development"],"games"));
 	articleItems.push(new Article("M Herman: Rules","https://quip.com/7PuuA7Yl7ufc",800,["development"],"games"));
-	articleItems.push(new Article("Ludwig Game Art","https://quip.com/QWw2AaVe90Kl",500,["design"],"games"));
 	articleItems.push(new Article("Mechanics Basics","https://quip.com/WaX1AvaGgz9K",800,["development"],"games"));
 	articleItems.push(new Article("Accomplishment","https://quip.com/QhhzAai1oAe8",800,["core-drives"],"games"));
 	articleItems.push(new Article("Which Way to Win","https://quip.com/pg3cAKnl4OTb",800,["core-drives"],"games"));
@@ -55,6 +54,7 @@
 	articleItems.push(new Article("Creative Spaces","https://quip.com/svxFApDVhrkw",500,["design"],"design"));
 	articleItems.push(new Article("Webfacing","https://quip.com/43rCAxkydhz9",500,["design"],"design"));
 	articleItems.push(new Article("Typography General","https://quip.com/gZ5pAFe10EIn",500,["design"],"design"));
+	articleItems.push(new Article("Ludwig Game Art","https://quip.com/QWw2AaVe90Kl",500,["game"],"design"));
 	
 	//BUSINESS
 	articleItems.push(new Article("Job Description","https://quip.com/JN4LADIMxLuj",1000,["games"],"business"));
@@ -86,6 +86,12 @@
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
+	articleItems.push(new Article("Frameworks in HCI","https://quip.com/bPe9Alul09cd",900,["HCI"],"HCI"));
+
+	//Sustainable design
+	articleItems.push(new Article("Socio-science Paradigm","https://quip.com/mjG7Ao9bFpfo",900,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Systematic Revolution","https://quip.com/aaT3ABjwH4Z3",900,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("The Mechanicals","https://quip.com/pRMGAVNK4oYH",900,["Systems-Thinking"],"Systems-Thinking"));
 
 	//TLDR
 	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",1000,["tldr"],"tldr"));
