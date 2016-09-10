@@ -2,75 +2,6 @@
 
 $(document).ready(function(){
 
-/*
-	function Article (title, link, weight, tags, section){
-		this.title = title;
-		this.link = link;
-		this.weight = weight;
-		this.tags = tags;
-		this.section = section;
-	}
-	
-	Article.prototype.getTitle = function (){
-		return this.title
-	};
-	Article.prototype.getLink = function (){
-		return this.link
-	};
-	Article.prototype.getWeight = function (){
-		return this.weight
-	};
-	Article.prototype.getTags = function (){
-		return this.tags
-	};
-	Article.prototype.getSection = function (){
-		return this.section
-	};
-	Article.prototype.getInfo = function (){
-		return [this.title, this.link, this.weight, this.tags, this.section];
-	};
-	
-	var articleItems = []
-	
-	//GAMES
-	articleItems.push(new Article("Arrowhead: Magicka","https://quip.com/4T9fAuWAeWx0",600,["development"],"games"));
-	articleItems.push(new Article("M Herman: Rules","https://quip.com/7PuuA7Yl7ufc",800,["development"],"games"));
-	articleItems.push(new Article("Ludwig Game Art","https://quip.com/QWw2AaVe90Kl",500,["design"],"games"));
-	articleItems.push(new Article("Mechanics Basics","https://quip.com/WaX1AvaGgz9K",800,["development"],"games"));
-	articleItems.push(new Article("Accomplishment","https://quip.com/QhhzAai1oAe8",800,["development"],"games"));
-	articleItems.push(new Article("Which Way to Win","https://quip.com/pg3cAKnl4OTb",800,["development"],"games"));
-	articleItems.push(new Article("Chou's Techniques","https://quip.com/PapOARw86ebe",800,["development"],"games"));
-	articleItems.push(new Article("Epic Purpose","https://quip.com/nuFuAeH8xBLw",800,["development"],"games"));
-	articleItems.push(new Article("Fit Investment","https://quip.com/bLWCA3nNGjFe",800,["development"],"games"));
-	articleItems.push(new Article("Community","https://quip.com/i0WbAA7vsTFa",800,["development"],"games"));
-	articleItems.push(new Article("Rare & Shiny","https://quip.com/LdPXA0CzbjmC",800,["development"],"games"));
-	articleItems.push(new Article("Curios & Expectations","https://quip.com/qkzuA49NDga3",800,["development"],"games"));
-	
-	//EDUCATION
-	articleItems.push(new Article("Good Question Game","https://quip.com/iUDRAFpLiDT5",500,["games"],"education"));
-	
-	//DESGIN
-	articleItems.push(new Article("Transparency","https://quip.com/qXCpAojvaNs4",700,["design"],"design"));
-	articleItems.push(new Article("Creative Spaces","https://quip.com/svxFApDVhrkw",500,["design"],"design"));
-	articleItems.push(new Article("Webfacing","https://quip.com/43rCAxkydhz9",500,["design"],"design"));
-	
-	//BUSINESS
-	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",1000,["business"],"business"));
-	articleItems.push(new Article("Job Description","https://quip.com/JN4LADIMxLuj",1000,["games"],"business"));
-	articleItems.push(new Article("Y Moon: Strengths","https://quip.com/E6m1AKQ4j93x",800,["business"],"business"));
-	articleItems.push(new Article("Team Composition","https://quip.com/iWE7AaCWOAVP",400,["business"],"business"));
-	articleItems.push(new Article("Early Access","https://quip.com/BFa9AyasmE7Z",600,["games"],"business"));
-
-	//UXUI
-	articleItems.push(new Article("N Rosencranz: UXUI","https://quip.com/tuGHAxcuzvZB",500,["uxui"],"uxui"));
-	articleItems.push(new Article("Error Experience","https://quip.com/aq7uAWHGF0gZ",500,["uxui"],"uxui"));
-	
-	//PSYCHOLOGY
-	articleItems.push(new Article("Memory in Design","https://quip.com/TcNoArb2Ktkp",500,["uxui"],"psychology"));
-	articleItems.push(new Article("Learning by Tests","https://quip.com/zRTIAb4zLUys",600,["psychology"],"psychology"));
-	articleItems.push(new Article("Learning with Animation","https://quip.com/a7LmAyHro4bL",600,["psychology"],"psychology"));
-	articleItems.push(new Article("Listen, then Talk","https://quip.com/M64BABTzXwTT",300,["psychology"],"psychology"));
-*/
 	//POPULATE THE ARTICLES INTO THE CONTAINER
 	function LoadContainer (items) {
 		
@@ -116,10 +47,15 @@ $(document).ready(function(){
 		//$("#sortContain").append('<div class="titleInfo" data-type="titleInfo"><p>Title</p><div class="visToggle" data-type="sort" data-section="titleInfo"><img class="button" src="image/grayButton.png"></div></div><div class="weightInfo" data-type="weightInfo"><p>Weight</p><div class="visToggle" data-section="weightInfo"><img class="button" src="image/grayButton.png"></div></div>')
 		
 		//TAG NAMES ARE POPULATED ON ARTICLE LOAD
-		for(var i = 0; i < tags.length; i ++){
+		for(var i = 0; i < tags.length; i++){
 			if(tags[i] != null){
-				$("#tagInfo").append('<div data-tag="'+tags[i]+'"><p>'+tags[i]+'</p><div class="tagToggle" data-type="tag" data-tag="'+tags[i]+'"><img class="button" src="image/grayButton.png"></div></div>');
+				$("#tagInfo").append('<div data-tag="'+tags[i]+'"><p class="tagPToggle" data-type="tag" data-tag="'+tags[i]+'">'+tags[i]+'</p><div id='+"hover"+tags[i]+' class="tagToggle" data-type="tag" data-tag="'+tags[i]+'"><img class="button" src="image/grayButton.png"></div></div>');
 			}
+		}
+		
+		//LOAD IN THE COLOR CODE SCHEMES HERE, EVEN THOUGH ITS SHOULD BE SEPARATE
+		for(var i = 0; i < colorArray.length; i++){
+			$("#colorSchemes").append('<li data-option="scheme" data-code="'+colorArray[i]+'">'+colorNames[i]+'</li>');
 		}
 	}
 	
@@ -164,9 +100,33 @@ $(document).ready(function(){
 			}
 	};*/
 	
+	// the initial seed
+	var timeSeed = new Date();
+	Math.seed = timeSeed.getTime();
+	
+	//Math.seed = 1467926970352;
+	document.getElementById("seed").innerHTML = "Color Code: " + Math.seed;
+
+		// in order to work 'Math.seed' must NOT be undefined,
+		// so in any case, you HAVE to provide a Math.seed
+	Math.seededRandom = function(max, min) {
+		max = max || 1;
+		min = min || 0;
+		
+		Math.seed = (Math.seed * 9301 + 49297) % 233280;
+		var rnd = Math.seed / 233280;
+		
+		return min + rnd * (max - min);
+	}
+	
+	//Array of interesting colors
+	var colorArray = [1467929669389,1467930290698,1467930335292,1468096778469,1468181071259,1468380281929,1468894552492,1470434848507,1471740693405,1471991342961,1471999239306,1473109525456,1473458086273,1473462312959];
+	var colorNames = [];
+	
 	var sectionNames = [];
 	var tagNames = [];
 	
+	GenerateColorNames(colorArray.length);
 	//$("#itemContainer").empty();
 	LoadContainer(articleItems);
 
@@ -292,24 +252,6 @@ $(document).ready(function(){
 				$("#"+sectionNames[i]).find(".visToggle").removeClass("clicked");
 			}
 	});
-
-	// the initial seed
-	var timeSeed = new Date();
-	Math.seed = timeSeed.getTime();
-	//Math.seed = 1467926970352;
-	document.getElementById("seed").innerHTML = "Color Code: " + Math.seed;
-
-		// in order to work 'Math.seed' must NOT be undefined,
-		// so in any case, you HAVE to provide a Math.seed
-	Math.seededRandom = function(max, min) {
-		max = max || 1;
-		min = min || 0;
-		
-		Math.seed = (Math.seed * 9301 + 49297) % 233280;
-		var rnd = Math.seed / 233280;
-		
-		return min + rnd * (max - min);
-	}
 	
 	//OPERATE CONTEXT OPTIONS FOR TAG DROPDOWN MENU
 	function AddClassTags () {
@@ -339,6 +281,7 @@ $(document).ready(function(){
 			var tag = $(this).data("tag");
 			
 			$(this).addClass("clicked");
+			$(this).parent().find(".tagPToggle").addClass("clicked");
 			$(this).find("img").attr("src", "image/greenButton.png");
 			
 			for(var i = 0; i < tagHues.length; i++){
@@ -356,7 +299,52 @@ $(document).ready(function(){
 			var tag = $(this).data("tag");
 			
 			$(this).removeClass("clicked");
+			$(this).parent().find(".tagPToggle").removeClass("clicked");
 			$(this).find("img").attr("src", "image/grayButton.png");
+			
+			for(var i = 0; i < tagHues.length; i++){
+				var tagArray = $(tagHues[i]).data("tags").split(" ");
+				
+				if( ($.inArray(tag, tagArray) > -1))
+				{
+					$(tagHues[i]).removeClass(tag+"Hue");
+				}
+			}
+			
+		}
+		
+	});
+	
+	//FUNCTION TO CONTROL WHEN USER IS CLICKING ON THE TEXT
+	$(".tagPToggle").click(function(){
+		
+		var tagHues = document.getElementsByClassName("linkArticle");
+
+		if(!$(this).hasClass("clicked")){
+		
+			var tag = $(this).data("tag");
+			
+			$(this).addClass("clicked");
+			$(this).parent().find("img").attr("src", "image/greenButton.png");
+			$(this).parent().find(".tagToggle").addClass("clicked");
+			
+			for(var i = 0; i < tagHues.length; i++){
+				var tagArray = $(tagHues[i]).data("tags").split(" ");
+				
+				if( ($.inArray(tag, tagArray) > -1) )
+				{
+					$(tagHues[i]).addClass(tag+"Hue");
+				}
+			}
+
+		}
+		else{
+		
+			var tag = $(this).data("tag");
+			
+			$(this).removeClass("clicked");
+			$(this).parent().find("img").attr("src", "image/grayButton.png");
+			$(this).parent().find(".tagToggle").removeClass("clicked");
 			
 			for(var i = 0; i < tagHues.length; i++){
 				var tagArray = $(tagHues[i]).data("tags").split(" ");
@@ -375,6 +363,7 @@ $(document).ready(function(){
 	$("#tagAll").click(function(){
 		
 		var enabledTags = document.getElementsByClassName("tagToggle");
+		var enabledPTags = document.getElementsByClassName("tagPToggle");
 		var tagHues = document.getElementsByClassName("linkArticle");
 		var tagArray = tagNames.map(function(e) {return e + "Hue"});
 
@@ -386,6 +375,7 @@ $(document).ready(function(){
 			}
 			
 			$(enabledTags).removeClass("clicked");
+			$(enabledPTags).removeClass("clicked");
 			$(enabledTags).find("img").attr("src", "image/grayButton.png");
 		}
 		else
@@ -394,6 +384,59 @@ $(document).ready(function(){
 		}
 	});
 	
+	//DETECT SCROLL AND MOVE CONTROLS TO TOP OF SCREEN
+	$(window).scroll(function (event) {
+		var scroll = $(window).scrollTop();
+		if(scroll > 30){
+			$("#searchBar").css({"margin-top":"0","top":"0%"});
+		}
+		else{
+			$("#searchBar").css({"margin-top":"1.5vh", "top":"7%"});
+		}
+	});
+	
+	//GENERATE THE RANDOM NAMES FOR COLORS
+	function GenerateColorNames(number) {
+		
+		var first = ["Fools", "Triple","Savage", "Hard",
+		"Adamant", "Soft", "Edgy", "Slick",
+		"Clear", "007", "Cute", "Ice",
+		"Molten", "Terra", "Facet", "Weird"];
+		
+		var second = ["Ocean", "Reef", "Plains", "Rock",
+			"Panda", "Shock", "Berry", "Engine",
+			"Smear", "Bouy", "Money", "Chance",
+			"Diamond", "Cake", "Bucket", "Bunny", "Cathedral"];
+		
+		for(i = 0; i < number; i++){
+			ResetSeed(colorArray[i]);
+			var firstRand = Math.ceil(Math.seededRandom() * (first.length - 1));
+			var secondRand = Math.ceil(Math.seededRandom() * (second.length - 1));
+		
+			colorNames.push(first[firstRand]+" "+second[secondRand]);
+		}
+	}
+	
+	//MANIPULATE TAGS WHEN HOVERING
+	$(".linkArticle").hover(function(){
+		
+		var tagCall = $(this).data("tags");
+		console.log($("#hover"+tagCall).hasClass("clicked"));
+		
+		if(!$("#hover"+tagCall).hasClass("clicked")){
+		
+			$("#hover"+tagCall).addClass("hoverMode");
+			$("#hover"+tagCall).click();
+		}
+		
+	}, function(){
+		var tagCall = $(this).data("tags");
+
+		if($("#hover"+tagCall).hasClass("hoverMode")){
+			$("#hover"+tagCall).removeClass("hoverMode");
+			$("#hover"+tagCall).click();
+		}
+	});
 	
 	//TURN OFF/ON THE SETTINGS MENU
 	$('#settings').click(function(){
@@ -403,16 +446,42 @@ $(document).ready(function(){
 		$('#settingsMenu').toggle();
 	});
 
+	//Reset seed to previous code scheme
+	function ResetSeed (newSeed){
+		Math.seed = newSeed;
+	}
+	//Change the color code to scheme
+	function ChangeColor (color){
+	
+		var sheet = document.styleSheets[1];
+		
+		ResetSeed(color);
+		
+		for(var i = 0; i < tagNames.length; i++)
+		{
+			var color1 = Math.floor(Math.seededRandom() * 255);
+			var color2 = Math.floor(Math.seededRandom() * 255);
+			var color3 = Math.floor(Math.seededRandom() * 255);
+			var opacity = .5 * Math.seededRandom() + .2;
+			
+			sheet.insertRule("."+tagNames[i]+"Hue::before" + " {position:absolute;content:' ';top: 0; right: 0; bottom: 0; left: 0; background:rgba("+color1+","+color2+","+color3+","+opacity+"); z-index:99;}", sheet.cssRules.length);
+		}
+	}
+	
 	//SETS CURRENT THEME
 	var currentTheme = "tranBox";
 	
 	//CONTROLLER FOR THEMES
 	$("li").click(function(){
 		var option = $(this).data("option");
-		console
+		
 		if(option == "Red" || option == "Green" || option == "Purple" || option == "Pink"){
 			$("body").removeClass("Red Green Purple Pink");
 			$("body").addClass(option);
+		}
+		else if(option == "scheme"){
+			var code = $(this).data("code");
+			ChangeColor(code);
 		}
 		else{
 			if(currentTheme == "tranBox")
