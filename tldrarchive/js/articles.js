@@ -87,11 +87,15 @@
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
 	articleItems.push(new Article("Frameworks in HCI","https://quip.com/bPe9Alul09cd",900,["HCI"],"HCI"));
+	articleItems.push(new Article("HCI Research Ethics","https://quip.com/rVM3Abu2Vw56",700,["HCI"],"HCI"));
 
 	//Sustainable design
 	articleItems.push(new Article("Socio-science Paradigm","https://quip.com/mjG7Ao9bFpfo",900,["Systems-Thinking"],"Systems-Thinking"));
 	articleItems.push(new Article("Systematic Revolution","https://quip.com/aaT3ABjwH4Z3",900,["Systems-Thinking"],"Systems-Thinking"));
 	articleItems.push(new Article("The Mechanicals","https://quip.com/pRMGAVNK4oYH",900,["Systems-Thinking"],"Systems-Thinking"));
+
+	//Informatics
+	articleItems.push(new Article("Connectivism","https://quip.com/P4H3AMvqs8S5",700,["Informatics"],"Informatics"));
 
 	//TLDR
 	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",1000,["tldr"],"tldr"));
