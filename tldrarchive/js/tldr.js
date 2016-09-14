@@ -101,11 +101,13 @@ $(document).ready(function(){
 	};*/
 	
 	// the initial seed
-	var timeSeed = new Date();
-	Math.seed = timeSeed.getTime();
+	//var timeSeed = new Date();
+	//Math.seed = timeSeed.getTime();
 	
 	//Math.seed = 1467926970352;
-	document.getElementById("seed").innerHTML = "Color Code: " + Math.seed;
+	
+	//need to move this function until new seed is set inside functions
+	//document.getElementById("seed").innerHTML = "Color Code: " + Math.seed;
 
 		// in order to work 'Math.seed' must NOT be undefined,
 		// so in any case, you HAVE to provide a Math.seed
@@ -255,6 +257,10 @@ $(document).ready(function(){
 	
 	//OPERATE CONTEXT OPTIONS FOR TAG DROPDOWN MENU
 	function AddClassTags () {
+	
+		var timeSeed = new Date();
+		ResetSeed (timeSeed.getTime());
+		document.getElementById("seed").innerHTML = "Color Code: " + timeSeed.getTime();
 	
 		var sheet = document.styleSheets[1];
 		//console.log(sheet);
@@ -421,7 +427,7 @@ $(document).ready(function(){
 	$(".linkArticle").hover(function(){
 		
 		var tagCall = $(this).data("tags");
-		console.log($("#hover"+tagCall).hasClass("clicked"));
+		//console.log($("#hover"+tagCall).hasClass("clicked"));
 		
 		if(!$("#hover"+tagCall).hasClass("clicked")){
 		
@@ -512,6 +518,10 @@ $(document).ready(function(){
 	});
 	
 	function RandomizeTheme () {
+	
+		var timeSeed = new Date();
+		ResetSeed (timeSeed.getTime());
+		
 		var background = [ "Green", "Red", "Purple", "Pink"];
 		var bkSelect = background[Math.round(Math.seededRandom () * 3)];
 		
