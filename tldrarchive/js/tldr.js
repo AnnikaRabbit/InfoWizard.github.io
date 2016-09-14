@@ -259,8 +259,10 @@ $(document).ready(function(){
 	function AddClassTags () {
 	
 		var timeSeed = new Date();
-		ResetSeed (timeSeed.getTime());
-		document.getElementById("seed").innerHTML = "Color Code: " + timeSeed.getTime();
+		var firstSeed = timeSeed.getTime();
+		ResetSeed (firstSeed);
+		document.getElementById("seed").innerHTML = "Color Code: " + firstSeed;
+		//console.log([firstSeed, Math.seed]);
 	
 		var sheet = document.styleSheets[1];
 		//console.log(sheet);
