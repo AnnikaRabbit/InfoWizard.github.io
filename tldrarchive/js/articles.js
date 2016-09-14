@@ -83,11 +83,14 @@
 	articleItems.push(new Article("Transformative Participation","https://quip.com/tphQAtC3yehl",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Cultural Tools","https://quip.com/7KcpA6lWWK7S",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Paper","https://quip.com/M7GRAS9qcwCx",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Artifact Mediation","https://quip.com/PTE6Ali2BF92",700,["sociocultural"],"sociocultural"));
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
 	articleItems.push(new Article("Frameworks in HCI","https://quip.com/bPe9Alul09cd",900,["HCI"],"HCI"));
 	articleItems.push(new Article("HCI Research Ethics","https://quip.com/rVM3Abu2Vw56",700,["HCI"],"HCI"));
+	articleItems.push(new Article("DOT COM POV HCI","https://quip.com/3A86AzY3r6YP",700,["HCI"],"HCI"));
+
 
 	//Sustainable design
 	articleItems.push(new Article("Socio-science Paradigm","https://quip.com/mjG7Ao9bFpfo",900,["Systems-Thinking"],"Systems-Thinking"));
@@ -96,6 +99,7 @@
 
 	//Informatics
 	articleItems.push(new Article("Connectivism","https://quip.com/P4H3AMvqs8S5",700,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Quest Learning","https://quip.com/ATmLAs5U6pF4",750,["Informatics"],"Informatics"));
 
 	//TLDR
 	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",1000,["tldr"],"tldr"));
