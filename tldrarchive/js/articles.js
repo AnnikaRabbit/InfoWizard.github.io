@@ -84,12 +84,16 @@
 	articleItems.push(new Article("Cultural Tools","https://quip.com/7KcpA6lWWK7S",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Paper","https://quip.com/M7GRAS9qcwCx",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Artifact Mediation","https://quip.com/PTE6Ali2BF92",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("ZPD Usage","https://quip.com/5dqMApte3Pca",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Evolving Institutions","https://quip.com/jQxCAz3A8Wez",400,["sociocultural"],"sociocultural"));
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
 	articleItems.push(new Article("Frameworks in HCI","https://quip.com/bPe9Alul09cd",900,["HCI"],"HCI"));
 	articleItems.push(new Article("HCI Research Ethics","https://quip.com/rVM3Abu2Vw56",700,["HCI"],"HCI"));
 	articleItems.push(new Article("DOT COM POV HCI","https://quip.com/3A86AzY3r6YP",700,["HCI"],"HCI"));
+	articleItems.push(new Article("Unremarkable Computing","https://quip.com/Un0OAJhhrJSj",900,["HCI"],"HCI"));
+	articleItems.push(new Article("21st Century","https://quip.com/83f7AhzFvsf1",820,["HCI"],"HCI"));
 
 
 	//Sustainable design
