@@ -28,10 +28,12 @@
 	
 	var articleItems = [];
 
-	//GAMES
+	//GAME Development
 	articleItems.push(new Article("Arrowhead: Magicka","https://quip.com/4T9fAuWAeWx0",600,["development"],"games"));
 	articleItems.push(new Article("M Herman: Rules","https://quip.com/7PuuA7Yl7ufc",800,["development"],"games"));
 	articleItems.push(new Article("Mechanics Basics","https://quip.com/WaX1AvaGgz9K",800,["development"],"games"));
+
+	//Core-drives
 	articleItems.push(new Article("Accomplishment","https://quip.com/QhhzAai1oAe8",800,["core-drives"],"games"));
 	articleItems.push(new Article("Which Way to Win","https://quip.com/pg3cAKnl4OTb",800,["core-drives"],"games"));
 	articleItems.push(new Article("Chou's Techniques","https://quip.com/PapOARw86ebe",800,["core-drives"],"games"));
@@ -40,14 +42,15 @@
 	articleItems.push(new Article("Community","https://quip.com/i0WbAA7vsTFa",801,["core-drives"],"games"));
 	articleItems.push(new Article("Rare & Shiny","https://quip.com/LdPXA0CzbjmC",800,["core-drives"],"games"));
 	articleItems.push(new Article("Curios & Expectations","https://quip.com/qkzuA49NDga3",800,["core-drives"],"games"));
-	articleItems.push(new Article("Value & Time","https://quip.com/H2baAhJrk5ls",800,["development"],"games"));
+	articleItems.push(new Article("Value & Time","https://quip.com/H2baAhJrk5ls",800,["core-drives"],"games"));
 	articleItems.push(new Article("Identity Networks","https://quip.com/xYDXA00uNx1b",801,["core-drives"],"games"));
 	articleItems.push(new Article("Game Frameworks","https://quip.com/aFk0AMZfCm8a",801,["core-drives"],"games"));
 	articleItems.push(new Article("Phases in Games","https://quip.com/uZ3EASv7m08b",700,["core-drives"],"games"));
 	articleItems.push(new Article("Yu-kai Design Document","https://quip.com/hbT7AdIi28A9",800,["core-drives"],"games"));
 
 	//EDUCATION
-	articleItems.push(new Article("Good Question Game","https://quip.com/iUDRAFpLiDT5",500,["games"],"education"));
+	articleItems.push(new Article("Good Question Game","https://quip.com/iUDRAFpLiDT5",750,["education"],"games"));
+	articleItems.push(new Article("Game Based Environment","https://quip.com/kDJrAkOl9Oc4",750,["education"],"games"));
 	
 	//DESGIN
 	articleItems.push(new Article("Transparency","https://quip.com/qXCpAojvaNs4",700,["design"],"design"));
@@ -94,16 +97,22 @@
 	articleItems.push(new Article("DOT COM POV HCI","https://quip.com/3A86AzY3r6YP",700,["HCI"],"HCI"));
 	articleItems.push(new Article("Unremarkable Computing","https://quip.com/Un0OAJhhrJSj",900,["HCI"],"HCI"));
 	articleItems.push(new Article("21st Century","https://quip.com/83f7AhzFvsf1",820,["HCI"],"HCI"));
+	articleItems.push(new Article("Methodology Matters","https://quip.com/9bbqAiCKFgq8",800,["HCI"],"HCI"));
 
 
 	//Sustainable design
-	articleItems.push(new Article("Socio-science Paradigm","https://quip.com/mjG7Ao9bFpfo",900,["Systems-Thinking"],"Systems-Thinking"));
-	articleItems.push(new Article("Systematic Revolution","https://quip.com/aaT3ABjwH4Z3",900,["Systems-Thinking"],"Systems-Thinking"));
-	articleItems.push(new Article("The Mechanicals","https://quip.com/pRMGAVNK4oYH",900,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Socio-science Paradigm","https://quip.com/mjG7Ao9bFpfo",600,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Systematic Revolution","https://quip.com/aaT3ABjwH4Z3",600,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("The Mechanicals","https://quip.com/pRMGAVNK4oYH",600,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Systems Thinking","https://quip.com/E7RIAcxqNvX4",600,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Systems View of Life","https://quip.com/MbaGAjl5WDnj",600,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Disorder & Complexity","https://quip.com/5vixA4CFXzbK",800,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Biologic Evolution","https://quip.com/FrD9A4m9bFkH",600,["Systems-Thinking"],"Systems-Thinking"));
 
 	//Informatics
 	articleItems.push(new Article("Connectivism","https://quip.com/P4H3AMvqs8S5",700,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Quest Learning","https://quip.com/ATmLAs5U6pF4",750,["Informatics"],"Informatics"));
+	articleItems.push(new Article("MOOC Survey 14","https://quip.com/PfVXAWCqDsNe",650,["Informatics"],"Informatics"));
 
 	//TLDR
 	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",1000,["tldr"],"tldr"));
