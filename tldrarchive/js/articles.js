@@ -113,6 +113,10 @@
 	articleItems.push(new Article("Connectivism","https://quip.com/P4H3AMvqs8S5",700,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Quest Learning","https://quip.com/ATmLAs5U6pF4",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("MOOC Survey 14","https://quip.com/PfVXAWCqDsNe",650,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Open Education Resources","https://quip.com/ASiyAZlK8naN",750,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Design Based Research","https://quip.com/1LatAmyCxHbY",750,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Animation Manipulation","https://quip.com/ADETAqSqwgX4",850,["Informatics"],"Informatics"));
+
 
 	//TLDR
 	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",1000,["tldr"],"tldr"));
