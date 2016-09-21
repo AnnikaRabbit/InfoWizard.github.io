@@ -48,7 +48,7 @@
 	articleItems.push(new Article("Phases in Games","https://quip.com/uZ3EASv7m08b",700,["core-drives"],"games"));
 	articleItems.push(new Article("Yu-kai Design Document","https://quip.com/hbT7AdIi28A9",800,["core-drives"],"games"));
 
-	//EDUCATION
+	//EDUCATION Game Dev
 	articleItems.push(new Article("Good Question Game","https://quip.com/iUDRAFpLiDT5",750,["education"],"games"));
 	articleItems.push(new Article("Game Based Environment","https://quip.com/kDJrAkOl9Oc4",750,["education"],"games"));
 	
@@ -74,7 +74,7 @@
 	//PSYCHOLOGY
 	articleItems.push(new Article("Memory in Design","https://quip.com/TcNoArb2Ktkp",500,["uxui"],"psychology"));
 	articleItems.push(new Article("Learning by Tests","https://quip.com/zRTIAb4zLUys",600,["psychology"],"psychology"));
-	articleItems.push(new Article("Learning with Animation","https://quip.com/a7LmAyHro4bL",600,["psychology"],"psychology"));
+	//articleItems.push(new Article("Learning with Animation","https://quip.com/a7LmAyHro4bL",600,["psychology"],"psychology"));
 	articleItems.push(new Article("Listen, then Talk","https://quip.com/M64BABTzXwTT",300,["psychology"],"psychology"));
 	articleItems.push(new Article("Motivation Ryan 06","https://quip.com/rfhrAHPJqIsH",800,["psychology"],"psychology"));
 
@@ -88,16 +88,20 @@
 	articleItems.push(new Article("Paper","https://quip.com/M7GRAS9qcwCx",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Artifact Mediation","https://quip.com/PTE6Ali2BF92",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("ZPD Usage","https://quip.com/5dqMApte3Pca",700,["sociocultural"],"sociocultural"));
-	articleItems.push(new Article("Evolving Institutions","https://quip.com/jQxCAz3A8Wez",400,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Evolving Institutions","https://quip.com/jQxCAz3A8Wez",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Sociocult Approach","https://quip.com/d02vAdtbLJMq",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Creative Collab","https://quip.com/enfdAYSxaNKb",700,["sociocultural"],"sociocultural"));
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
 	articleItems.push(new Article("Frameworks in HCI","https://quip.com/bPe9Alul09cd",900,["HCI"],"HCI"));
 	articleItems.push(new Article("HCI Research Ethics","https://quip.com/rVM3Abu2Vw56",700,["HCI"],"HCI"));
-	articleItems.push(new Article("DOT COM POV HCI","https://quip.com/3A86AzY3r6YP",700,["HCI"],"HCI"));
+	articleItems.push(new Article("DOTCOM POV HCI","https://quip.com/3A86AzY3r6YP",700,["HCI"],"HCI"));
 	articleItems.push(new Article("Unremarkable Computing","https://quip.com/Un0OAJhhrJSj",900,["HCI"],"HCI"));
 	articleItems.push(new Article("21st Century","https://quip.com/83f7AhzFvsf1",820,["HCI"],"HCI"));
 	articleItems.push(new Article("Methodology Matters","https://quip.com/9bbqAiCKFgq8",800,["HCI"],"HCI"));
+	articleItems.push(new Article("HCI Method Primer","https://quip.com/OkMbADxripoN",800,["HCI"],"HCI"));
+	articleItems.push(new Article("Building Theory","https://quip.com/xZZiA1eKsNXG",800,["HCI"],"HCI"));
 
 
 	//Sustainable design
