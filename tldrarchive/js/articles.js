@@ -50,8 +50,7 @@
 
 	//EDUCATION Game Dev
 	articleItems.push(new Article("Good Question Game","https://quip.com/iUDRAFpLiDT5",750,["education"],"games"));
-	articleItems.push(new Article("Game Based Environment","https://quip.com/kDJrAkOl9Oc4",750,["education"],"games"));
-	
+
 	//DESGIN
 	articleItems.push(new Article("Transparency","https://quip.com/qXCpAojvaNs4",700,["design"],"design"));
 	articleItems.push(new Article("Creative Spaces","https://quip.com/svxFApDVhrkw",500,["design"],"design"));
@@ -91,6 +90,7 @@
 	articleItems.push(new Article("Evolving Institutions","https://quip.com/jQxCAz3A8Wez",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Sociocult Approach","https://quip.com/d02vAdtbLJMq",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Creative Collab","https://quip.com/enfdAYSxaNKb",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Words and Minds","https://quip.com/9iCxAhYVUtSh",700,["sociocultural"],"sociocultural"));
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
@@ -102,6 +102,9 @@
 	articleItems.push(new Article("Methodology Matters","https://quip.com/9bbqAiCKFgq8",800,["HCI"],"HCI"));
 	articleItems.push(new Article("HCI Method Primer","https://quip.com/OkMbADxripoN",800,["HCI"],"HCI"));
 	articleItems.push(new Article("Building Theory","https://quip.com/xZZiA1eKsNXG",800,["HCI"],"HCI"));
+	articleItems.push(new Article("Digital Trust","https://quip.com/LOEDA46jSmv1",800,["HCI"],"HCI"));
+	articleItems.push(new Article("CMC Theories","https://quip.com/Bz1GAU0FVTUi",400,["HCI"],"HCI"));
+	articleItems.push(new Article("MC Theories & Methods","https://quip.com/1KKeANJ96Lji",800,["HCI"],"HCI"));
 
 
 	//Sustainable design
@@ -112,6 +115,8 @@
 	articleItems.push(new Article("Systems View of Life","https://quip.com/MbaGAjl5WDnj",600,["Systems-Thinking"],"Systems-Thinking"));
 	articleItems.push(new Article("Disorder & Complexity","https://quip.com/5vixA4CFXzbK",800,["Systems-Thinking"],"Systems-Thinking"));
 	articleItems.push(new Article("Biologic Evolution","https://quip.com/FrD9A4m9bFkH",600,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Earth: Origin Story","https://quip.com/80TfAfZzgJCr",600,["Systems-Thinking"],"Systems-Thinking"));
+
 
 	//Informatics
 	articleItems.push(new Article("Connectivism","https://quip.com/P4H3AMvqs8S5",700,["Informatics"],"Informatics"));
@@ -120,6 +125,13 @@
 	articleItems.push(new Article("Open Education Resources","https://quip.com/ASiyAZlK8naN",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Design Based Research","https://quip.com/1LatAmyCxHbY",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Animation Manipulation","https://quip.com/ADETAqSqwgX4",850,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Notes on Digital Media","https://quip.com/wwffAFsyJDiL",850,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Bonk YT MOOCs","https://quip.com/g2b7A1S2DyaW",850,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Playable Models","https://quip.com/i8iCAp6qCDA2",850,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Exploratory Learning","https://quip.com/kLHtAybNmzVR",850,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Game Based Environment","https://quip.com/kDJrAkOl9Oc4",750,["Informatics"],"Informatics"));
+
+
 
 
 	//TLDR
