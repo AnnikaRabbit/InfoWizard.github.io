@@ -116,6 +116,10 @@
 	articleItems.push(new Article("Disorder & Complexity","https://quip.com/5vixA4CFXzbK",800,["Systems-Thinking"],"Systems-Thinking"));
 	articleItems.push(new Article("Biologic Evolution","https://quip.com/FrD9A4m9bFkH",600,["Systems-Thinking"],"Systems-Thinking"));
 	articleItems.push(new Article("Earth: Origin Story","https://quip.com/80TfAfZzgJCr",600,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Human Adventure","https://quip.com/CweTAkqm2Uei",400,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Mind & Being","https://quip.com/1P4PAhVN59Mh",400,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Science & Spirituality","https://quip.com/bYpkAMAYaqxP",410,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Life, Mind & Society","https://quip.com/hUmjA3pfL9co",450,["Systems-Thinking"],"Systems-Thinking"));
 
 
 	//Informatics
@@ -124,14 +128,16 @@
 	articleItems.push(new Article("MOOC Survey 14","https://quip.com/PfVXAWCqDsNe",650,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Open Education Resources","https://quip.com/ASiyAZlK8naN",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Design Based Research","https://quip.com/1LatAmyCxHbY",750,["Informatics"],"Informatics"));
-	articleItems.push(new Article("Animation Manipulation","https://quip.com/ADETAqSqwgX4",850,["Informatics"],"Informatics"));
-	articleItems.push(new Article("Notes on Digital Media","https://quip.com/wwffAFsyJDiL",850,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Animation Manipulation","https://quip.com/ADETAqSqwgX4",750,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Notes on Digital Media","https://quip.com/wwffAFsyJDiL",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Bonk YT MOOCs","https://quip.com/g2b7A1S2DyaW",850,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Playable Models","https://quip.com/i8iCAp6qCDA2",850,["Informatics"],"Informatics"));
-	articleItems.push(new Article("Exploratory Learning","https://quip.com/kLHtAybNmzVR",850,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Exploratory Learning","https://quip.com/kLHtAybNmzVR",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Game Based Environment","https://quip.com/kDJrAkOl9Oc4",750,["Informatics"],"Informatics"));
-
-
+	articleItems.push(new Article("P2P Diagramming","https://quip.com/7A41A4USdFnd",750,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Formative Research VR","https://quip.com/04XTASppwoxo",750,["Informatics"],"Informatics"));
+	articleItems.push(new Article("GBL Systems Analysis","https://quip.com/kAszAdgx2GBx",750,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Problem Solving Online","https://quip.com/p2dQAb4PDIk8",800,["Informatics"],"Informatics"));
 
 
 	//TLDR
