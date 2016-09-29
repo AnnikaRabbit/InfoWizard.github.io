@@ -91,6 +91,7 @@
 	articleItems.push(new Article("Sociocult Approach","https://quip.com/d02vAdtbLJMq",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Creative Collab","https://quip.com/enfdAYSxaNKb",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Words and Minds","https://quip.com/9iCxAhYVUtSh",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Capturing Change","https://quip.com/gCMpALLtod3V",800,["sociocultural"],"sociocultural"));
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
@@ -105,6 +106,8 @@
 	articleItems.push(new Article("Digital Trust","https://quip.com/LOEDA46jSmv1",800,["HCI"],"HCI"));
 	articleItems.push(new Article("CMC Theories","https://quip.com/Bz1GAU0FVTUi",400,["HCI"],"HCI"));
 	articleItems.push(new Article("MC Theories & Methods","https://quip.com/1KKeANJ96Lji",800,["HCI"],"HCI"));
+	articleItems.push(new Article("Adaptive UI","https://quip.com/DIYRA7fAj3BT",800,["HCI"],"HCI"));
+	articleItems.push(new Article("Blind Interaction","https://quip.com/HS4kAHVXpTDQ",800,["HCI"],"HCI"));
 
 
 	//Sustainable design
@@ -138,6 +141,7 @@
 	articleItems.push(new Article("Formative Research VR","https://quip.com/04XTASppwoxo",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("GBL Systems Analysis","https://quip.com/kAszAdgx2GBx",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Problem Solving Online","https://quip.com/p2dQAb4PDIk8",800,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Connected Learning","https://quip.com/ZTxHAtHwdEmE",950,["Informatics"],"Informatics"));
 
 
 	//TLDR

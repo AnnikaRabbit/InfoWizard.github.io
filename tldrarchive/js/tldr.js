@@ -122,7 +122,7 @@ $(document).ready(function(){
 	}
 	
 	//Array of interesting colors
-	var colorArray = [1467929669389,1467930290698,1467930335292,1468096778469,1468181071259,1468380281929,1468894552492,1470434848507,1471740693405,1471991342961,1471999239306,1473109525456,1473458086273,1473462312959,1474498025742,1474789185995];
+	var colorArray = [1467929669389,1467930290698,1467930335292,1468096778469,1468181071259,1468380281929,1468894552492,1470434848507,1471740693405,1471991342961,1471999239306,1473109525456,1473458086273,1473462312959,1474498025742,1474789185995,1475113849949];
 	var colorNames = [];
 	
 	var sectionNames = [];
@@ -409,12 +409,14 @@ $(document).ready(function(){
 		var first = ["Fools", "Triple","Savage", "Hard",
 		"Adamant", "Soft", "Edgy", "Slick",
 		"Clear", "007", "Cute", "Ice",
-		"Molten", "Terra", "Facet", "Weird"];
+		"Molten", "Terra", "Facet", "Weird",
+		"Wicked","Spotted","Jungle","Yuge"];
 		
 		var second = ["Ocean", "Reef", "Plains", "Rock",
 			"Panda", "Shock", "Berry", "Engine",
 			"Smear", "Bouy", "Money", "Chance",
-			"Diamond", "Cake", "Bucket", "Bunny", "Cathedral"];
+			"Diamond", "Cake", "Bucket", "Bunny", "Cathedral",
+			"Bucket","Bar","Tangent","Red"];
 		
 		for(i = 0; i < number; i++){
 			ResetSeed(colorArray[i]);
