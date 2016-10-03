@@ -92,6 +92,7 @@
 	articleItems.push(new Article("Creative Collab","https://quip.com/enfdAYSxaNKb",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Words and Minds","https://quip.com/9iCxAhYVUtSh",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Capturing Change","https://quip.com/gCMpALLtod3V",800,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Classroom Dialogue","https://quip.com/16fRAgMQMqCl",800,["sociocultural"],"sociocultural"));
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
@@ -108,6 +109,8 @@
 	articleItems.push(new Article("MC Theories & Methods","https://quip.com/1KKeANJ96Lji",800,["HCI"],"HCI"));
 	articleItems.push(new Article("Adaptive UI","https://quip.com/DIYRA7fAj3BT",800,["HCI"],"HCI"));
 	articleItems.push(new Article("Blind Interaction","https://quip.com/HS4kAHVXpTDQ",800,["HCI"],"HCI"));
+	articleItems.push(new Article("Ethnography","https://quip.com/lT9eAb0fbyjf",800,["HCI"],"HCI"));
+	articleItems.push(new Article("Accessibility Guidelines","https://quip.com/zhU1AubnJ8ZK",650,["HCI"],"HCI"));
 
 
 	//Sustainable design
@@ -123,6 +126,11 @@
 	articleItems.push(new Article("Mind & Being","https://quip.com/1P4PAhVN59Mh",400,["Systems-Thinking"],"Systems-Thinking"));
 	articleItems.push(new Article("Science & Spirituality","https://quip.com/bYpkAMAYaqxP",410,["Systems-Thinking"],"Systems-Thinking"));
 	articleItems.push(new Article("Life, Mind & Society","https://quip.com/hUmjA3pfL9co",450,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Health Systems","https://quip.com/O4SIAcXjqS0F",450,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Ecology Systems","https://quip.com/CU4JAv9YRSXh",450,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Connecting Dots","https://quip.com/xKMoAGePetux",450,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Systematic Solutions","https://quip.com/lhErARdub0Jb",450,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Systems Primer","https://quip.com/ZacVAaQLORX2",900,["Systems-Thinking"],"Systems-Thinking"));
 
 
 	//Informatics
@@ -142,6 +150,9 @@
 	articleItems.push(new Article("GBL Systems Analysis","https://quip.com/kAszAdgx2GBx",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Problem Solving Online","https://quip.com/p2dQAb4PDIk8",800,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Connected Learning","https://quip.com/ZTxHAtHwdEmE",950,["Informatics"],"Informatics"));
+	articleItems.push(new Article("MMO Academia","https://quip.com/pFMrAvVZvUTC",950,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Dissemination of KM","https://quip.com/4aJzAYuu0e65",950,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Emergent Innovation","https://quip.com/b5wVAdWZ3C0s",950,["Informatics"],"Informatics"));
 
 
 	//TLDR
