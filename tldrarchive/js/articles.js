@@ -96,6 +96,8 @@
 	articleItems.push(new Article("Dist Cognition Learning","https://quip.com/VQEgA2nyw8el",800,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Sociotechnical Systems","https://quip.com/H70WAn1cnL7c",800,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Distributed Cognition","https://quip.com/wojLARyS2qWm",800,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("POV on Activity Theory","https://quip.com/bw54Aw75tJUo",400,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Activity Systems Analysis","https://quip.com/yDauAwpInYRM",800,["sociocultural"],"sociocultural"));
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
@@ -120,6 +122,9 @@
 	articleItems.push(new Article("Ethnographic Coding","https://quip.com/XIXaAXFM5dnp",810,["HCI"],"HCI"));
 	articleItems.push(new Article("Grounded Theory","https://quip.com/GKYmA6AGwggs",810,["HCI"],"HCI"));
 	articleItems.push(new Article("CSCW Lite Dossier","https://quip.com/sb8KA2GkGZyN",200,["HCI"],"HCI"));
+	articleItems.push(new Article("Theory in Practice","https://quip.com/T8JxASCnDVL7",800,["HCI"],"HCI"));
+	articleItems.push(new Article("Graphical Representations","https://quip.com/eppjAbCHIHll",800,["HCI"],"HCI"));
+	articleItems.push(new Article("Writing Fieldnotes","https://quip.com/bNAQAwfebQ9a",800,["HCI"],"HCI"));
 
 
 	//Sustainable design
@@ -165,6 +170,10 @@
 	articleItems.push(new Article("Participatory Design","https://quip.com/CQWSA074XqEq",890,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Systems in Academics","https://quip.com/WF0ZAJqMtaIf",890,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Design System Thinkers","https://quip.com/MnRZAbRvLKgY",890,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Systems in Education","https://quip.com/BDWFAM6QzuWX",890,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Changing Systems","https://quip.com/vvJnAbYbKisL",890,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Knowledge Building","https://quip.com/8qp2AWOvPvMc",890,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Rich Connections","https://quip.com/aW4YAMx2UKJN",810,["Informatics"],"Informatics"));
 
 
 	//TLDR
