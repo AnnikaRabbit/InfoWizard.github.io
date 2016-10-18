@@ -183,7 +183,7 @@
 	articleItems.push(new Article("Collaborative Design","https://quip.com/c5mGAvdijRl3",810,["Informatics"],"Informatics"));
 
 	//Academic tools
-	articleItems.push(new Article("Dissertation Framework","https://quip.com/ahaZA9ObgDVe",700,["Academic Tools"],"Academic Tools"));
+	articleItems.push(new Article("Dissertation Framework","https://quip.com/ahaZA9ObgDVe",700,["Academic-Tools"],"Academic-Tools"));
 
 
 	//TLDR
