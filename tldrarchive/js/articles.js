@@ -125,6 +125,8 @@
 	articleItems.push(new Article("Theory in Practice","https://quip.com/T8JxASCnDVL7",800,["HCI"],"HCI"));
 	articleItems.push(new Article("Graphical Representations","https://quip.com/eppjAbCHIHll",800,["HCI"],"HCI"));
 	articleItems.push(new Article("Writing Fieldnotes","https://quip.com/bNAQAwfebQ9a",800,["HCI"],"HCI"));
+	articleItems.push(new Article("Basic Methods HCI","https://quip.com/YSdVACOq68By",600,["HCI"],"HCI"));
+	articleItems.push(new Article("Computer Based Tutoring","https://quip.com/MtYMA1thVD74",800,["HCI"],"HCI"));
 
 
 	//Sustainable design
@@ -174,6 +176,14 @@
 	articleItems.push(new Article("Changing Systems","https://quip.com/vvJnAbYbKisL",890,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Knowledge Building","https://quip.com/8qp2AWOvPvMc",890,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Rich Connections","https://quip.com/aW4YAMx2UKJN",810,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Virtual Affordances","https://quip.com/2RWnAC19lrBQ",810,["Informatics"],"Informatics"));
+	articleItems.push(new Article("GroupMind Tools","https://quip.com/20KCAmyqm8Pv",810,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Virtual Contributors","https://quip.com/xtTwAOyGOxnU",810,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Meta Design in VW","https://quip.com/8oKBAmAcwv9K",810,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Collaborative Design","https://quip.com/c5mGAvdijRl3",810,["Informatics"],"Informatics"));
+
+	//Academic tools
+	articleItems.push(new Article("Dissertation Framework","https://quip.com/ahaZA9ObgDVe",700,["Academic Tools"],"Academic Tools"));
 
 
 	//TLDR
