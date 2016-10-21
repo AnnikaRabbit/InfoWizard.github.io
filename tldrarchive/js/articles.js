@@ -98,6 +98,8 @@
 	articleItems.push(new Article("Distributed Cognition","https://quip.com/wojLARyS2qWm",800,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("POV on Activity Theory","https://quip.com/bw54Aw75tJUo",400,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Activity Systems Analysis","https://quip.com/yDauAwpInYRM",800,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Activity System Actors","https://quip.com/lcPUA89dUeVV",400,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Learning via Resistance","https://quip.com/HoxpAtbfiMkk",700,["sociocultural"],"sociocultural"));
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
@@ -127,6 +129,8 @@
 	articleItems.push(new Article("Writing Fieldnotes","https://quip.com/bNAQAwfebQ9a",800,["HCI"],"HCI"));
 	articleItems.push(new Article("Basic Methods HCI","https://quip.com/YSdVACOq68By",600,["HCI"],"HCI"));
 	articleItems.push(new Article("Computer Based Tutoring","https://quip.com/MtYMA1thVD74",800,["HCI"],"HCI"));
+	articleItems.push(new Article("Crowdsource Writing","https://quip.com/jfTbAfHbudIn",700,["HCI"],"HCI"));
+	articleItems.push(new Article("Human Computation","https://quip.com/cVHJATyJkw4k",700,["HCI"],"HCI"));
 
 
 	//Sustainable design
@@ -191,6 +195,7 @@
 	articleItems.push(new Article("As We May Think","https://quip.com/EZBEAmBUMlUr",1000,["tldr"],"tldr"));
 	articleItems.push(new Article("Mother of All Demos","https://quip.com/47M5A3CR4jcz",1000,["tldr"],"tldr"));
 	articleItems.push(new Article("Augmenting Intellect","https://quip.com/lkZbAKCZSWql",1000,["tldr"],"tldr"));
+	articleItems.push(new Article("Crowdwork Future [TLDR]","https://quip.com/eGUBApQh3oaO",1000,["tldr"],"tldr"));
 
 
 
