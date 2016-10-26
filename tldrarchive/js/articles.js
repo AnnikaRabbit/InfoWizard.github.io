@@ -100,6 +100,7 @@
 	articleItems.push(new Article("Activity Systems Analysis","https://quip.com/yDauAwpInYRM",800,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Activity System Actors","https://quip.com/lcPUA89dUeVV",400,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Learning via Resistance","https://quip.com/HoxpAtbfiMkk",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Systems & Activity Theory","https://quip.com/ht0VAX4dLrYf",990,["sociocultural"],"sociocultural"));
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
@@ -131,6 +132,9 @@
 	articleItems.push(new Article("Computer Based Tutoring","https://quip.com/MtYMA1thVD74",800,["HCI"],"HCI"));
 	articleItems.push(new Article("Crowdsource Writing","https://quip.com/jfTbAfHbudIn",700,["HCI"],"HCI"));
 	articleItems.push(new Article("Human Computation","https://quip.com/cVHJATyJkw4k",700,["HCI"],"HCI"));
+	articleItems.push(new Article("Purposeful Games","https://quip.com/6TbSAPQMTrLM",700,["HCI"],"HCI"));
+	articleItems.push(new Article("Gamify It","https://quip.com/u6AbA3Sa5xbi",850,["HCI"],"HCI"));
+	articleItems.push(new Article("MMO Social Dynamics","https://quip.com/YJbjAxjYlfZt",850,["HCI"],"HCI"));
 
 
 	//Sustainable design
