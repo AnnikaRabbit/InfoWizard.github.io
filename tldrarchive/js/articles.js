@@ -101,6 +101,8 @@
 	articleItems.push(new Article("Activity System Actors","https://quip.com/lcPUA89dUeVV",400,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Learning via Resistance","https://quip.com/HoxpAtbfiMkk",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Systems & Activity Theory","https://quip.com/ht0VAX4dLrYf",990,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("CoP Prelude","https://quip.com/ZnY5ADRRjkNQ",690,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Practices of Meaning","https://quip.com/cCUNARLznotb",790,["sociocultural"],"sociocultural"));
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
@@ -135,6 +137,7 @@
 	articleItems.push(new Article("Purposeful Games","https://quip.com/6TbSAPQMTrLM",700,["HCI"],"HCI"));
 	articleItems.push(new Article("Gamify It","https://quip.com/u6AbA3Sa5xbi",850,["HCI"],"HCI"));
 	articleItems.push(new Article("MMO Social Dynamics","https://quip.com/YJbjAxjYlfZt",850,["HCI"],"HCI"));
+	articleItems.push(new Article("Stealth Assessment","https://quip.com/TMMPAYvLAZd2",850,["HCI"],"HCI"));
 
 
 	//Sustainable design
@@ -155,6 +158,9 @@
 	articleItems.push(new Article("Connecting Dots","https://quip.com/xKMoAGePetux",450,["Systems-Thinking"],"Systems-Thinking"));
 	articleItems.push(new Article("Systematic Solutions","https://quip.com/lhErARdub0Jb",450,["Systems-Thinking"],"Systems-Thinking"));
 	articleItems.push(new Article("Systems Primer","https://quip.com/ZacVAaQLORX2",900,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Edu Policy Systems","https://quip.com/KlJBAp5IbVPA",900,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Learning Systems","https://quip.com/p5GSAXqYS1lt",800,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Classroom Systems","https://quip.com/H755AkS6wI27",850,["Systems-Thinking"],"Systems-Thinking"));
 
 
 	//Informatics
@@ -189,9 +195,14 @@
 	articleItems.push(new Article("Virtual Contributors","https://quip.com/xtTwAOyGOxnU",810,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Meta Design in VW","https://quip.com/8oKBAmAcwv9K",810,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Collaborative Design","https://quip.com/c5mGAvdijRl3",810,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Experts & Novices","https://quip.com/pxnoA3kxzLHK",750,["Informatics"],"Informatics"));
+	articleItems.push(new Article("PORTAAL Observation","https://quip.com/DQbjASMsl3i3",950,["Informatics"],"Informatics"));
 
 	//Academic tools
 	articleItems.push(new Article("Dissertation Framework","https://quip.com/ahaZA9ObgDVe",700,["Academic-Tools"],"Academic-Tools"));
+
+	//Community
+	articleItems.push(new Article("Evicted","https://quip.com/G6RWAvQtSjbK",700,["Community"],"Community"));
 
 
 	//TLDR
