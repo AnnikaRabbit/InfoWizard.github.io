@@ -103,6 +103,11 @@
 	articleItems.push(new Article("Systems & Activity Theory","https://quip.com/ht0VAX4dLrYf",990,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("CoP Prelude","https://quip.com/ZnY5ADRRjkNQ",690,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Practices of Meaning","https://quip.com/cCUNARLznotb",790,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Cultural Activity Theory","https://quip.com/1OMpAjyaSP7u",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Cognitive Apprentice","https://quip.com/dTMPAm3Zj3DJ",990,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Community Argumentation","https://quip.com/bnYvAvuEpi5H",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Scientific Practice","https://quip.com/nSaSAQF03qvk",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Cognition in Flux","https://quip.com/Iiy0ALoqW7fJ",400,["sociocultural"],"sociocultural"));
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
@@ -138,6 +143,11 @@
 	articleItems.push(new Article("Gamify It","https://quip.com/u6AbA3Sa5xbi",850,["HCI"],"HCI"));
 	articleItems.push(new Article("MMO Social Dynamics","https://quip.com/YJbjAxjYlfZt",850,["HCI"],"HCI"));
 	articleItems.push(new Article("Stealth Assessment","https://quip.com/TMMPAYvLAZd2",850,["HCI"],"HCI"));
+	articleItems.push(new Article("Brain Comp UI","https://quip.com/zaMPAbIwCam1",400,["HCI"],"HCI"));
+	articleItems.push(new Article("Adaptive UX","https://quip.com/7T7WAK8IFdMw",700,["HCI"],"HCI"));
+	articleItems.push(new Article("Physiological Computing","https://quip.com/faXfAkbVfHfh",500,["HCI"],"HCI"));
+	articleItems.push(new Article("Affect in HCI","https://quip.com/SbbaAywkEOvw",500,["HCI"],"HCI"));
+	articleItems.push(new Article("User Behavior Logs","https://quip.com/0TwRA4j0l7l8",500,["HCI"],"HCI"));
 
 
 	//Sustainable design
@@ -161,6 +171,8 @@
 	articleItems.push(new Article("Edu Policy Systems","https://quip.com/KlJBAp5IbVPA",900,["Systems-Thinking"],"Systems-Thinking"));
 	articleItems.push(new Article("Learning Systems","https://quip.com/p5GSAXqYS1lt",800,["Systems-Thinking"],"Systems-Thinking"));
 	articleItems.push(new Article("Classroom Systems","https://quip.com/H755AkS6wI27",850,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Knowledge Profession","https://quip.com/8HtRAQrzwP6i",900,["Systems-Thinking"],"Systems-Thinking"));
+	articleItems.push(new Article("Civ & Systems","https://quip.com/bmR7AvnLCXz8",800,["Systems-Thinking"],"Systems-Thinking"));
 
 
 	//Informatics
@@ -197,6 +209,7 @@
 	articleItems.push(new Article("Collaborative Design","https://quip.com/c5mGAvdijRl3",810,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Experts & Novices","https://quip.com/pxnoA3kxzLHK",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("PORTAAL Observation","https://quip.com/DQbjASMsl3i3",950,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Open Student Models","https://quip.com/cULKAOaQbn9c",920,["Informatics"],"Informatics"));
 
 	//Academic tools
 	articleItems.push(new Article("Dissertation Framework","https://quip.com/ahaZA9ObgDVe",700,["Academic-Tools"],"Academic-Tools"));
