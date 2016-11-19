@@ -108,6 +108,8 @@
 	articleItems.push(new Article("Community Argumentation","https://quip.com/bnYvAvuEpi5H",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Scientific Practice","https://quip.com/nSaSAQF03qvk",700,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Cognition in Flux","https://quip.com/Iiy0ALoqW7fJ",400,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Identity & Agency","https://quip.com/kjHLAOTecvpo",550,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("PD in Figured Worlds","https://quip.com/m1B6ABHK8GsR",650,["sociocultural"],"sociocultural"));
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
@@ -148,6 +150,17 @@
 	articleItems.push(new Article("Physiological Computing","https://quip.com/faXfAkbVfHfh",500,["HCI"],"HCI"));
 	articleItems.push(new Article("Affect in HCI","https://quip.com/SbbaAywkEOvw",500,["HCI"],"HCI"));
 	articleItems.push(new Article("User Behavior Logs","https://quip.com/0TwRA4j0l7l8",500,["HCI"],"HCI"));
+	articleItems.push(new Article("Memory & Visuals","https://quip.com/xeH5AznvyWZ2",700,["HCI"],"HCI"));
+	articleItems.push(new Article("Animation & Mental Maps","https://quip.com/2MiQATO0vAC5",710,["HCI"],"HCI"));
+	articleItems.push(new Article("Crowds MTurk","https://quip.com/f5ZiAz0OITkQ",410,["HCI"],"HCI"));
+	articleItems.push(new Article("Value of Visualization","https://quip.com/5FDJATCJQZtP",410,["HCI"],"HCI"));
+	articleItems.push(new Article("Visualization","https://quip.com/5FDJATCJQZtP",950,["HCI"],"HCI"));
+	articleItems.push(new Article("Visualization","https://quip.com/RkL9AD7xcaip",750,["HCI"],"HCI"));
+	articleItems.push(new Article("MTurk Research","https://quip.com/V3IGAFdnlAqP",500,["HCI"],"HCI"));
+	articleItems.push(new Article("Survey Design","https://quip.com/e3LBAtH8sLFa",805,["HCI"],"HCI"));
+	articleItems.push(new Article("Recommender Systems","https://quip.com/s4YkAYFLTPFR",690,["HCI"],"HCI"));
+	articleItems.push(new Article("Technology Use Profiles","https://quip.com/mPmzA6ErdjlW",690,["HCI"],"HCI"));
+	articleItems.push(new Article("User Modeling","https://quip.com/AU2fAna8biU0",800,["HCI"],"HCI"));
 
 
 	//Sustainable design
@@ -210,6 +223,7 @@
 	articleItems.push(new Article("Experts & Novices","https://quip.com/pxnoA3kxzLHK",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("PORTAAL Observation","https://quip.com/DQbjASMsl3i3",950,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Open Student Models","https://quip.com/cULKAOaQbn9c",920,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Open Edu Resources","https://quip.com/4G9KASDCQxT6",920,["Informatics"],"Informatics"));
 
 	//Academic tools
 	articleItems.push(new Article("Dissertation Framework","https://quip.com/ahaZA9ObgDVe",700,["Academic-Tools"],"Academic-Tools"));
