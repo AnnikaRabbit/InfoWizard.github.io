@@ -51,6 +51,8 @@
 	//EDUCATION Game Dev
 	articleItems.push(new Article("Good Question Game","https://quip.com/iUDRAFpLiDT5",750,["education"],"games"));
 
+	//EDUCATION
+
 	//DESGIN
 	articleItems.push(new Article("Transparency","https://quip.com/qXCpAojvaNs4",700,["design"],"design"));
 	articleItems.push(new Article("Creative Spaces","https://quip.com/svxFApDVhrkw",500,["design"],"design"));
@@ -110,6 +112,9 @@
 	articleItems.push(new Article("Cognition in Flux","https://quip.com/Iiy0ALoqW7fJ",400,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Identity & Agency","https://quip.com/kjHLAOTecvpo",550,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("PD in Figured Worlds","https://quip.com/m1B6ABHK8GsR",650,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("CHAT","https://quip.com/ZRN1A4QQweaz",850,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Race, Culture & Learning","https://quip.com/MkuwAaNGb0iv",900,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Cultural Pedagogy","https://quip.com/GXMpAfe6v8Qs",700,["sociocultural"],"sociocultural"));
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
@@ -161,6 +166,7 @@
 	articleItems.push(new Article("Recommender Systems","https://quip.com/s4YkAYFLTPFR",690,["HCI"],"HCI"));
 	articleItems.push(new Article("Technology Use Profiles","https://quip.com/mPmzA6ErdjlW",690,["HCI"],"HCI"));
 	articleItems.push(new Article("User Modeling","https://quip.com/AU2fAna8biU0",800,["HCI"],"HCI"));
+	articleItems.push(new Article("Media Behavior Norms","https://quip.com/gQqAAV3HIqwM",400,["HCI"],"HCI"));
 
 
 	//Sustainable design
@@ -224,6 +230,10 @@
 	articleItems.push(new Article("PORTAAL Observation","https://quip.com/DQbjASMsl3i3",950,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Open Student Models","https://quip.com/cULKAOaQbn9c",920,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Open Edu Resources","https://quip.com/4G9KASDCQxT6",920,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Power in Feedback","https://quip.com/9VX1AguYkXHt",800,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Active Learning Review","https://quip.com/2duVAk0OeDRa",800,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Formative Feedback","https://quip.com/BYndAScur0Jc",800,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Active Pedagogy","https://quip.com/TvynAei2TIC8",950,["Informatics"],"Informatics"));
 
 	//Academic tools
 	articleItems.push(new Article("Dissertation Framework","https://quip.com/ahaZA9ObgDVe",700,["Academic-Tools"],"Academic-Tools"));
