@@ -115,6 +115,9 @@
 	articleItems.push(new Article("CHAT","https://quip.com/ZRN1A4QQweaz",850,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Race, Culture & Learning","https://quip.com/MkuwAaNGb0iv",900,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Cultural Pedagogy","https://quip.com/GXMpAfe6v8Qs",700,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Theory of CRP","https://quip.com/mzq4AsBqQUNR",900,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Justice in Math","https://quip.com/25A8A1Sx4YQj",920,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Funds of Knowledge","https://quip.com/70p7ARgwzDeo",920,["sociocultural"],"sociocultural"));
 
 	//HCI Methodology
 	articleItems.push(new Article("Evolution History HCI","https://quip.com/irGuAPC5vycR",900,["HCI"],"HCI"));
@@ -167,6 +170,9 @@
 	articleItems.push(new Article("Technology Use Profiles","https://quip.com/mPmzA6ErdjlW",690,["HCI"],"HCI"));
 	articleItems.push(new Article("User Modeling","https://quip.com/AU2fAna8biU0",800,["HCI"],"HCI"));
 	articleItems.push(new Article("Media Behavior Norms","https://quip.com/gQqAAV3HIqwM",400,["HCI"],"HCI"));
+	articleItems.push(new Article("Brain UI","https://quip.com/qCbTAfP8u9Eo",400,["HCI"],"HCI"));
+	articleItems.push(new Article("Design Based Research","https://quip.com/Dfz0ACytzRQx",900,["HCI"],"HCI"));
+	articleItems.push(new Article("Interactive Tutor Design","https://quip.com/LPJJAWKlQmtt",850,["HCI"],"HCI"));
 
 
 	//Sustainable design
