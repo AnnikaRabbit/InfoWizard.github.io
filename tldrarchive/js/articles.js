@@ -244,6 +244,9 @@
 	//Academic tools
 	articleItems.push(new Article("Dissertation Framework","https://quip.com/ahaZA9ObgDVe",700,["Academic-Tools"],"Academic-Tools"));
 
+	//Personal Development
+	articleItems.push(new Article("Rebels at Work","https://quip.com/yEk8A7l0aq4U",1000,["Personal-Development"],"Personal-Development"));
+
 	//Community
 	articleItems.push(new Article("Evicted","https://quip.com/G6RWAvQtSjbK",700,["Community"],"Community"));
 
