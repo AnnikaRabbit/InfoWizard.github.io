@@ -50,6 +50,8 @@
 
 	//EDUCATION Game Dev
 	articleItems.push(new Article("Good Question Game","https://quip.com/iUDRAFpLiDT5",750,["education"],"games"));
+	articleItems.push(new Article("Learning by Design","https://quip.com/KzolAyMm7qaL",900,["education"],"games"));
+	articleItems.push(new Article("Learning & Gaming","https://quip.com/CICkA50GySma",900,["education"],"games"));
 
 	//EDUCATION
 
