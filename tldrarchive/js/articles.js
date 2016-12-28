@@ -48,12 +48,16 @@
 	articleItems.push(new Article("Phases in Games","https://quip.com/uZ3EASv7m08b",700,["core-drives"],"games"));
 	articleItems.push(new Article("Yu-kai Design Document","https://quip.com/hbT7AdIi28A9",800,["core-drives"],"games"));
 
-	//EDUCATION Game Dev
+	//EDUCATION Dev
 	articleItems.push(new Article("Good Question Game","https://quip.com/iUDRAFpLiDT5",750,["education"],"games"));
-	articleItems.push(new Article("Learning by Design","https://quip.com/KzolAyMm7qaL",900,["education"],"games"));
-	articleItems.push(new Article("Learning & Gaming","https://quip.com/CICkA50GySma",900,["education"],"games"));
-
-	//EDUCATION
+	articleItems.push(new Article("Learning by Design","https://quip.com/KzolAyMm7qaL",900,["education"],"pedagogy"));
+	articleItems.push(new Article("Learning & Gaming","https://quip.com/CICkA50GySma",900,["education"],"pedagogy"));
+	articleItems.push(new Article("Affinity Spaces","https://quip.com/YzyYAlouEKbD",900,["education"],"pedagogy"));
+	articleItems.push(new Article("TV TEC Variety","https://quip.com/ELc4AXdUJSWN",900,["education"],"pedagogy"));
+	articleItems.push(new Article("TV Attrition","https://quip.com/X0adAbOTpyIr",900,["education"],"pedagogy"));
+	articleItems.push(new Article("TV Motivation","https://quip.com/aOmeAYDt4aS7",900,["education"],"pedagogy"));
+	articleItems.push(new Article("Co Design Innovation","https://quip.com/Hxa3AleUDHFW",800,["education"],"pedagogy"));
+	articleItems.push(new Article("DBR with Hive","https://quip.com/jXcfAJox0ayu",810,["education"],"pedagogy"));
 
 	//DESGIN
 	articleItems.push(new Article("Transparency","https://quip.com/qXCpAojvaNs4",700,["design"],"design"));
