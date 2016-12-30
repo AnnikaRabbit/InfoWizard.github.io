@@ -49,15 +49,16 @@
 	articleItems.push(new Article("Yu-kai Design Document","https://quip.com/hbT7AdIi28A9",800,["core-drives"],"games"));
 
 	//EDUCATION Dev
-	articleItems.push(new Article("Good Question Game","https://quip.com/iUDRAFpLiDT5",750,["education"],"games"));
-	articleItems.push(new Article("Learning by Design","https://quip.com/KzolAyMm7qaL",900,["education"],"pedagogy"));
-	articleItems.push(new Article("Learning & Gaming","https://quip.com/CICkA50GySma",900,["education"],"pedagogy"));
-	articleItems.push(new Article("Affinity Spaces","https://quip.com/YzyYAlouEKbD",900,["education"],"pedagogy"));
-	articleItems.push(new Article("TV TEC Variety","https://quip.com/ELc4AXdUJSWN",900,["education"],"pedagogy"));
-	articleItems.push(new Article("TV Attrition","https://quip.com/X0adAbOTpyIr",900,["education"],"pedagogy"));
-	articleItems.push(new Article("TV Motivation","https://quip.com/aOmeAYDt4aS7",900,["education"],"pedagogy"));
-	articleItems.push(new Article("Co Design Innovation","https://quip.com/Hxa3AleUDHFW",800,["education"],"pedagogy"));
-	articleItems.push(new Article("DBR with Hive","https://quip.com/jXcfAJox0ayu",810,["education"],"pedagogy"));
+	articleItems.push(new Article("Good Question Game","https://quip.com/iUDRAFpLiDT5",750,["games"],"education"));
+	articleItems.push(new Article("Learning by Design","https://quip.com/KzolAyMm7qaL",900,["games"],"education"));
+	articleItems.push(new Article("Learning & Gaming","https://quip.com/CICkA50GySma",900,["games"],"education"));
+	articleItems.push(new Article("Affinity Spaces","https://quip.com/YzyYAlouEKbD",900,["games"],"education"));
+	articleItems.push(new Article("TV TEC Variety","https://quip.com/ELc4AXdUJSWN",900,["games"],"education"));
+	articleItems.push(new Article("TV Attrition","https://quip.com/X0adAbOTpyIr",900,["games"],"education"));
+	articleItems.push(new Article("TV Motivation","https://quip.com/aOmeAYDt4aS7",900,["games"],"education"));
+	articleItems.push(new Article("Co Design Innovation","https://quip.com/Hxa3AleUDHFW",800,["games"],"education"));
+	articleItems.push(new Article("DBR with Hive","https://quip.com/jXcfAJox0ayu",810,["games"],"education"));
+	articleItems.push(new Article("TV Tone Climate","https://quip.com/uBnEAD6PciuT",900,["games"],"education"));
 
 	//DESGIN
 	articleItems.push(new Article("Transparency","https://quip.com/qXCpAojvaNs4",700,["design"],"design"));
@@ -155,7 +156,7 @@
 	articleItems.push(new Article("Computer Based Tutoring","https://quip.com/MtYMA1thVD74",800,["HCI"],"HCI"));
 	articleItems.push(new Article("Crowdsource Writing","https://quip.com/jfTbAfHbudIn",700,["HCI"],"HCI"));
 	articleItems.push(new Article("Human Computation","https://quip.com/cVHJATyJkw4k",700,["HCI"],"HCI"));
-	articleItems.push(new Article("Purposeful Games","https://quip.com/6TbSAPQMTrLM",700,["HCI"],"HCI"));
+	articleItems.push(new Article("Purposeful Games","https://quip.com/6TbSAPQMTrLM",700,["games"],"HCI"));
 	articleItems.push(new Article("Gamify It","https://quip.com/u6AbA3Sa5xbi",850,["HCI"],"HCI"));
 	articleItems.push(new Article("MMO Social Dynamics","https://quip.com/YJbjAxjYlfZt",850,["HCI"],"HCI"));
 	articleItems.push(new Article("Stealth Assessment","https://quip.com/TMMPAYvLAZd2",850,["HCI"],"HCI"));
@@ -208,19 +209,19 @@
 
 	//Informatics
 	articleItems.push(new Article("Connectivism","https://quip.com/P4H3AMvqs8S5",700,["Informatics"],"Informatics"));
-	articleItems.push(new Article("Quest Learning","https://quip.com/ATmLAs5U6pF4",750,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Quest Learning","https://quip.com/ATmLAs5U6pF4",750,["games"],"Informatics"));
 	articleItems.push(new Article("MOOC Survey 14","https://quip.com/PfVXAWCqDsNe",650,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Open Education Resources","https://quip.com/ASiyAZlK8naN",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Design Based Research","https://quip.com/1LatAmyCxHbY",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Animation Manipulation","https://quip.com/ADETAqSqwgX4",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Notes on Digital Media","https://quip.com/wwffAFsyJDiL",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Bonk YT MOOCs","https://quip.com/g2b7A1S2DyaW",850,["Informatics"],"Informatics"));
-	articleItems.push(new Article("Playable Models","https://quip.com/i8iCAp6qCDA2",850,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Playable Models","https://quip.com/i8iCAp6qCDA2",850,["games"],"Informatics"));
 	articleItems.push(new Article("Exploratory Learning","https://quip.com/kLHtAybNmzVR",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Game Based Environment","https://quip.com/kDJrAkOl9Oc4",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("P2P Diagramming","https://quip.com/7A41A4USdFnd",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Formative Research VR","https://quip.com/04XTASppwoxo",750,["Informatics"],"Informatics"));
-	articleItems.push(new Article("GBL Systems Analysis","https://quip.com/kAszAdgx2GBx",750,["Informatics"],"Informatics"));
+	articleItems.push(new Article("GBL Systems Analysis","https://quip.com/kAszAdgx2GBx",750,["games"],"Informatics"));
 	articleItems.push(new Article("Problem Solving Online","https://quip.com/p2dQAb4PDIk8",800,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Connected Learning","https://quip.com/ZTxHAtHwdEmE",950,["Informatics"],"Informatics"));
 	articleItems.push(new Article("MMO Academia","https://quip.com/pFMrAvVZvUTC",950,["Informatics"],"Informatics"));
@@ -236,7 +237,7 @@
 	articleItems.push(new Article("Virtual Affordances","https://quip.com/2RWnAC19lrBQ",810,["Informatics"],"Informatics"));
 	articleItems.push(new Article("GroupMind Tools","https://quip.com/20KCAmyqm8Pv",810,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Virtual Contributors","https://quip.com/xtTwAOyGOxnU",810,["Informatics"],"Informatics"));
-	articleItems.push(new Article("Meta Design in VW","https://quip.com/8oKBAmAcwv9K",810,["Informatics"],"Informatics"));
+	articleItems.push(new Article("Meta Design in VW","https://quip.com/8oKBAmAcwv9K",810,["games"],"Informatics"));
 	articleItems.push(new Article("Collaborative Design","https://quip.com/c5mGAvdijRl3",810,["Informatics"],"Informatics"));
 	articleItems.push(new Article("Experts & Novices","https://quip.com/pxnoA3kxzLHK",750,["Informatics"],"Informatics"));
 	articleItems.push(new Article("PORTAAL Observation","https://quip.com/DQbjASMsl3i3",950,["Informatics"],"Informatics"));
