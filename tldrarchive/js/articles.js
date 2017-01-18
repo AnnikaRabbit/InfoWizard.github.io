@@ -59,6 +59,8 @@
 	articleItems.push(new Article("Co Design Innovation","https://quip.com/Hxa3AleUDHFW",800,["games"],"education"));
 	articleItems.push(new Article("DBR with Hive","https://quip.com/jXcfAJox0ayu",810,["games"],"education"));
 	articleItems.push(new Article("TV Tone Climate","https://quip.com/uBnEAD6PciuT",900,["games"],"education"));
+	articleItems.push(new Article("TV Encouragement","https://quip.com/fWjlAthqaEBz",900,["games"],"education"));
+	articleItems.push(new Article("TV Curiosity","https://quip.com/T51MAzif1sFY",900,["games"],"education"));
 
 	//DESGIN
 	articleItems.push(new Article("Transparency","https://quip.com/qXCpAojvaNs4",700,["design"],"design"));
@@ -253,6 +255,7 @@
 
 	//Personal Development
 	articleItems.push(new Article("Rebels at Work","https://quip.com/yEk8A7l0aq4U",1000,["Personal-Development"],"Personal-Development"));
+	articleItems.push(new Article("Discovering Diversity","https://quip.com/ZvCxA7SDSBi2",1000,["Personal-Development"],"Personal-Development"));
 
 	//Community
 	articleItems.push(new Article("Evicted","https://quip.com/G6RWAvQtSjbK",700,["Community"],"Community"));
