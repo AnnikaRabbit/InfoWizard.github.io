@@ -170,7 +170,7 @@ a {
 
 /** Portfolio images **/
 .classExp {
-	background-image: url("../image/Class Exp.jpg");
+	background-image: url("../image/ClassExp.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -234,7 +234,7 @@ a {
     background-position: 50% 50%;
 }
 .bucketrun{
-	background-image: url("../image/BucketRun.jpg");
+	background-image: url("../image/BucketRun.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
