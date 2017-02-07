@@ -1,0 +1,177 @@
+
+
+
+
+
+body {
+    position: relative;
+    margin:0;
+    height:100vh;
+    width:100vw;
+    overflow:hidden;
+    background: black;
+}
+
+#game-board {
+  position: relative;
+  height:100vh;
+  width:100vw;
+  background: url("../image/howtoplay/whole-game-board.png") no-repeat center center fixed;
+  background-size: auto 100vh;
+}
+
+#how-to-play-title {
+  position: absolute;
+  top:3vh;
+  width:19vw;
+  height:6vw;
+  background: url("../image/howtoplay/how-to-play-title.png");
+  background-size: 19vw 6vw;
+}
+
+#how-to-play-menu {
+  position: absolute;
+  top:100%;
+  width:12vw;
+  height:3vw;
+  background: url("../image/howtoplay/how-to-play-menu.png");
+  background-size: 12vw 3vw;
+}
+
+#how-to-play-menu:hover {
+  filter:invert(100%);
+}
+
+#hand-of-cards {
+  position: absolute;
+      left: -999em;
+      width: 1em;
+      overflow: hidden;
+}
+
+#hand-of-cards-select {
+  position: absolute;
+  display: none;
+  background:rgba(255,255,255,.4);
+  bottom:0;
+  width:35%;
+  height:13%;
+  left:30%;
+}
+
+#hand-of-cards-text {
+  position: absolute;
+  opacity: .6;
+  top:19vh;
+  left:9%;
+  width:40vh;
+  z-index: 99;
+}
+
+#hand-of-cards-text:hover {
+  opacity: 1;
+  z-index:100;
+}
+
+#powerful-heroes {
+  position: absolute;
+      left: -999em;
+      width: 1em;
+      overflow: hidden;
+}
+
+#powerful-heroes-select-1 {
+  position: absolute;
+  display: none;
+  background:rgba(255,255,255,.4);
+  top:10%;
+  width:20%;
+  height:18%;
+  left:40%;
+}
+
+#powerful-heroes-select-2 {
+  position: absolute;
+  display: none;
+  background:rgba(255,255,255,.4);
+  bottom:15%;
+  width:20%;
+  height:19%;
+  left:40%;
+}
+
+#powerful-heroes-text {
+  position: absolute;
+  opacity: .6;
+  top:34vh;
+  left:9%;
+  width:40vh;
+  z-index: 99;
+}
+
+#powerful-heroes-text:hover {
+  opacity: 1;
+  z-index:100;
+}
+
+#pool-of-mana {
+  position: absolute;
+      left: -999em;
+      width: 1em;
+      overflow: hidden;
+}
+
+#pool-of-mana-select {
+  position: absolute;
+  display: none;
+  background:rgba(255,255,255,.4);
+  bottom:5%;
+  width:30%;
+  height:5%;
+  right:4%;
+}
+
+#pool-of-mana-text {
+  position: absolute;
+  opacity: .6;
+  top:49vh;
+  left:9%;
+  width:40vh;
+  z-index: 99;
+}
+
+#pool-of-mana-text:hover {
+  opacity: 1;
+  z-index:100;
+}
+
+#board {
+  position: absolute;
+      left: -999em;
+      width: 1em;
+      overflow: hidden;
+}
+
+#board-select {
+  position: absolute;
+  display: none;
+  background:rgba(255,255,255,.4);
+  top:30%;
+  width:20%;
+  height:33%;
+  left:40%;
+}
+
+#board-text {
+  position: absolute;
+  opacity: .6;
+  top:64vh;
+  left:9%;
+  width:40vh;
+  z-index:99;
+}
+
+#board-text:hover {
+  opacity: 1;
+  z-index:100;
+}
