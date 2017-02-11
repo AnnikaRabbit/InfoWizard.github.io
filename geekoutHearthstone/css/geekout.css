@@ -36,6 +36,25 @@ body {
     }
 }
 
+#landscapeMessage {
+  position: relative;
+  display: none;
+  left:30vw;
+  top:30vh;
+  width:40vw;
+  height:40vh;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#landscapeMessage p {
+  position: relative;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4vh;
+  top:20vh;
+  transform: translateY(-50%);
+}
+
 #welcome-board {
   position: relative;
   visibility: hidden;
@@ -105,7 +124,7 @@ body {
     #welcome-button {
       position: absolute;
       bottom: 19%;
-      left: 42.5%;
+      left: 43.75%;
       width: 26.5vw;
       height: 6.5vw;
 
@@ -117,10 +136,11 @@ body {
   and (orientation: landscape) {
 
     #welcome-board {
-      position: relative;
-      width: 70vw;
-      height:45vw;
-      left: 8vw;
+      display:none;
+    }
+
+    #landscapeMessage {
+      display:block;
     }
 
     #welcome-button {
@@ -164,12 +184,20 @@ body {
   }
 
 @media only screen and (max-device-width: 750px) {
-      #hearthbook {
-          width: 80vw;
-          height: 56vw;
-          left: 10vw;
+      #hearthbook-contain {
+        width: 80vw;
+        height:56vw;
+        left:11vw;
       }
   }
+
+@media only screen
+  and (max-device-width: 750px)
+  and (orientation: landscape) {
+    #hearthbook-contain {
+      display: none;
+    }
+}
 
 #star-contain {
   position: absolute;

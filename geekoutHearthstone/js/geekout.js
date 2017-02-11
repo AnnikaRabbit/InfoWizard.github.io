@@ -182,6 +182,11 @@ $(document).ready(function() {
         window.location = "howtoplay.html";
     });
 
+    $("#streamers").click(function() {
+        $("body").remove("rattle");
+        window.location = "streamers.html";
+    });
+
 
 
 });
