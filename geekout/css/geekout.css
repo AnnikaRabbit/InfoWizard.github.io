@@ -1,0 +1,506 @@
+
+
+
+
+/*
+*===WELCOME SCREEN===
+*/
+
+body {
+    position: relative;
+    margin:0;
+    height:100vh;
+    width:100vw;
+    background: url("../image/welcome/fancy-background@2x.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow:hidden;
+}
+
+#project-logo {
+  position: absolute;
+  z-index:101;
+  top:5vh;
+  height:7vh;
+}
+
+@media only screen
+  and (max-device-width: 750px)
+  and (orientation: landscape) {
+
+    #project-logo {
+      top:5vh;
+      height:14vh;
+    }
+}
+
+#landscapeMessage {
+  position: relative;
+  display: none;
+  left:30vw;
+  top:30vh;
+  width:40vw;
+  height:40vh;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#landscapeMessage p {
+  position: relative;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4vh;
+  top:20vh;
+  transform: translateY(-50%);
+}
+
+#welcome-board {
+  position: relative;
+  visibility: hidden;
+  top: 50%;
+  width: 50vw;
+  height:31vw;
+  left: 20vw;
+  transform: translateY(-50%);
+}
+
+#welcome-board img {
+  height: auto;
+  width: 100%;
+}
+
+.welcome-board-text {
+  position: absolute;
+      left: -999em;
+      width: 1em;
+      overflow: hidden;
+}
+
+#welcome-button {
+  position: absolute;
+  background: url("../image/welcome/welcome-button-up@2x.jpg") no-repeat;
+  background-size: contain;
+  bottom: 17%;
+  left:44%;
+  width: 15vw;
+  height: 3.75vw;
+  border:none;
+  outline:none;
+}
+
+#welcome-button:hover {
+  background: url("../image/welcome/welcome-button-down@2x.jpg") no-repeat;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 750px) {
+    #welcome-board {
+      position: relative;
+      width: 80vw;
+      height:49.6vw;
+      left: 3vw;
+    }
+
+    #welcome-button {
+      position: absolute;
+      bottom: 19%;
+      left: 42%;
+      width: 26.5vw;
+      height: 6.5vw;
+
+    }
+  }
+
+@media only screen and (max-device-width: 750px) {
+
+    #welcome-board {
+      position: relative;
+      width: 85vw;
+      height:54.6vw;
+      left: 1vw;
+    }
+
+    #welcome-button {
+      position: absolute;
+      bottom: 19%;
+      left: 43.75%;
+      width: 26.5vw;
+      height: 6.5vw;
+
+    }
+}
+
+@media only screen
+  and (max-device-width: 750px)
+  and (orientation: landscape) {
+
+    #welcome-board {
+      display:none;
+    }
+
+    #landscapeMessage {
+      display:block;
+    }
+
+    #welcome-button {
+      position: absolute;
+      bottom: 25%;
+      left: 43.5%;
+      width: 16.5vw;
+      height: 4vw;
+
+    }
+}
+
+/*
+*===NAVIGATION SCREEN===
+*/
+
+#hearthbook-contain {
+  position: absolute;
+  pointer-events: none;
+  width: 64vw;
+  height:45vw;
+  top:50%;
+  left:19vw;
+  transform: translateY(-50%);
+}
+
+#hearthbook {
+  height: 100%;
+  width: 100%;
+  display: none;
+  pointer-events:auto;
+  background: url("../image/welcome/Hearthbookhole@1x.png") no-repeat;
+  background-size: contain;
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    #hearthbook-contain {
+    }
+  }
+
+@media only screen and (max-device-width: 750px) {
+      #hearthbook-contain {
+        width: 80vw;
+        height:56vw;
+        left:11vw;
+      }
+  }
+
+@media only screen
+  and (max-device-width: 750px)
+  and (orientation: landscape) {
+    #hearthbook-contain {
+      display: none;
+    }
+}
+
+#star-contain {
+  position: absolute;
+  z-index:100;
+  height:56%;
+  width:39.5%;
+  top:22.5%;
+  left:29.5%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+#star-menu-contain {
+  position: absolute;
+  z-index:99;
+  height:55%;
+  width:38.5%;
+  top:23%;
+  left:30%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+#hearthbook-star {
+  height:100%;
+  width:100%;
+}
+
+#star-menu {
+  height:100%;
+  width:100%;
+}
+
+#what-is-hearthstone {
+  position:absolute;
+  top:20%;
+  width:80%;
+  height: 13%;
+  left:50%;
+  background: url("../image/navigation/whatis-up@2x.png") no-repeat;
+  background-size: contain;
+  transform: translateX(-50%);
+  border:none;
+  outline:none;
+}
+
+#what-is-hearthstone:hover {
+  background: url("../image/navigation/whatis-down@2x.png") no-repeat;
+  background-size: contain;
+}
+
+#what-is-hearthstone-text-contain {
+  position: absolute;
+  z-index:99;
+  height:55%;
+  width:38.5%;
+  top:23%;
+  left:30%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+#what-is-hearthstone-text {
+  height:100%;
+  width:100%;
+}
+
+#what-is-hearthstone-menu {
+  position:absolute;
+  bottom:9%;
+  width:12%;
+  height: 5%;
+  left:50%;
+  background: url("../image/navigation/menu@2x.png") no-repeat;
+  background-size: contain;
+  transform: translateX(-50%);
+  border:none;
+  outline:none;
+}
+
+#what-is-hearthstone-menu:hover {
+  background: url("../image/navigation/menu-down@2x.png") no-repeat;
+  background-size: contain;
+}
+
+#how-to-play {
+  position:absolute;
+  top:36%;
+  width:85%;
+  height: 13%;
+  left:50%;
+  background: url("../image/navigation/howtoplay-up@2x.png") no-repeat;
+  background-size: contain;
+  transform: translateX(-50%);
+  border:none;
+  outline:none;
+}
+
+#how-to-play:hover {
+  background: url("../image/navigation/howtoplay-down@2x.png") no-repeat;
+  background-size: contain;
+}
+
+#upcoming-news {
+  position:absolute;
+  top:52%;
+  width:85%;
+  height: 13%;
+  left:50%;
+  background: url("../image/navigation/news-up@2x.png") no-repeat;
+  background-size: contain;
+  transform: translateX(-50%);
+  border:none;
+  outline:none;
+}
+
+#upcoming-news:hover {
+  background: url("../image/navigation/news-down@2x.png") no-repeat;
+  background-size: contain;
+}
+
+#upcoming-news-text-contain {
+  position: absolute;
+  z-index:99;
+  height:55%;
+  width:38.5%;
+  top:23%;
+  left:30%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+#upcoming-news-text {
+  height:100%;
+  width:100%;
+}
+
+#upcoming-news-menu {
+  position:absolute;
+  bottom:9%;
+  width:12%;
+  height: 5%;
+  left:50%;
+  background: url("../image/navigation/menu@2x.png") no-repeat;
+  background-size: contain;
+  transform: translateX(-50%);
+  border:none;
+  outline:none;
+}
+
+#upcoming-news-menu:hover {
+  background: url("../image/navigation/menu-down@2x.png") no-repeat;
+  background-size: contain;
+}
+
+#streamers {
+  position:absolute;
+  top:67%;
+  width:80%;
+  height: 13%;
+  left:50%;
+  background: url("../image/navigation/streamers-up@2x.png") no-repeat;
+  background-size: contain;
+  transform: translateX(-50%);
+  border:none;
+  outline:none;
+}
+
+#streamers:hover {
+  background: url("../image/navigation/streamers-down@2x.png") no-repeat;
+  background-size: contain;
+}
+
+
+/*************** THE GRID ***************/
+.widthOne		{width:5vw;}
+.widthTwo		{width:10vw;}
+.widthThree	{width:15vw;}
+.widthFour		{width:20vw;}
+.widthFive		{width:25vw;}
+.widthSix		{width:30vw;}
+.widthSeven	{width:35vw;}
+.widthEight	{width:40vw;}
+.widthNine		{width:45vw;}
+.widthTen		{width:50vw;}
+.widthEleven	{width:55vw;}
+.widthTwelve	{width:60vw;}
+.widthThirteen	{width:65vw;}
+.widthFourteen	{width:70vw;}
+.widthFifteen	{width:75vw;}
+.widthSixteen	{width:80vw;}
+.widthSeventeen{width:85vw;}
+.widthEighteen	{width:90vw;}
+.widthNineteen	{width:95vw;}
+
+.heightOne		{height:5vh;}
+.heightTwo		{height:10vh;}
+.heightThree	{height:15vh;}
+.heightFour		{height:20vh;}
+.heightFive		{height:25vh;}
+.heightSix		{height:30vh;}
+.heightSeven	{height:35vh;}
+.heightEight	{height:40vh;}
+.heightNine		{height:45vh;}
+.heightTen		{height:50vh;}
+.heightEleven	{height:55vh;}
+.heightTwelve	{height:60vh;}
+.heightThirteen	{height:65vh;}
+.heightFourteen	{height:70vh;}
+.heightFifteen	{height:75vh;}
+.heightSixteen	{height:80vh;}
+.heightSeventeen{height:85vh;}
+.heightEighteen	{height:90vh;}
+.heightNineteen	{height:95vh;}
+
+.one		{width:5vh;}
+.two		{width:10vh;}
+.twoThirds	{width:13.33vh;}
+.three		{width:15vh;}
+.four		{width:20vh;}
+.five		{width:25vh;}
+.six		{width:30vh;}
+.seven		{width:35vh;}
+.eight		{width:40vh;}
+.nine		{width:45vh;}
+.ten		{width:50vh;}
+.eleven		{width:55vh;}
+.twelve		{width:60vh;}
+.thirteen	{width:65vh;}
+.fourteen	{width:70vh;}
+.fifteen	{width:75vh;}
+.sixteen	{width:80vh;}
+.seventeen	{width:85vh;}
+.eighteen	{width:90vh;}
+.nineteen	{width:95vh;}
+.twenty		{width:100vw;}
+
+
+.rattle
+{
+  animation: rattle 0.2s;
+  animation-delay: 1s;
+}
+
+.slam
+{
+  animation: slam 1s;
+  animation-timing-function: ease-in;
+  display: block;
+}
+
+.flipped {
+  transform: perspective(800px) rotateY(180deg);
+  -webkit-transform: perspective(800px) rotateY(180deg);
+}
+
+.zoomed {
+  transform: scale(2);
+  -webkit-transform: scale(2);
+}
+
+/*  animation: shift 1s;
+}
+
+@keyframes shift
+{
+  100%
+  {
+    transform: translateY(-50%);
+  }
+}*/
+
+@keyframes slam
+{
+  0%
+  {
+    transform: scale(10, 10);
+    opacity: 0;
+  }
+
+  40%
+  {
+    opacity: 0;
+  }
+
+  100%
+  {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes rattle
+{
+  0% { margin-top: 0; margin-left: 0; }
+  10% { margin-top: -10px; margin-left: 0; }
+  20% { margin-top: 0; margin-left: -10px; }
+  30% { margin-top: 10px; margin-left: 0; }
+  40% { margin-top: 0; margin-left: 10px; }
+  50% { margin-top: -5px; margin-left: 0; }
+  60% { margin-top: 0; margin-left: -5px; }
+  70% { margin-top: 5px; margin-left: 0; }
+  80% { margin-top: 0; margin-left: 5px; }
+  90% { margin-top: -2px; margin-left: 0; }
+  100% { margin-top: 0; margin-left: 0; }
+}
