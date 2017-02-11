@@ -240,6 +240,13 @@ a {
     background-position: 50% 50%;
 }
 
+.geekout{
+	background-image: url("../image/Geekout.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
 
 .inactive {
 	-webkit-filter: grayscale(100%) !important; /* Chrome, Safari, Opera */
@@ -512,17 +519,17 @@ a {
 	#navigation {
 		width:50%;
 	}
-	
+
 	/** Work example page **/
 	#workTitle {
 		width:50%;
 	}
-	
+
 	.workPanel {
 		height:80vw;
 		border:0;
 	}
-	
+
 	.workText {
 		vertical-align:top;
 		width:50%;
@@ -557,27 +564,27 @@ a {
 		border-width:2px 0 0 0;
 		box-sizing:border-box;
 	}
-	
+
 	.inactive {
 		-webkit-filter: grayscale(0%) !important; /* Chrome, Safari, Opera */
 		filter: grayscale(0%) !important;
 	}
-	
+
 	.selected {
 		-webkit-filter: grayscale(0%) !important; /* Chrome, Safari, Opera */
 		filter: grayscale(0%) !important;
 	}
-	
+
 	/** Experience section **/
 	#experienceTitle {
 		width:50%;
 	}
-	
+
 	/** info page nav button change **/
 	.buttonWrap {
 		width:20vw;
 	}
-	
+
 	.buttonWrap:nth-of-type(2){
 		left:20vw;
 		border-left:0;
@@ -586,12 +593,12 @@ a {
 		left:40vw;
 		border-left:0;
 	}
-	
+
 	/** info resize **/
 	#jobs img {
 		width:100%;
 	}
-	
+
 	#bs img {
 		width:100%;
 	}
@@ -599,12 +606,12 @@ a {
 	#phd img {
 		width:100%;
 	}
-	
+
 	/** Connect page **/
 	#connectPage {
 		padding-bottom:100px;
 	}
-	
+
 	#connectTitle {
 		width:50%;
 	}
@@ -625,17 +632,17 @@ a {
 	#navigation {
 		width:30%;
 	}
-	
+
 	/** Work example page **/
 	#workTitle {
 		width:50%;
 	}
-	
+
 	.workPanel {
 		height:80vw;
 		border:0;
 	}
-	
+
 	.workText {
 		vertical-align:top;
 		width:50%;
@@ -670,27 +677,27 @@ a {
 		border-width:2px 0 0 0;
 		box-sizing:border-box;
 	}
-	
+
 	.inactive {
 		-webkit-filter: grayscale(0%) !important; /* Chrome, Safari, Opera */
 		filter: grayscale(0%) !important;
 	}
-	
+
 	.selected {
 		-webkit-filter: grayscale(0%) !important; /* Chrome, Safari, Opera */
 		filter: grayscale(0%) !important;
 	}
-	
+
 	/** Experience section **/
 	#experienceTitle {
 		width:50%;
 	}
-	
+
 	/** info page nav button change **/
 	.buttonWrap {
 		width:20vw;
 	}
-	
+
 	.buttonWrap:nth-of-type(2){
 		left:20vw;
 		border-left:0;
@@ -699,12 +706,12 @@ a {
 		left:40vw;
 		border-left:0;
 	}
-	
+
 	/** info resize **/
 	#jobs img {
 		width:100%;
 	}
-	
+
 	#bs img {
 		width:100%;
 	}
@@ -712,12 +719,12 @@ a {
 	#phd img {
 		width:100%;
 	}
-	
+
 	/** Connect page **/
 	#connectPage {
 		padding-bottom:100px;
 	}
-	
+
 	#connectTitle {
 		width:50%;
 	}
@@ -747,7 +754,7 @@ a {
  .heightSeventeen{height:85vw;}
  .heightEighteen	{height:90vw;}
  .heightNineteen	{height:95vw;}
- 
+
  .one		{width:5vw;}
  .two		{width:10vw;}
  .twoThirds	{width:13.33vw;}
