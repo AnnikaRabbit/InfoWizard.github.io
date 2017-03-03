@@ -64,6 +64,7 @@
 	articleItems.push(new Article("TV Curiosity","https://quip.com/T51MAzif1sFY",900,["design"],"education"));
 	articleItems.push(new Article("TV Variety","https://quip.com/ACObAXqK23Cs",900,["design"],"education"));
 	articleItems.push(new Article("TV Autonomy","https://quip.com/n0sTAadafJq0",900,["design"],"education"));
+	articleItems.push(new Article("TV Relevance","https://quip.com/ZUGyAhbd0hbf",980,["design"],"education"));
 
 	articleItems.push(new Article("Designing Theory","https://quip.com/APlaA8Pavvl2",950,["design"],"education"));
 	articleItems.push(new Article("Learning for Use","https://quip.com/66XRApttF1ZN",950,["design"],"education"));
@@ -75,6 +76,10 @@
 	articleItems.push(new Article("Jasper Series","https://quip.com/aAYtAhqWrW6W",855,["design"],"education"));
 	articleItems.push(new Article("Doom Principles","https://quip.com/yTeJAEnOxV6G",855,["design"],"education"));
 	articleItems.push(new Article("Cooperative Inquiry","https://quip.com/W3eXAZaXWmGq",950,["design"],"education"));
+	articleItems.push(new Article("Mindstorms","https://quip.com/JBvqAYDLG0Ah",980,["design"],"education"));
+	articleItems.push(new Article("Learning by Design","https://quip.com/av1wAS4W4FQ4",980,["design"],"education"));
+	articleItems.push(new Article("Interactive Exhibits","https://quip.com/vnz3A9Ulxx1B",950,["design"],"education"));
+	articleItems.push(new Article("Museum Learning","https://quip.com/M8t3Ab8aVChd",950,["design"],"education"));
 
 	//BUSINESS
 	articleItems.push(new Article("Y Moon: Strengths","https://quip.com/E6m1AKQ4j93x",800,["business"],"business"));
@@ -107,6 +112,8 @@
 	articleItems.push(new Article("Mental Workload","https://quip.com/a6wJAnwLEYba",700,["human-factors"],"human-factors"));
 	articleItems.push(new Article("Crossmodal Attention","https://quip.com/wU8pAbo2REDw",700,["human-factors"],"human-factors"));
 	articleItems.push(new Article("Memory in Court","https://quip.com/poYEAqTVfUOs",600,["human-factors"],"human-factors"));
+	articleItems.push(new Article("Monitor Alarm Fatigue","https://quip.com/jWvUA5DZnmLH",600,["human-factors"],"human-factors"));
+	articleItems.push(new Article("Workplace Design","https://quip.com/Bza1A6VMqjxk",600,["human-factors"],"human-factors"));
 
 	//PSYCHOLOGY
 	articleItems.push(new Article("Memory in Design","https://quip.com/TcNoArb2Ktkp",500,["uxui"],"psychology"));
