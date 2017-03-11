@@ -32,6 +32,9 @@
 	articleItems.push(new Article("Arrowhead: Magicka","https://quip.com/4T9fAuWAeWx0",600,["development"],"games"));
 	articleItems.push(new Article("M Herman: Rules","https://quip.com/7PuuA7Yl7ufc",800,["development"],"games"));
 	articleItems.push(new Article("Mechanics Basics","https://quip.com/WaX1AvaGgz9K",800,["development"],"games"));
+	articleItems.push(new Article("Gaming Motivations","https://quip.com/ZaytARYFbalb",900,["development"],"games"));
+	articleItems.push(new Article("Player Modeling","https://quip.com/7A5BAbPJcbac",950,["development"],"games"));
+	articleItems.push(new Article("Motivation & Engagement","https://quip.com/x93KAesDh0mq",950,["development"],"games"));
 
 	//Core-drives
 	articleItems.push(new Article("Accomplishment","https://quip.com/QhhzAai1oAe8",800,["core-drives"],"games"));
@@ -80,6 +83,8 @@
 	articleItems.push(new Article("Learning by Design","https://quip.com/av1wAS4W4FQ4",980,["design"],"education"));
 	articleItems.push(new Article("Interactive Exhibits","https://quip.com/vnz3A9Ulxx1B",950,["design"],"education"));
 	articleItems.push(new Article("Museum Learning","https://quip.com/M8t3Ab8aVChd",950,["design"],"education"));
+	articleItems.push(new Article("Routines of Thinking","https://quip.com/zu4LAsoZZ9i5",950,["design"],"education"));
+	articleItems.push(new Article("Self Learning","https://quip.com/c9UVAYK34Tya",950,["design"],"education"));
 
 	//BUSINESS
 	articleItems.push(new Article("Y Moon: Strengths","https://quip.com/E6m1AKQ4j93x",800,["business"],"business"));
@@ -114,6 +119,8 @@
 	articleItems.push(new Article("Memory in Court","https://quip.com/poYEAqTVfUOs",600,["human-factors"],"human-factors"));
 	articleItems.push(new Article("Monitor Alarm Fatigue","https://quip.com/jWvUA5DZnmLH",600,["human-factors"],"human-factors"));
 	articleItems.push(new Article("Workplace Design","https://quip.com/Bza1A6VMqjxk",600,["human-factors"],"human-factors"));
+	articleItems.push(new Article("Surgeon Task Analysis","https://quip.com/1zVHAAbCJ0fH",200,["human-factors"],"human-factors"));
+	articleItems.push(new Article("Cognitive Task Analysis","https://quip.com/deq9Ao1UI1Jx",900,["human-factors"],"human-factors"));
 
 	//PSYCHOLOGY
 	articleItems.push(new Article("Memory in Design","https://quip.com/TcNoArb2Ktkp",500,["uxui"],"psychology"));
@@ -307,6 +314,8 @@
 	articleItems.push(new Article("Digital Divide","https://quip.com/1LZQAnZ8LjsR",900,["Diversity"],"Diversity"));
 	articleItems.push(new Article("Technology Opportunity","https://quip.com/iXgaAH0twp5B",900,["Diversity"],"Diversity"));
 	articleItems.push(new Article("Barriers in Diversity","https://quip.com/lN9AAFbYeGRc",900,["Diversity"],"Diversity"));
+	articleItems.push(new Article("Empowerment","https://quip.com/QovhAbKTYFJ9",900,["Diversity"],"Diversity"));
+	articleItems.push(new Article("Daughters in Tech","https://quip.com/wZUAAlvpaEUv",900,["Diversity"],"Diversity"));
 
 	//Fiction
 	articleItems.push(new Article("Evicted","https://quip.com/G6RWAvQtSjbK",700,["Community"],"Books"));
