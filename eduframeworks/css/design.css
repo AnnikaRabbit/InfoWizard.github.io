@@ -1,0 +1,140 @@
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#siteCanvas {
+  position: fixed;
+  top:0;
+  height:100vh;
+  width:100vw;
+  background: url("../assets/background-2.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: scroll;
+}
+
+#pageSlab {
+  position: relative;
+  z-index: 100;
+  width:70vw;
+  left:15vw;
+  border-radius: 20px 20px 0 0;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#pageTitle {
+  position: relative;
+  width: 62%;
+  left:19%;
+  padding: 8vh 0;
+}
+
+#pageSlab p {
+  margin: 0;
+  padding: 5% 10% 5% 10%;
+  font-size: 2vw;
+  font-family: 'EB Garamond', serif;
+}
+
+#pageSlab ul {
+  margin: 0;
+  padding: 0% 15% 5% 15%;
+  font-size: 2vw;
+  font-family: 'EB Garamond', serif;
+}
+#pageSlab ol {
+  margin: 0;
+  padding: 0% 15% 5% 15%;
+  font-size: 2vw;
+  font-family: 'EB Garamond', serif;
+}
+
+.guidelines {
+  position: relative;
+  width:75%;
+  left:12.5%;
+}
+
+.additionalParagraph {
+  padding-top: 0 !important;
+}
+
+.headerBadges {
+  position: relative;
+  display: block;
+  height: 5vh;
+  left:-3%;
+}
+
+.subHeaderBadges {
+  position: absolute;
+  display:inline-block;
+  height: 5vh;
+  right:-3%;
+}
+.subSpacer {
+  position: relative;
+  height: 5vh;
+}
+
+#optionMenu img {
+  position: relative;
+  left:25%;
+  width:50%;
+}
+
+#optionMenu img:hover {
+  filter:hue-rotate(90deg);
+}
+
+.spacer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height:7vh;
+  margin: 0;
+  padding:0;
+}
+
+#pageTail {
+  position: relative;
+  z-index: 100;
+  width: 73.2vw;
+  height: auto;
+  left: 13.4vw;
+  transform: translateY(-5%);
+}
+
+#accentSlab {
+  position: absolute;
+  z-index: 99;
+  width:68vw;
+  height:auto;
+  left:16vw;
+}
+
+#menuButton {
+  position: fixed;
+  z-index: 101;
+  right:0;
+  top:7vh;
+  width: 10vw;
+}
+
+#menuButton:hover {
+filter:hue-rotate(90deg);
+}
+
+#attribution {
+  text-align: center;
+  color:lightslategrey;
+}
