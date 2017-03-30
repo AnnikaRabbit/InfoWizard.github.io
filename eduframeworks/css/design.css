@@ -96,6 +96,40 @@ body {
   filter:hue-rotate(90deg);
 }
 
+#references p {
+  padding:2% 10%;
+}
+
+#references h3 {
+  text-align: center;
+}
+
+.citation {
+  position: relative;
+  color:darkgoldenrod;
+}
+
+.citation .tooltipCite {
+    visibility: hidden;
+    top:100%;
+    width: 30vw;
+    font-size: 1.5vw;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.citation:hover .tooltipCite {
+    visibility: visible;
+}
+
 .spacer {
   position: relative;
   display: inline-block;
