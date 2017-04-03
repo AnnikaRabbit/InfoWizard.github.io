@@ -35,6 +35,8 @@
 	articleItems.push(new Article("Gaming Motivations","https://quip.com/ZaytARYFbalb",900,["development"],"games"));
 	articleItems.push(new Article("Player Modeling","https://quip.com/7A5BAbPJcbac",950,["development"],"games"));
 	articleItems.push(new Article("Motivation & Engagement","https://quip.com/x93KAesDh0mq",950,["development"],"games"));
+	articleItems.push(new Article("Define Gamification","https://quip.com/AncmAl5ApFMU",1000,["development"],"games"));
+	articleItems.push(new Article("Designing E Learning","https://quip.com/FZAvAo8PPnLS",990,["development"],"games"));
 
 	//Core-drives
 	articleItems.push(new Article("Accomplishment","https://quip.com/QhhzAai1oAe8",800,["core-drives"],"games"));
@@ -53,7 +55,7 @@
 
 	//EDUCATION Dev
 	articleItems.push(new Article("Good Question Game","https://quip.com/iUDRAFpLiDT5",750,["games"],"education"));
-	articleItems.push(new Article("Learning by Design","https://quip.com/KzolAyMm7qaL",900,["games"],"education"));
+	articleItems.push(new Article("Learning by Design","https://quip.com/KzolAyMm7qaL",955,["games"],"education"));
 	articleItems.push(new Article("Learning & Gaming","https://quip.com/CICkA50GySma",900,["games"],"education"));
 	articleItems.push(new Article("Affinity Spaces","https://quip.com/YzyYAlouEKbD",900,["games"],"education"));
 	articleItems.push(new Article("Co Design Innovation","https://quip.com/Hxa3AleUDHFW",800,["design"],"education"));
@@ -85,6 +87,9 @@
 	articleItems.push(new Article("Museum Learning","https://quip.com/M8t3Ab8aVChd",950,["design"],"education"));
 	articleItems.push(new Article("Routines of Thinking","https://quip.com/zu4LAsoZZ9i5",950,["design"],"education"));
 	articleItems.push(new Article("Self Learning","https://quip.com/c9UVAYK34Tya",950,["design"],"education"));
+	articleItems.push(new Article("Culturally Relevant Pegagogy","https://quip.com/59GlABWb6vnC",990,["design"],"education"));
+	articleItems.push(new Article("Reading Environments","https://quip.com/sCvhAhWc1rsF",950,["design"],"education"));
+	articleItems.push(new Article("Goal Based Scenarios","https://quip.com/Wl15A5Id31ll",990,["design"],"education"));
 
 	//BUSINESS
 	articleItems.push(new Article("Y Moon: Strengths","https://quip.com/E6m1AKQ4j93x",800,["business"],"business"));
@@ -121,6 +126,8 @@
 	articleItems.push(new Article("Workplace Design","https://quip.com/Bza1A6VMqjxk",600,["human-factors"],"human-factors"));
 	articleItems.push(new Article("Surgeon Task Analysis","https://quip.com/1zVHAAbCJ0fH",200,["human-factors"],"human-factors"));
 	articleItems.push(new Article("Cognitive Task Analysis","https://quip.com/deq9Ao1UI1Jx",900,["human-factors"],"human-factors"));
+	articleItems.push(new Article("Crew Resource Management","https://quip.com/bssYAbPFb1ox",940,["human-factors"],"human-factors"));
+	articleItems.push(new Article("Mental Workload","https://quip.com/GKeIA27Ilcnf",900,["human-factors"],"human-factors"));
 
 	//PSYCHOLOGY
 	articleItems.push(new Article("Memory in Design","https://quip.com/TcNoArb2Ktkp",500,["uxui"],"psychology"));
@@ -295,8 +302,8 @@
 	articleItems.push(new Article("Dissertation Framework","https://quip.com/ahaZA9ObgDVe",700,["Academic-Tools"],"Academic-Tools"));
 
 	//Personal Development
-	articleItems.push(new Article("Rebels at Work","https://quip.com/yEk8A7l0aq4U",1000,["Personal-Development"],"Personal-Development"));
-	articleItems.push(new Article("Who is Persa?","https://quip.com/IcUQA4YfFiaN",1000,["Personal-Development"],"Personal-Development"));
+	articleItems.push(new Article("Rebels at Work","https://quip.com/yEk8A7l0aq4U",2000,["Personal-Development"],"Personal-Development"));
+	articleItems.push(new Article("Who is Persa?","https://quip.com/IcUQA4YfFiaN",2000,["Personal-Development"],"Personal-Development"));
 
 	//Diversity
 	articleItems.push(new Article("Discovering Diversity","https://quip.com/ZvCxA7SDSBi2",810,["Diversity"],"Diversity"));
@@ -316,17 +323,25 @@
 	articleItems.push(new Article("Barriers in Diversity","https://quip.com/lN9AAFbYeGRc",900,["Diversity"],"Diversity"));
 	articleItems.push(new Article("Empowerment","https://quip.com/QovhAbKTYFJ9",900,["Diversity"],"Diversity"));
 	articleItems.push(new Article("Daughters in Tech","https://quip.com/wZUAAlvpaEUv",900,["Diversity"],"Diversity"));
+	articleItems.push(new Article("Inclusiveness","https://quip.com/MQ0fAbWlxb2g",900,["Diversity"],"Diversity"));
+	articleItems.push(new Article("Entry to STEM","https://quip.com/jn4bAQgah8kb",700,["Diversity"],"Diversity"));
+	articleItems.push(new Article("Biased Pathways","https://quip.com/CJViAoGzPXnv",800,["Diversity"],"Diversity"));
+	articleItems.push(new Article("Bias Against Women","https://quip.com/WES9ASUqMT9v",900,["Diversity"],"Diversity"));
+	articleItems.push(new Article("Closed Source Software","https://quip.com/7r3DARua7TIC",905,["Diversity"],"Diversity"));
+	articleItems.push(new Article("Floss & Women","https://quip.com/P1WEAL6TtBjB",905,["Diversity"],"Diversity"));
+	articleItems.push(new Article("Social Barriers","https://quip.com/OjkEA0wG3aJk",900,["Diversity"],"Diversity"));
+	articleItems.push(new Article("Competing Genders","https://quip.com/ktZTA9DSY5zk",900,["Diversity"],"Diversity"));
 
 	//Fiction
 	articleItems.push(new Article("Evicted","https://quip.com/G6RWAvQtSjbK",700,["Community"],"Books"));
 
 
 	//TLDR
-	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",1000,["tldr"],"tldr"));
-	articleItems.push(new Article("As We May Think","https://quip.com/EZBEAmBUMlUr",1000,["tldr"],"tldr"));
-	articleItems.push(new Article("Mother of All Demos","https://quip.com/47M5A3CR4jcz",1000,["tldr"],"tldr"));
-	articleItems.push(new Article("Augmenting Intellect","https://quip.com/lkZbAKCZSWql",1000,["tldr"],"tldr"));
-	articleItems.push(new Article("Crowdwork Future [TLDR]","https://quip.com/eGUBApQh3oaO",1000,["tldr"],"tldr"));
+	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",2000,["tldr"],"tldr"));
+	articleItems.push(new Article("As We May Think","https://quip.com/EZBEAmBUMlUr",2000,["tldr"],"tldr"));
+	articleItems.push(new Article("Mother of All Demos","https://quip.com/47M5A3CR4jcz",2000,["tldr"],"tldr"));
+	articleItems.push(new Article("Augmenting Intellect","https://quip.com/lkZbAKCZSWql",2000,["tldr"],"tldr"));
+	articleItems.push(new Article("Crowdwork Future [TLDR]","https://quip.com/eGUBApQh3oaO",2000,["tldr"],"tldr"));
 
 
 
