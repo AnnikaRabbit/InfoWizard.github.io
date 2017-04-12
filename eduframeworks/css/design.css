@@ -81,6 +81,7 @@ body {
   height: 5vh;
   right:-3%;
 }
+
 .subSpacer {
   position: relative;
   height: 5vh;
@@ -94,6 +95,12 @@ body {
 
 #optionMenu img:hover {
   filter:hue-rotate(90deg);
+}
+
+.storyImage {
+  position: relative;
+  width:60%;
+  left:20%;
 }
 
 #references p {
