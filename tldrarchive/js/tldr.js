@@ -275,7 +275,11 @@ $(document).ready(function(){
 			var color3 = Math.floor(Math.seededRandom() * 255);
 			var opacity = .5 * Math.seededRandom() + .2;
 			
+			if(tagNames[i]=="phd"){
+			sheet.insertRule("."+tagNames[i]+"Hue::after" + " {position:absolute;content:' ';top: 0; right: 0; bottom: 0; left: 0; background:rgba("+color1+","+color2+","+color3+","+opacity+"); z-index:101;}", sheet.cssRules.length);
+			}else{
 			sheet.insertRule("."+tagNames[i]+"Hue::before" + " {position:absolute;content:' ';top: 0; right: 0; bottom: 0; left: 0; background:rgba("+color1+","+color2+","+color3+","+opacity+"); z-index:99;}", sheet.cssRules.length);
+			}
 		}
 	}
 	AddClassTags();

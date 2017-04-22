@@ -45,9 +45,9 @@
 	//
 	////PhD
 	//
-	articleItems.push(new Article("Define Gamification","https://quip.com/AncmAl5ApFMU",1000,["development"],"games"));
-	articleItems.push(new Article("Game Design Learning","https://quip.com/KzolAyMm7qaL",1000,["education"],"games"));
-	articleItems.push(new Article("Edu gDesign Review","https://quip.com/UWUWAye5H1s4",1000,["education"],"games"));
+	articleItems.push(new Article("Define Gamification","https://quip.com/AncmAl5ApFMU",1000,["phd","development"],"games"));
+	articleItems.push(new Article("Game Design Learning","https://quip.com/KzolAyMm7qaL",1000,["phd","education"],"games"));
+	articleItems.push(new Article("Edu gDesign Review","https://quip.com/UWUWAye5H1s4",1000,["phd","education"],"games"));
 
 	//Core-drives
 	articleItems.push(new Article("Accomplishment","https://quip.com/QhhzAai1oAe8",800,["core-drives"],"games"));
@@ -105,10 +105,10 @@
 	//
 	////PhD
 	//
-	articleItems.push(new Article("DBR in MUVEs","https://quip.com/NuhXApqrMPbF",1000,["design"],"education"));
-	articleItems.push(new Article("Educational Frames","https://quip.com/YYJaAGyHk4NM",1000,["design"],"education"));
-	articleItems.push(new Article("Social Structuring","https://quip.com/Gj0YAt7AxR8d",1000,["design"],"education"));
-	articleItems.push(new Article("Design Roles","https://quip.com/KpP5AQwlS0TN",1000,["design"],"education"));
+	articleItems.push(new Article("DBR in MUVEs","https://quip.com/NuhXApqrMPbF",1000,["phd","design"],"education"));
+	articleItems.push(new Article("Educational Frames","https://quip.com/YYJaAGyHk4NM",1000,["phd","design"],"education"));
+	articleItems.push(new Article("Social Structuring","https://quip.com/Gj0YAt7AxR8d",1000,["phd","design"],"education"));
+	articleItems.push(new Article("Design Roles","https://quip.com/KpP5AQwlS0TN",1000,["phd","design"],"education"));
 
 
 	//BUSINESS
@@ -150,6 +150,7 @@
 	articleItems.push(new Article("Mental Workload","https://quip.com/GKeIA27Ilcnf",900,["human-factors"],"human-factors"));
 	articleItems.push(new Article("Decision Support Systems","https://quip.com/oyNjAyo82mGZ",700,["human-factors"],"human-factors"));
 	articleItems.push(new Article("Human Error","https://quip.com/47EQATmlmf82",700,["human-factors"],"human-factors"));
+	articleItems.push(new Article("Automation","https://quip.com/xlqUAbMb78Ft",900,["human-factors"],"human-factors"));
 
 	//PSYCHOLOGY
 	articleItems.push(new Article("Memory in Design","https://quip.com/TcNoArb2Ktkp",500,["uxui"],"psychology"));
