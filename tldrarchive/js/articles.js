@@ -43,11 +43,15 @@
 	articleItems.push(new Article("Activity Theory in Games","https://quip.com/lRIHAmeiA8yz",950,["education"],"games"));
 
 	//
-	////PhD
+	////PhD//
 	//
 	articleItems.push(new Article("Define Gamification","https://quip.com/AncmAl5ApFMU",1000,["phd","development"],"games"));
 	articleItems.push(new Article("Game Design Learning","https://quip.com/KzolAyMm7qaL",1000,["phd","education"],"games"));
 	articleItems.push(new Article("Edu gDesign Review","https://quip.com/UWUWAye5H1s4",1000,["phd","education"],"games"));
+	articleItems.push(new Article("Evaluating Edu Games","https://quip.com/qVV4AjTZX50X",1000,["phd","education"],"games"));
+	articleItems.push(new Article("Skill Atom Framework","https://quip.com/BwhZAcjwPNps",1001,["phd","education"],"games"));
+	articleItems.push(new Article("Gamification Maturing","https://quip.com/manEAksqfhm2",1001,["phd","education"],"games"));
+	articleItems.push(new Article("Gamification Failures","https://quip.com/7UAcAWp03nmw",1001,["phd","education"],"games"));
 
 	//Core-drives
 	articleItems.push(new Article("Accomplishment","https://quip.com/QhhzAai1oAe8",800,["core-drives"],"games"));
@@ -101,6 +105,7 @@
 	articleItems.push(new Article("Embedded Phenomena","https://quip.com/N8SuAweDLc0l",950,["design"],"education"));
 	articleItems.push(new Article("MathWorlds","https://quip.com/dbzuAEThNncE",750,["design"],"education"));
 	articleItems.push(new Article("Thinker Tools","https://quip.com/d0tuAoZOnsHu",800,["design"],"education"));
+	articleItems.push(new Article("Understanding by Design","https://quip.com/iBTfAFq3GSrK",991,["design"],"education"));
 
 	//
 	////PhD
