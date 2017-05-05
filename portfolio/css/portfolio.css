@@ -1,822 +1,237 @@
 
 
-
-html, body {margin:0;padding:0;height:100%;background:;}
-
-a {
-	text-decoration:none;
-}
-
-/* HOMEPAGE */
-.pageContainer {
-	position:relative;
-	height:100vh;
-	width:100vw;
-	margin-bottom:30%;
-}
-
-#nicholasPersa {
-	position:absolute;
-	top:5%;
-	width:30%;
-}
-#nicholasPersa img {
-	width:100%;
-	height:auto;
-}
-
-#rocket {
-	position:absolute;
-	left:50%;
-	top:50%;
-	width:40%;
-	-webkit-transform:translateX(-50%) translateY(-50%);
-	transform:translateX(-50%) translateY(-50%);
-}
-#rocket img {
-	position:absolute;
-	left:50%;
-	top:50%;
-	width:100%;
-	height:auto;
-	-webkit-animation: Dip 5s infinite; /* Safari 4+ */
-	-moz-animation:    Dip 5s infinite; /* Fx 5+ */
-	-o-animation:      Dip 5s infinite; /* Opera 12+ */
-	animation:         Dip 5s infinite; /* IE 10+, Fx 29+ */
-}
-
-#navigation {
-	position:absolute;
-	bottom:5%;
-	right:0;
-	width:30%;
-}
-#navigation img {
-	width:100%;
-	height:auto;
-}
-#splitWork {
-	position:absolute;
-	top:0;
-	width:28%;
-	height:33%;
-	cursor:pointer;
-}
-#splitExperience {
-	position:absolute;
-	top:33%;
-	width:52%;
-	height:33%;
-	cursor:pointer;
-}
-#splitConnect {
-	position:absolute;
-	bottom:0;
-	width:42%;
-	height:33%;
-	cursor:pointer;
-}
-
-/*Work examples page*/
-
-#workPage {
-	position:relative;
-	display:block;
-	margin-bottom:30%;
-}
-
-#workTitle {
-	position:relative;
-	width:30%;
-	margin:5% 0 12vw 0;
-	padding-top:1vw;
-	margin-top:-1vw;
-}
-#workTitle img {
-	width:100%;
-	height:auto;
-}
-
-.workPanel {
-	position:relative;
-	display:block;
-	top:20%;
-	width:90vw;
-	height:30vw;
-	margin: 0 auto;
-	border:1px solid #444;
-	border-width:2px 0 0px 0;
-	box-sizing:border-box;
-}
-
-.firstPanel {
-}
-
-.workText {
-	position:relative;
-	display:inline-block;
-	vertical-align:top;
-	width:33.3333333333334%;
-	height:100%;
-	padding:15px;
-	box-sizing:border-box;
-}
-
-.workText img {
-	position:relative;
-	top:50%;
-	width:100%;
-	height:auto;
-	-webkit-transform:translateY(-50%);
-	transform:translateY(-50%);
-}
-
-.workTextSecond {
-	position:absolute;
-	display:inline-block;
-	left:33.3%;
-	width:33.3333333333334%;
-	height:100%;
-	padding:15px;
-	box-sizing:border-box;
-}
-
-.workTextSecond{z-index:100;}
-.workImage{z-index:101;}
-
-.workImage {
-	position:relative;
-	display:inline-block;
-	width:33.3333333333334%;
-	height:100%;
-	box-sizing:border-box;
-}
-.workImageSecond {
-	position:relative;
-	display:inline-block;
-	width:33.3333333333334%;
-	height:100%;
-	box-sizing:border-box;
-}
-
-.workTextSecond img {
-	position:relative;
-	top:50%;
-	width:100%;
-	height:auto;
-	-webkit-transform:translateY(-50%);
-	transform:translateY(-50%);
-}
-
-/** Portfolio images **/
-.classExp {
-	background-image: url("../image/ClassExp.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.clickVenture {
-	background-image: url("../image/ClickVenture.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.theory {
-	background-image: url("../image/TheoryAnd.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.story {
-	background-image: url("../image/Story.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.gqg {
-	background-image: url("../image/GQG.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-.lucca {
-	background-image: url("../image/Lucca.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-.beacon{
-	background-image: url("../image/beacon.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+body, html, h4, p {
+  margin: 0;
+  padding: 0;
 }
-.toga{
-	background-image: url("../image/Toga.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-.TLDR{
-	background-image: url("../image/TLDR.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-.gogreet{
-	background-image: url("../image/GoGreet.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-.bucketrun{
-	background-image: url("../image/BucketRun.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+
+body {
+  position: relative;
 }
 
-.geekout{
-	background-image: url("../image/Geekout.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+#background {
+  position: fixed;
+  width:100vw;
+  height: auto;
+  transition: 0s linear;
+  transition-property: top;
 }
 
+#splash {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  filter:blur();
+}
 
-.inactive {
-	-webkit-filter: grayscale(100%) !important; /* Chrome, Safari, Opera */
-    filter: grayscale(100%) !important;
+#myName {
+  position: absolute;
+  top:20vh;
+  left:50%;
+  width:50vw;
+  transform: translateX(-50%);
 }
 
-.selected {
-	-webkit-filter: grayscale(0%) !important; /* Chrome, Safari, Opera */
-    filter: grayscale(0%) !important;
+#heroFlavor {
+  position: absolute;
+  top:40vh;
+  left:50%;
+  width:50vw;
+  transform: translateX(-50%);
 }
 
-/*Experience Page*/
-#experiencePage {
-	position:relative
-	display:block;
-	width:90%;
-	margin-bottom:30%;
+#breakIndicator {
+  position: absolute;
+  bottom:3vh;
+  left:47.5%;
+  width:5vw;
+  transform: translateX(-50%);
 }
+
+/*** FEATURED DESIGN PROJECTS ***/
 
-#experienceTitle {
-	position:relative;
-	margin:5% 0 12vw 0;
-	width:30%;
-	padding-top:1vw;
-	margin-top:-1vw;
+#expIcon {
+  position: relative;
+  width:30%;
+  margin:10vw 0 0 0;
 }
 
-#experienceTitle img {
-	width:100%;
-	height:auto;
+#expFeatured {
+  position: relative;
+  width: 100vw;
 }
 
-#itemContainer {
-	position:relative;
-	background:#fff;
-	width:100%;
-	left:5%;
+.projectBanner {
+  position: relative;
+  width: 100vw;
+  background: rgba(255,255,255,.2);
+  margin-top: 5vw;
 }
 
-/** navigation buttons for CV **/
-.buttonWrap {
-	position:absolute;
-	top:-6vw;
-	width:10vw;
-	height:6vw;
-	border:1px solid black;
-	border-bottom:0;
-	box-sizing:border-box;
-	cursor:pointer;
+.projectContent {
+  position: relative;
+  display: inline-block;
+  height: 80%;
+  width: 80vw;
+  top:10%;
+  left:50%;
+  transform: translateX(-50%);
 }
 
-.buttonWrap:nth-of-type(1){
+.projectText {
+  position: relative;
+  display: inline-block;
+  left:0;
+  width:50vw;
+  background: rgba(255,255,255,.8);
+  margin:5vw 0;
+  border-radius: 10px;
+}
 
+.projectText p {
+  font-size: 1.9vw;
+  padding:1vw 2vw 2vw 2vw;
+  font-family: Asul;
 }
-.buttonWrap:nth-of-type(2){
-	left:10vw;
-	border-left:0;
+.projectText h4 {
+  text-align: center;
+  font-size: 2.3vw;
+  padding:1vw 0 0 0;
+  font-family: Roboto;
 }
-.buttonWrap:nth-of-type(3){
-	left:20vw;
-	border-left:0;
+.projectImage {
+  position: absolute;
+  display: inline-block;
+  height:auto;
+  width: 20vw;
+  top:50%;
+  right:0;
+  transform: translateY(-50%);
 }
 
-.buttonWrap:hover {
-	background:rgba(0,0,0,.3);
+.projectImage:hover {
+  filter:hue-rotate(180deg);
+  cursor: pointer;
 }
 
-.expTab {
-	height:100%;
-	width:100%;
-}
+/*** MINOR DESIGN PROJECTS ***/
 
-.buttonWrap:nth-of-type(1) .expTab{
-	background-image: url("../image/buttonJob.svg");
-    background-size: 45%;
-    background-repeat: no-repeat;
-    background-position: 50% 55%;
+#expMini {
+  position: relative;
+  width:100vw;
+  filter:blur();
 }
 
-.buttonWrap:nth-of-type(2) .expTab{
-	background-image: url("../image/buttonPhd.svg");
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+#miniTitle {
+  position: relative;
+  width:60vw;
+  left:20vw;
+  margin: 15vw 0 5vw 0;
 }
 
-.buttonWrap:nth-of-type(3) .expTab{
-	background-image: url("../image/buttonBs.svg");
-    background-size: 25%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+#miniContainer {
+  position: relative;
+  width:95vw;
+  left:2.5vw;
+  margin-top: 5vw;
 }
 
-/** Information for CV **/
-#jobs {
-	position:relative;
-	width:100%;
+.miniProject {
+  position: relative;
+  display: inline-block;
+  width:25vw;
+  margin-left: 5vw;
+  margin-bottom: 5vw;
 }
 
-#jobs img {
-	display:inline-block;
-	width:50%;
-	vertical-align:top;
-	padding:25px;
-	box-sizing:border-box;
-	border:1px solid black;
-	border-width:1px 0 0px 0;
+.miniProject h4 {
+  position: absolute;
+  bottom: 5%;
+  left:50%;
+  transform: translateX(-50%);
+  padding:1vw;
+  border-radius: 7px;
+  background: rgba(255,255,255,.85);
+  white-space: nowrap;
+  font-family: Roboto;
 }
 
-#jobs img:first-child {
-	-webkit-filter: saturate(275%) contrast(80%); /* Chrome, Safari, Opera */
-    filter: saturate(275%) contrast(80%);
+.miniImage {
+  width:100%;
 }
 
-#phd {
-	width:100%;
-	display:none;
+.miniImage:hover {
+  filter:hue-rotate(180deg);
 }
 
-#phd img {
-	vertical-align:top;
-	display:inline-block;
-	width:50%;
-	padding:25px;
-	box-sizing:border-box;
-	border:1px solid black;
-	border-width:1px 0 0px 0;
-}
+/*** EDUCATION BACKGROUND ***/
 
-#bs {
-	width:100%;
-	display:none;
+#eduIcon {
+  position: relative;
+  width:30%;
+  margin:10vw 0 0 0;
 }
 
-#bs img {
-	vertical-align:top;
-	display:inline-block;
-	width:50%;
-	padding:25px;
-	box-sizing:border-box;
-	border:1px solid black;
-	border-width:1px 0 0px 0;
+#edu {
+  position: relative;
+  width: 100vw;
+  margin-bottom: 5vw;
 }
 
-/*Connect Page*/
-#connectPage {
-	position:relative
-	display:block;
-	width:100%;
-	margin-bottom:50%;
+.eduImage {
+  position: absolute;
+  display: inline-block;
+  height:auto;
+  width: 20vw;
+  top:50%;
+  right:0;
+  transform: translateY(-50%);
 }
 
-#connectTitle {
-	position:relative;
-	margin:5% 0 12vw 0;
-	width:30%;
-	padding-top:1vw;
-	margin-top:-1vw;
+/*** SKILLS BACKGROUND ***/
+#skillsIcon {
+  position: relative;
+  width:30%;
+  margin:10vw 0 0 0;
 }
 
-#connectTitle img {
-	width:100%;
-	height:auto;
+#skills {
+  position: relative;
+  width: 100vw;
+  margin-bottom: 10vw;
 }
 
-#iconBox {
-	position:relative;
-	display:block;
-	width:20%;
-	margin:0 auto;
+.skillsText {
+  position: relative;
+  display: inline-block;
+  left:50%;
+  width:60vw;
+  margin:5vw 0;
+  padding:3vw;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,.8);
+  border-radius: 10px;
 }
 
-#iconBox img {
-	width:100%;
+.skillsText p {
+  font-size: 1.9vw;
+  padding:2vw 2vw 2vw 2vw;
+  font-family: Asul;
 }
-
-#boxSplitMail {
-	position:absolute;
-	top:0;
-	width:45%;
-	height:45%;
-	cursor:pointer;
+.skillsText h4 {
+  text-align: center;
+  font-size: 2.3vw;
+  padding:1vw 0 0 0;
+  font-family: Roboto;
 }
 
-#boxSplitTwitter {
-	position:absolute;
-	top:0;
-	right:0;
-	width:45%;
-	height:45%;
-	cursor:pointer;
+.skillsText ul {
+  position: relative;
+  display: inline-block;
+  padding:0 2vw;
+  list-style-type: none;
 }
-#boxSplitPatreon {
-	position:absolute;
-	bottom:0;
-	width:100%;
-	height:35%;
-	cursor:pointer;
-}
-
 
-/** Animations  **/
-@-webkit-keyframes Dip {
-0%{
-	-webkit-transform:translateX(-50%) translateY(-50%) scaleX(1) rotate(5deg);
-	transform:translateX(-50%) translateY(-50%) scaleX(1)  rotate(5deg);
+.skillsText li {
+  padding:.5vw 2vw;
 }
-50%{
-	-webkit-transform:translateX(-60%) translateY(-60%) scaleX(1) rotate(15deg);
-	transform:translateX(-60%) translateY(-60%) scaleX(1)  rotate(15deg);
-}
-100%{
-	-webkit-transform:translateX(-50%) translateY(-50%) scaleX(1) rotate(5deg);
-	transform:translateX(-50%) translateY(-50%) scaleX(1)  rotate(5deg);
-}
-}
-@-moz-keyframes Dip {
-0%{
-	-webkit-transform:translateX(-50%) translateY(-50%) scaleX(1) rotate(5deg);
-	transform:translateX(-50%) translateY(-50%) scaleX(1)  rotate(5deg);
-}
-50%{
-	-webkit-transform:translateX(-60%) translateY(-60%) scaleX(1) rotate(15deg);
-	transform:translateX(-60%) translateY(-60%) scaleX(1)  rotate(15deg);
-}
-100%{
-	-webkit-transform:translateX(-50%) translateY(-50%) scaleX(1) rotate(5deg);
-	transform:translateX(-50%) translateY(-50%) scaleX(1)  rotate(5deg);
-}
-}
-@-o-keyframes Dip {
-0%{
-	-webkit-transform:translateX(-50%) translateY(-50%) scaleX(1) rotate(5deg);
-	transform:translateX(-50%) translateY(-50%) scaleX(1)  rotate(5deg);
-}
-50%{
-	-webkit-transform:translateX(-60%) translateY(-60%) scaleX(1) rotate(15deg);
-	transform:translateX(-60%) translateY(-60%) scaleX(1)  rotate(15deg);
-}
-100%{
-	-webkit-transform:translateX(-50%) translateY(-50%) scaleX(1) rotate(5deg);
-	transform:translateX(-50%) translateY(-50%) scaleX(1)  rotate(5deg);
-}
-}
-@keyframes Dip {
-0%{
-	-webkit-transform:translateX(-50%) translateY(-50%) scaleX(1) rotate(5deg);
-	transform:translateX(-50%) translateY(-50%) scaleX(1)  rotate(5deg);
-}
-50%{
-	-webkit-transform:translateX(-60%) translateY(-60%) scaleX(1) rotate(15deg);
-	transform:translateX(-60%) translateY(-60%) scaleX(1)  rotate(15deg);
-}
-100%{
-	-webkit-transform:translateX(-50%) translateY(-50%) scaleX(1) rotate(5deg);
-	transform:translateX(-50%) translateY(-50%) scaleX(1)  rotate(5deg);
-}
-}
-
-/** Media screen size **/
-@media only screen and (max-width: 650px) {
-	/** Main page **/
-	#nicholasPersa {
-		width:50%;
-	}
-	#rocket {
-		width:60%;
-		top:30%;
-	}
-	#navigation {
-		width:50%;
-	}
-
-	/** Work example page **/
-	#workTitle {
-		width:50%;
-	}
-
-	.workPanel {
-		height:80vw;
-		border:0;
-	}
-
-	.workText {
-		vertical-align:top;
-		width:50%;
-		height:40vw;
-		border:2px solid #444;
-		border-width:2px 0 0 0;
-		box-sizing:border-box;
-	}
-	.workTextSecond {
-		position:relative;
-		vertical-align:top;
-		left:0%;
-		width:50%;
-		height:40vw;
-		border:2px solid #444;
-		border-width:2px 0 0 0;
-		box-sizing:border-box;
-	}
-	.workImage {
-		vertical-align:top;
-		width:50%;
-		height:40vw;
-		border:2px solid #444;
-		border-width:2px 0 0 0;
-		box-sizing:border-box;
-	}
-	.workImageSecond {
-		vertical-align:top;
-		width:50%;
-		height:40vw;
-		border:2px solid #444;
-		border-width:2px 0 0 0;
-		box-sizing:border-box;
-	}
-
-	.inactive {
-		-webkit-filter: grayscale(0%) !important; /* Chrome, Safari, Opera */
-		filter: grayscale(0%) !important;
-	}
-
-	.selected {
-		-webkit-filter: grayscale(0%) !important; /* Chrome, Safari, Opera */
-		filter: grayscale(0%) !important;
-	}
-
-	/** Experience section **/
-	#experienceTitle {
-		width:50%;
-	}
-
-	/** info page nav button change **/
-	.buttonWrap {
-		width:20vw;
-	}
-
-	.buttonWrap:nth-of-type(2){
-		left:20vw;
-		border-left:0;
-	}
-	.buttonWrap:nth-of-type(3){
-		left:40vw;
-		border-left:0;
-	}
-
-	/** info resize **/
-	#jobs img {
-		width:100%;
-	}
-
-	#bs img {
-		width:100%;
-	}
-
-	#phd img {
-		width:100%;
-	}
-
-	/** Connect page **/
-	#connectPage {
-		padding-bottom:100px;
-	}
-
-	#connectTitle {
-		width:50%;
-	}
-	#iconBox {
-		width:50%;
-	}
-}
-
-@media only screen and(max-height:650px) and (orientation:landscape) {
-	/** Main page **/
-	#nicholasPersa {
-		width:30%;
-	}
-	#rocket {
-		width:30%;
-		top:30%;
-	}
-	#navigation {
-		width:30%;
-	}
-
-	/** Work example page **/
-	#workTitle {
-		width:50%;
-	}
-
-	.workPanel {
-		height:80vw;
-		border:0;
-	}
-
-	.workText {
-		vertical-align:top;
-		width:50%;
-		height:40vw;
-		border:2px solid #444;
-		border-width:2px 0 0 0;
-		box-sizing:border-box;
-	}
-	.workTextSecond {
-		position:relative;
-		vertical-align:top;
-		left:0%;
-		width:50%;
-		height:40vw;
-		border:2px solid #444;
-		border-width:2px 0 0 0;
-		box-sizing:border-box;
-	}
-	.workImage {
-		vertical-align:top;
-		width:50%;
-		height:40vw;
-		border:2px solid #444;
-		border-width:2px 0 0 0;
-		box-sizing:border-box;
-	}
-	.workImageSecond {
-		vertical-align:top;
-		width:50%;
-		height:40vw;
-		border:2px solid #444;
-		border-width:2px 0 0 0;
-		box-sizing:border-box;
-	}
-
-	.inactive {
-		-webkit-filter: grayscale(0%) !important; /* Chrome, Safari, Opera */
-		filter: grayscale(0%) !important;
-	}
-
-	.selected {
-		-webkit-filter: grayscale(0%) !important; /* Chrome, Safari, Opera */
-		filter: grayscale(0%) !important;
-	}
-
-	/** Experience section **/
-	#experienceTitle {
-		width:50%;
-	}
-
-	/** info page nav button change **/
-	.buttonWrap {
-		width:20vw;
-	}
-
-	.buttonWrap:nth-of-type(2){
-		left:20vw;
-		border-left:0;
-	}
-	.buttonWrap:nth-of-type(3){
-		left:40vw;
-		border-left:0;
-	}
-
-	/** info resize **/
-	#jobs img {
-		width:100%;
-	}
-
-	#bs img {
-		width:100%;
-	}
-
-	#phd img {
-		width:100%;
-	}
-
-	/** Connect page **/
-	#connectPage {
-		padding-bottom:100px;
-	}
-
-	#connectTitle {
-		width:50%;
-	}
-	#iconBox {
-		width:50%;
-	}
-}
-
-/** Grid system **/
-
-/*.heightOne		{height:5vw;}
- .heightTwo		{height:10vw;}
- .heightThree	{height:15vw;}
- .heightFour		{height:20vw;}
- .heightFive		{height:25vw;}
- .heightSix		{height:30vw;}
- .heightSeven	{height:35vw;}
- .heightEight	{height:40vw;}
- .heightNine		{height:45vw;}
- .heightTen		{height:50vw;}
- .heightEleven	{height:55vw;}
- .heightTwelve	{height:60vw;}
- .heightThirteen	{height:65vw;}
- .heightFourteen	{height:70vw;}
- .heightFifteen	{height:75vw;}
- .heightSixteen	{height:80vw;}
- .heightSeventeen{height:85vw;}
- .heightEighteen	{height:90vw;}
- .heightNineteen	{height:95vw;}
-
- .one		{width:5vw;}
- .two		{width:10vw;}
- .twoThirds	{width:13.33vw;}
- .three		{width:15vw;}
- .four		{width:20vw;}
- .five		{width:25vw;}
- .six		{width:30vw;}
- .seven		{width:35vw;}
- .eight		{width:40vw;}
- .nine		{width:45vw;}
- .ten		{width:50vw;}
- .eleven		{width:55vw;}
- .twelve		{width:60vw;}
- .thirteen	{width:65vw;}
- .fourteen	{width:70vw;}
- .fifteen	{width:75vw;}
- .sixteen	{width:80vw;}
- .seventeen	{width:85vw;}
- .eighteen	{width:90vw;}
- .nineteen	{width:95vw;}
- .twenty		{width:100vw;}*/
-
-
-/*************** THE GRID ***************/
-.heightOne		{height:5vh;}
-.heightTwo		{height:10vh;}
-.heightThree	{height:15vh;}
-.heightFour		{height:20vh;}
-.heightFive		{height:25vh;}
-.heightSix		{height:30vh;}
-.heightSeven	{height:35vh;}
-.heightEight	{height:40vh;}
-.heightNine		{height:45vh;}
-.heightTen		{height:50vh;}
-.heightEleven	{height:55vh;}
-.heightTwelve	{height:60vh;}
-.heightThirteen	{height:65vh;}
-.heightFourteen	{height:70vh;}
-.heightFifteen	{height:75vh;}
-.heightSixteen	{height:80vh;}
-.heightSeventeen{height:85vh;}
-.heightEighteen	{height:90vh;}
-.heightNineteen	{height:95vh;}
-
-.one		{width:5vh;}
-.two		{width:10vh;}
-.twoThirds	{width:13.33vh;}
-.three		{width:15vh;}
-.four		{width:20vh;}
-.five		{width:25vh;}
-.six		{width:30vh;}
-.seven		{width:35vh;}
-.eight		{width:40vh;}
-.nine		{width:45vh;}
-.ten		{width:50vh;}
-.eleven		{width:55vh;}
-.twelve		{width:60vh;}
-.thirteen	{width:65vh;}
-.fourteen	{width:70vh;}
-.fifteen	{width:75vh;}
-.sixteen	{width:80vh;}
-.seventeen	{width:85vh;}
-.eighteen	{width:90vh;}
-.nineteen	{width:95vh;}
-.twenty		{width:100vw;}

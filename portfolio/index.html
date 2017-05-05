@@ -1,142 +1,109 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
-	<head>
-		<link rel="icon" href="image/favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-			<link rel="stylesheet" type="text/css" href="css/portfolio.css">
-				<script src="js/jquery.min.js"></script>
-				<script src="js/velocity.js"></script>
-				<script src="js/velocity.ui.js"></script>
-				<script src="js/portfolio.js"></script>
-				<script src="js/ripple.js"></script>
+<head>
+    <meta charset="utf-8">
+    <title>Nicholas Persa</title>
 
-				<title>Persa's Motivations in Life</title>
-				<meta name="author" content="Nicholas Persa">
-					<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asul|Roboto" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/projects.js"></script>
+    <script type="text/javascript" src="js/portfolio.js"></script>
 
-	<body>
 
-		<div id="splashPage" class="pageContainer">
-			<div id="nicholasPersa">
-				<img src="image/Persa.svg" alt="Logo"/>
-			</div>
-			<div id="rocket">
-				<img src="image/rocketMe.png" alt="Rocket Man"/>
-			</div>
-			<div id="navigation">
-				<img src="image/Navigation.svg" alt="Navigation Bar" />
-				<a href="#workTitle"><div id="splitWork"></div></a>
-				<a href="#experienceTitle"><div id="splitExperience"></div></a>
-				<a href="#connectTitle"><div id="splitConnect"></div></a>
-			</div>
-		</div>
+</head>
 
-		<div id="workPage" class="">
-			<div id="workTitle">
-				<img src="image/Work.svg" alt="Previous work examples" />
-			</div>
+<body>
 
-			<div class="workPanel firstPanel">
+    <img id="background" class="parallax" src="images/parallax-backing.png" alt="" />
 
-				<div class="workText">
-					<img src="image/PortfolioTLDR.svg" alt="Student project portfolio" />
-				</div><a href="http://nicholaspersa.github.io/tldrarchive" target="_blank"><div class="imageClip workImage TLDR selected">
-				</div></a><div class="workTextSecond">
-					<img src="image/PortfolioGeekout.svg" alt="Student project portfolio" />
-				</div><a href="http://nicholaspersa.github.io/geekout" target="_blank"><div class="imageClip workImageSecond geekout inactive" data-paired="TLDR">
-				</div></a>
+    <div id="splash">
+        <img id="myName" src="images/nicholas-persa.png" alt="" />
+        <img id="heroFlavor" src="images/welcome-words.png" alt="" />
+        <img id="breakIndicator" src="images/triangle.png" alt="" />
+    </div>
 
-			</div>
+    <section name="Design projects" id="expFeatured">
+        <img id="expIcon" src="images/exp-icon.png" alt="" />
 
-			<div class="workPanel">
-				<div class="workText">
-					<img src="image/PortfolioBeacon.svg" alt="Student project portfolio" />
-				</div><a href="http://nicholaspersa.github.io/archive" target="_blank"><div class="imageClip workImage beacon inactive">
-				</div></a><div class="workTextSecond">
-					<img src="image/PortfolioStory.svg" alt="Student project portfolio" />
-				</div><a href="http://nicholaspersa.github.io/story" target="_blank"><div class="imageClip workImageSecond story inactive" data-paired="beacon">
-				</div></a>
-			</div>
+        <div id="featuredContainer">
+            <!-- <section name="Hearthstone “Geek out” fansite" class="projectBanner">
+                <div class="projectContent">
+                    <div class="projectText">
+                        <h4>Hearthstone “Geek out” fansite</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                    <a href="https://nicholaspersa.github.io/geekout/" target="_blank"><img class="projectImage" src="images/geekout.png" alt="" /></a>
+                </div>
+            </section> -->
+        </div>
 
-			<div class="workPanel">
-				<div class="workText">
-					<img src="image/PortfolioGoGreet.svg" alt="Student project portfolio" />
-				</div><a href="http://nicholaspersa.github.io/gogreet" target="_blank"><div class="imageClip workImage gogreet inactive">
-				</div></a><div class="workTextSecond">
-					<img src="image/PortfolioBucketRun.svg" alt="Student project portfolio" />
-				</div><a href="http://nicholaspersa.github.io/bucketrun" target="_blank"><div class="imageClip workImageSecond bucketrun inactive" data-paired="gogreet">
-				</div></a>
-			</div>
+    </section>
 
-			<div class="workPanel">
+<section name="Minor design projects" id="expMini">
+    <img id="miniTitle" src="images/asteroid-belt.png" alt="" />
+    <div id="miniContainer">
+        <!-- <section name="geekout project" class="miniProject">
+            <a href="https://nicholaspersa.github.io/geekout/" target="_blank"><img class="miniImage" src="images/geekout.png" alt="" /></a>
+            <h4>Pokemon Go Fansite</h4>
+        </section> -->
+    </div>
+</section>
 
-				<div class="workText">
-					<img src="image/PortfolioToga.svg" alt="Student project portfolio" />
-				</div><a href="unityGames/togaWeb/TogaWeb.html" target="_blank"><div class="imageClip workImage toga inactive">
-				</div></a><div class="workTextSecond">
-					<img src="image/PortfolioLucca.svg" alt="Student project portfolio" />
-				</div><a href="http://nicholaspersa.github.io/lucca" target="_blank"><div class="imageClip workImageSecond lucca inactive" data-paired="toga">
-				</div></a>
+<section name="Educational background" id="edu">
+    <img id="eduIcon" src="images/edu-icon.png" alt="" />
 
-			</div>
+    <div id="educationContainer">
 
-			<div class="workPanel">
-				<div class="workText">
-					<img src="image/PortfolioClassExp.svg" alt="Student project portfolio" />
-				</div><a href="http://nicholaspersa.github.io/classExp" target="_blank"><div class="imageClip workImage classExp inactive"></div></a><div class="workTextSecond">
-					<img src="image/PortfolioInteractive.svg" alt="Student project portfolio" />
-				</div><a href="http://nicholaspersa.github.io/clickVenture" target="_blank"><div class="imageClip workImageSecond clickVenture inactive" data-paired="classExp">
-				</div></a>
+      <section name="Graduate degree (UCI)" class="projectBanner">
+          <div class="projectContent">
+              <div class="projectText">
+                  <h4>Doctor of Philosophy, Informatics</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+              <img class="eduImage" src="images/uci.png" alt="" />
+          </div>
+      </section>
 
-			</div>
+        <section name="Undergraduate degree (UMN)" class="projectBanner">
+            <div class="projectContent">
+                <div class="projectText">
+                    <h4>Bachelor of Science, Psychology</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <img class="eduImage" src="images/umn.png" alt="" />
+            </div>
+        </section>
+    </div>
 
-			<div class="workPanel">
-				<div class="workText">
-					<img src="image/PortfolioTheory.svg" alt="Student project portfolio" />
-				</div><a href="http://nicholaspersa.github.io/theory" target="_blank"><div class="imageClip workImage theory inactive">
-				</div></a>
+</section>
 
-			</div>
+<!-- <section name="Skills from jobs" id="skills">
+  <img id="skillsIcon" src="images/skills-icon.png" alt="" />
 
-		</div>
+  <div id="skillsContainer">
 
-		<div id="experiencePage">
-			<div id="experienceTitle">
-				<img src="image/Experience.svg" alt="Education and Knowledge" />
-			</div>
-			<div id="itemContainer">
+    <section name="Skills: project management" class="projectBanner">
+            <div class="skillsText">
+                <h4>Project Management</h4>
+                <ul>
+                  <li><strong>2016-17</strong></li><ul><li>Active Learning in College Engineering: curriculum development, user research, focus groups, surveys, data analysis</li></ul>
+                  <li><strong>2015</strong></li><ul><li>How Language affects Learning: web development, participant studies, theory-building</li></ul>
+                  <li><strong>2014-15</strong></li><ul><li>Computerized Adaptive Testing: psychometric calibration, item analysis, individual assessment, big data</li></ul>
+                </ul>
+            </div>
+    </section>
 
-				<div class="buttonWrap"><div class="expTab" data-experience="jobs"></div></div><div class="buttonWrap"><div class="expTab" data-experience="phd"></div></div><div class="buttonWrap"><div class="expTab" data-experience="bs"></div></div>
+  </div>
 
-				<div id="jobs">
-					<img src="image/experience/Unity1.svg" /><img src="image/experience/Research3.svg" /><img src="image/experience/Research4.svg" /><img src="image/experience/Research2.svg" /><img src="image/experience/Research1.svg" />
-				</div>
+</section> -->
 
-				<div id="phd">
-					<img src="image/experience/Phd1.svg"/>
-				</div>
 
-				<div id="bs">
-					<img src="image/experience/Bs1.svg"/><img src="image/experience/Bs2.svg"/><img src="image/experience/Bs3.svg"/><img src="image/experience/Bs4.svg"/><img src="image/experience/Bs5.svg"/>
-				</div>
-
-			</div>
-		</div>
-
-		<div id="connectPage">
-			<div id="connectTitle">
-				<img src="image/Connect.svg" alt="Network and Connect" />
-			</div>
-			<div id="iconBox">
-				<img src="image/Social.png" alt="Network and Connect" />
-				<div id="boxSplitMail"></div>
-				<a href="https://twitter.com/nicholaspersa" target="_blank"><div id="boxSplitTwitter"></div></a>
-				<a href="https://patreon.com/persa" target="_blank"><div id="boxSplitPatreon"></div></a>
-			</div>
-		</div>
-
-	</body>
+</body>
 
 </html>
