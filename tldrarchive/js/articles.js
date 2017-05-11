@@ -52,6 +52,11 @@
 	articleItems.push(new Article("Skill Atom Framework","https://quip.com/BwhZAcjwPNps",1001,["phd","education"],"games"));
 	articleItems.push(new Article("Gamification Maturing","https://quip.com/manEAksqfhm2",1001,["phd","education"],"games"));
 	articleItems.push(new Article("Gamification Failures","https://quip.com/7UAcAWp03nmw",1001,["phd","education"],"games"));
+	articleItems.push(new Article("IxD Gamification","https://quip.com/cIzzAeaSqoN0",1010,["phd","education"],"games"));
+	articleItems.push(new Article("Badge Overlays","https://quip.com/1V5IAOVqLtHX",1000,["phd","education"],"games"));
+	articleItems.push(new Article("Rewards in Edu Games","https://quip.com/uaZ2AUWD47zg",1000,["phd","education"],"games"));
+	articleItems.push(new Article("Gamifying Language","https://quip.com/6g53ASyfzFEN",1000,["phd","education"],"games"));
+	articleItems.push(new Article("Structural Debriefing","https://quip.com/JyMpAMm0Uqa7",1000,["phd","education"],"games"));
 
 	//Core-drives
 	articleItems.push(new Article("Accomplishment","https://quip.com/QhhzAai1oAe8",800,["core-drives"],"games"));
@@ -372,6 +377,7 @@
 	articleItems.push(new Article("Mother of All Demos","https://quip.com/47M5A3CR4jcz",2000,["tldr"],"tldr"));
 	articleItems.push(new Article("Augmenting Intellect","https://quip.com/lkZbAKCZSWql",2000,["tldr"],"tldr"));
 	articleItems.push(new Article("Crowdwork Future [TLDR]","https://quip.com/eGUBApQh3oaO",2000,["tldr"],"tldr"));
+	articleItems.push(new Article("Creative Communities","https://quip.com/OxGTA2ao0baI",2000,["tldr"],"tldr"));
 
 
 
