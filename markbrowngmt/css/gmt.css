@@ -1,0 +1,544 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+#page-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /*background: url(../assets/general/background-color.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: all 1s;
+  overflow: hidden;*/
+}
+
+.animationHelper {
+  overflow:hidden;
+}
+
+#page-background {
+    /*position: fixed;
+  object-fit: cover;
+  overflow-y: scroll;*/
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    position: fixed;
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;
+    margin: auto;
+    transition: all 1s;
+}
+
+.grayscale {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+#gmt-header {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background: black;
+    z-index: 120;
+}
+
+#logo {
+    position: absolute;
+    top: 100%;
+    width: 15%;
+    height: auto;
+    left: 2%;
+    transform: translateY(-71%);
+}
+
+
+/* WRAPPER FOR NAVIGATION MENUS */
+
+#menu-wrapper {
+    position: fixed;
+    top: 23vh;
+    height: 65vw;
+    z-index: 110 !important;
+    pointer-events: none;
+}
+
+
+/* LIBRARY NAVIGATION MENU */
+
+#library-menu {
+    position: relative;
+    width: 20vw;
+    height: 25vw;
+    left: -100%;
+    pointer-events: auto;
+    /*transition: all .3s;*/
+}
+
+#library-menu-box {
+    width: 100%;
+    height: 100%;
+}
+
+#library-menu-flag {
+    position: absolute;
+    width: 6vw;
+    top: 4.45%;
+    left: 20vw;
+}
+
+#library-categories {
+    position: absolute;
+    top: 13%;
+    width: 90%;
+    height: 80%;
+    left: 5%;
+    overflow-y: scroll;
+}
+
+.library-category {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    margin-bottom: 5%;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(201, 201, 201, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(201, 201, 201, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(201, 201, 201, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(201, 201, 201, 1) 100%);
+    /* ie10+ */
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0%, rgba(201, 201, 201, 1) 100%);
+    /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#C9C9C9', GradientType=1);
+    /* ie6-9 */
+    cursor: pointer;
+}
+
+.library-category p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.7vw;
+    padding: 5% 0;
+}
+
+
+/* BOOKMARK NAVIGATION MENU */
+
+#bookmark-menu {
+    position: relative;
+    top: 3vh;
+    left: -100%;
+    width: 20vw;
+    height: 25vw;
+    pointer-events: auto;
+    /*transition: all .3s;*/
+}
+
+#bookmark-menu-box {
+    width: 100%;
+    height: 100%;
+}
+
+#bookmark-menu-flag {
+    position: absolute;
+    width: 6vw;
+    top: 5.1%;
+    left: 20vw;
+}
+
+#bookmark-categories {
+    position: absolute;
+    top: 13%;
+    width: 90%;
+    height: 80%;
+    left: 5%;
+    overflow-y: scroll;
+}
+
+
+/*
+#library-categories::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}*/
+
+.bookmark-category {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    margin-bottom: 5%;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(201, 201, 201, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(201, 201, 201, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(201, 201, 201, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(201, 201, 201, 1) 100%);
+    /* ie10+ */
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0%, rgba(201, 201, 201, 1) 100%);
+    /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#C9C9C9', GradientType=1);
+    /* ie6-9 */
+}
+
+.bookmark-category p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.7vw;
+    padding: 5% 0;
+}
+
+
+/* TOOLKIT MAIN VISUAL */
+#toolkit-wrapper {
+    position: absolute;
+    top: 23vh;
+    left: 15vw;
+    width: 70vw;
+    margin-bottom: 23vh;
+    z-index: 109 !important;
+    pointer-events: none;
+}
+
+#toolkit-column-1, #toolkit-column-2, #toolkit-column-3, #toolkit-column-4 {
+    float: left;
+    width: 16vw;
+    pointer-events: auto;
+}
+
+#toolkit-column-1, #toolkit-column-2, #toolkit-column-3 {
+    margin-right: 2vw;
+}
+
+.content-category {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2vw;
+}
+
+.content-title {
+    position: relative;
+    top: 150vh;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content-title p {
+    font-size: 1.7vw;
+    padding: 4% 0;
+    margin: 0;
+    color: #222;
+}
+
+.content-box {
+    position: relative;
+    float: left;
+    top: 150vh;
+    width: 24.3%;
+    padding-top: 24.3%;
+    background: rgba(255, 255, 255, .8);
+    cursor: pointer;
+}
+
+
+/*.content-box.design-concepts:nth-of-type(4n - 1), .content-box.graphing:nth-of-type(4n - 1) {
+  margin: 0 .9333% 0 .9333%;
+}
+
+.content-box.design-concepts:nth-of-type(4n + 1), .content-box.graphing:nth-of-type(4n + 1) {
+  margin-left: .9333%;
+}
+
+.content-box.design-concepts:nth-of-type(n + 6), .content-box.graphing:nth-of-type(n + 6)  {
+  margin-top: .9333%;
+}*/
+
+.content-box:nth-of-type(4n - 1) {
+    margin: 0 .9333% 0 .9333%;
+}
+
+.content-box:nth-of-type(4n + 1) {
+    margin-left: .9333%;
+}
+
+.content-box:nth-of-type(n + 6) {
+    margin-top: .9333%;
+}
+
+
+/* TOOLKIT SECTIONS */
+
+#toolkit-section-wrapper {
+    position: absolute;
+    display: none;
+    top: 23vh;
+    left: 15vw;
+    width: 70vw;
+    margin-bottom: 23vh;
+    z-index: 109 !important;
+}
+
+.toolkit-section-sidebar {
+    position: fixed !important;
+    overflow: scroll !important;
+    background: rgba(0, 0, 0, .3);
+}
+
+#section-title {
+    position: relative;
+    top: 150vh;
+    width: 100%;
+    background: rgba(255, 255, 255, .8);
+    overflow: hidden;
+}
+
+#section-title p {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 3vw 0;
+    font-size: 3vw;
+}
+
+#section-title img {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    height: 60%;
+    width: auto;
+    transition: all .3s;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+/*Seems to be an issue with other elements width when hovered*/
+#section-title img:hover {
+    filter: grayscale(100%);
+}
+
+.section-box {
+    position: relative;
+    top: 150vh;
+    float: left;
+    width: 17vw;
+    height: 17vw;
+    background: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .3s;
+    pointer-events: auto;
+}
+
+.section-box:hover {
+    opacity: .5;
+}
+
+.section-box:nth-of-type(4n - 1) {
+    margin: 0 .6667vw 0 .6667vw;
+}
+
+.section-box:nth-of-type(4n - 2) {
+    margin-left: .6667vw;
+}
+
+.section-box:nth-of-type(n + 5) {
+    margin-top: .6667vw;
+}
+
+.section-image-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+.section-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    /*opacity: .75;*/
+    opacity: 0;
+}
+
+.section-image-wrapper.loaded img {
+    opacity: 1;
+}
+
+.section-box h6 {
+    position: relative;
+    top: 10%;
+    font-size: 1.8vw;
+    margin: 0;
+    padding: 5%;
+    text-align: center;
+    background: rgba(255, 255, 255, .8);
+    z-index: 100;
+}
+
+.section-box p {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-size: 1.4vw;
+    margin: 0;
+    color: white;
+    text-align: center;
+    transform: translateY(-50%);
+    z-index: 100;
+    display:none;
+}
+
+.section-box-sidebar {
+    left: 2vw;
+    opacity: .4 !important;
+}
+
+.section-box-sidebar:nth-of-type(n+2) {
+    margin: 2vw 0 0 0 !important;
+}
+
+.section-box-sidebar:hover {
+    opacity: 1 !important;
+}
+
+
+/* TOOLKIT ARTICLE */
+#toolkit-article-wrapper {
+    position: absolute;
+    display: none;
+    top: 23vh;
+    left: 7vw;
+    width: 70vw;
+    margin-bottom: 23vh;
+    z-index: 109 !important;
+}
+
+#article-title {
+    position: relative;
+    top: 150vh;
+    width: 100%;
+    background: rgba(255, 255, 255, .9);
+    overflow: hidden;
+}
+
+#article-title p {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 3vw 0;
+    font-size: 3vw;
+}
+
+#article-close {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    height: 60%;
+    width: auto;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+#youtube-link {
+    position: absolute;
+    top: 28.5%;
+    right: 15%;
+    height: 34%;
+    width: auto;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+#favorite-star {
+    position: absolute;
+    top: 20%;
+    top: 27.5%;
+    left: 5%;
+    height: 38%;
+    width: auto;
+    transition: all .5s;
+    cursor: pointer;
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+}
+
+
+/*Seems to be an issue with other elements width when hovered*/
+
+#article-close:hover {
+    filter: grayscale(100%);
+}
+
+#youtube-link:hover {
+    filter: grayscale(100%);
+}
+
+#toolkit-article-wrapper > p {
+    position: relative;
+    top: 150vh;
+    padding: 1vw 10vw 0 10vw;
+    margin: 0;
+    font-size: 2vw;
+    background: rgba(255, 255, 255, .9);
+}
+
+.article-image-wrapper {
+    position: relative;
+    top: 150vh;
+    width: 50vw;
+    padding: 2vw 10vw 2vw 10vw;
+    background: rgba(255, 255, 255, .9);
+}
+
+.article-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    /*opacity: .75;*/
+    opacity: 0;
+    object-fit: cover;
+}
+
+.article-image-wrapper.loaded img {
+    opacity: 1;
+}
+
+.article-content {
+    position: relative;
+}
+
+.article-caption {
+  font-style: italic;
+  font-size: 2vw;
+}
+
+
+/* HOVER EFFECTS FOR HOME PAGE */
+
+/*.design-concepts-hover {
+    background: #11F2F8;
+    opacity: .8;
+    color: #065456;
+}*/
+/*
+.graphing-hover {
+    background: #FE4B84;
+    opacity: .8;
+    color: #74253E;
+}*/
