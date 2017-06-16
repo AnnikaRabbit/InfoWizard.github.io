@@ -34,16 +34,22 @@ projectItems.push(new Article("Hearthstone \“Geek out\” fansite",
     "As a avid player of Hearthstone, I took on a design challenge related to the game. The site is a brief introduction to the game and acted as practice for vector-based assets. I made all of the artwork using Sketch (except the wood pattern).",
     true));
 
-projectItems.push(new Article("Designing Curriculum Primer",
-    "images/eduFrameworks.png",
-    "https://nicholaspersa.github.io/eduframeworks/",
-    "A small web project focused on displaying content about designing curriculum. The project functions as a primer and reference document for those who design educational experiences.",
+projectItems.push(new Article("GameMaker's Toolkit",
+    "images/gamemaker.png",
+    "https://nicholaspersa.github.io/markbrowngmt/",
+    "A catalogue project that uses content produced by Mark Brown. The catalogue provides a UI interface to learn and explore about game design concepts discussed in the YoutTube series, GameMaker's Toolkit.",
     true));
 
 projectItems.push(new Article("Photography & Poetry: \"The Beacon\"",
     "images/beacon.png",
     "https://nicholaspersa.github.io/archive/",
     "A photography project that documents the location of one building from a variety of perspectives in Minnesota. I have lived near this building a majority of my life, and I can't seem to escape its view. It felt proper to give it one more perspective to be seen from.",
+    true));
+
+projectItems.push(new Article("Designing Curriculum Primer",
+    "images/eduFrameworks.png",
+    "https://nicholaspersa.github.io/eduframeworks/",
+    "A small web project focused on displaying content about designing curriculum. The project functions as a primer and reference document for those who design educational experiences.",
     true));
 
 projectItems.push(new Article("File Visualizer",
