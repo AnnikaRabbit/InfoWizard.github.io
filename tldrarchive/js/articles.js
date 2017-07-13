@@ -45,18 +45,31 @@
 	//
 	////PhD//
 	//
+	articleItems.push(new Article("IxD Gamification","https://quip.com/cIzzAeaSqoN0",1010,["phd","development"],"games"));
+	articleItems.push(new Article("Design: Supercharged","https://quip.com/alioAYLSX3lv",1010,["phd","education"],"games"));
+	articleItems.push(new Article("Skill Atom Framework","https://quip.com/BwhZAcjwPNps",1009,["phd","development"],"games"));
+	articleItems.push(new Article("Edu Game Taxonomy","https://quip.com/o4WEAiJBQGw8",1009,["phd","development"],"games"));
+	articleItems.push(new Article("Cultures of Play","https://quip.com/ewjsAyMYpM0F",1005,["phd","education"],"games"));
+	articleItems.push(new Article("Science Discourse: AR","https://quip.com/LGXEAwayJIyo",1005,["phd","education"],"games"));
+	articleItems.push(new Article("Gamification (3D Lab Questing)","https://quip.com/aSbBAgUj8MJj",1005,["phd","education"],"games"));
+	articleItems.push(new Article("Enterprise Design Cards","https://quip.com/LkV5Ap47PHH5",1005,["phd","development"],"games"));
+	articleItems.push(new Article("Gamification Maturing","https://quip.com/manEAksqfhm2",1001,["phd","education"],"games"));
+	articleItems.push(new Article("Gamification Failures","https://quip.com/7UAcAWp03nmw",1001,["phd","education"],"games"));
+	articleItems.push(new Article("Enterprise Game Taxonomy","https://quip.com/sTNEAbPjNQZX",1001,["phd","development"],"games"));
+	articleItems.push(new Article("Player Types","https://quip.com/YbSUAIjosWYL",1005,["phd","development"],"games"));
 	articleItems.push(new Article("Define Gamification","https://quip.com/AncmAl5ApFMU",1000,["phd","development"],"games"));
 	articleItems.push(new Article("Game Design Learning","https://quip.com/KzolAyMm7qaL",1000,["phd","education"],"games"));
 	articleItems.push(new Article("Edu gDesign Review","https://quip.com/UWUWAye5H1s4",1000,["phd","education"],"games"));
 	articleItems.push(new Article("Evaluating Edu Games","https://quip.com/qVV4AjTZX50X",1000,["phd","education"],"games"));
-	articleItems.push(new Article("Skill Atom Framework","https://quip.com/BwhZAcjwPNps",1001,["phd","education"],"games"));
-	articleItems.push(new Article("Gamification Maturing","https://quip.com/manEAksqfhm2",1001,["phd","education"],"games"));
-	articleItems.push(new Article("Gamification Failures","https://quip.com/7UAcAWp03nmw",1001,["phd","education"],"games"));
-	articleItems.push(new Article("IxD Gamification","https://quip.com/cIzzAeaSqoN0",1010,["phd","education"],"games"));
 	articleItems.push(new Article("Badge Overlays","https://quip.com/1V5IAOVqLtHX",1000,["phd","education"],"games"));
 	articleItems.push(new Article("Rewards in Edu Games","https://quip.com/uaZ2AUWD47zg",1000,["phd","education"],"games"));
 	articleItems.push(new Article("Gamifying Language","https://quip.com/6g53ASyfzFEN",1000,["phd","education"],"games"));
 	articleItems.push(new Article("Structural Debriefing","https://quip.com/JyMpAMm0Uqa7",1000,["phd","education"],"games"));
+	articleItems.push(new Article("Edu Goals in Games","https://quip.com/OYXaAzCmFpyY",1000,["phd","education"],"games"));
+	articleItems.push(new Article("Instructions in Games","https://quip.com/UfaxAU8dlsEf",1000,["phd","development"],"games"));
+	articleItems.push(new Article("GBL Frameworks","https://quip.com/HYbzAstRfd8f",1000,["phd","education"],"games"));
+	articleItems.push(new Article("Man, Play & Games","https://quip.com/3bRaAXZujGpY",1000,["phd"],"games"));
+	articleItems.push(new Article("Homo Ludens","https://quip.com/S8lGAbB8NYvx",1000,["phd"],"games"));
 
 	//Core-drives
 	articleItems.push(new Article("Accomplishment","https://quip.com/QhhzAai1oAe8",800,["core-drives"],"games"));
@@ -87,6 +100,7 @@
 	articleItems.push(new Article("TV Variety","https://quip.com/ACObAXqK23Cs",900,["design"],"education"));
 	articleItems.push(new Article("TV Autonomy","https://quip.com/n0sTAadafJq0",900,["design"],"education"));
 	articleItems.push(new Article("TV Relevance","https://quip.com/ZUGyAhbd0hbf",980,["design"],"education"));
+	articleItems.push(new Article("TV Interactivity","https://quip.com/4We3AWUSe95s",980,["design"],"education"));
 
 	articleItems.push(new Article("Designing Theory","https://quip.com/APlaA8Pavvl2",950,["design"],"education"));
 	articleItems.push(new Article("Learning for Use","https://quip.com/66XRApttF1ZN",950,["design"],"education"));
