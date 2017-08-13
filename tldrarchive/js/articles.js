@@ -90,17 +90,19 @@
 	articleItems.push(new Article("Affinity Spaces","https://quip.com/YzyYAlouEKbD",900,["games"],"education"));
 	articleItems.push(new Article("Co Design Innovation","https://quip.com/Hxa3AleUDHFW",800,["design"],"education"));
 	articleItems.push(new Article("DBR with Hive","https://quip.com/jXcfAJox0ayu",810,["design"],"education"));
-	
-	articleItems.push(new Article("TV TEC Variety","https://quip.com/ELc4AXdUJSWN",900,["design"],"education"));
-	articleItems.push(new Article("TV Attrition","https://quip.com/X0adAbOTpyIr",900,["design"],"education"));
-	articleItems.push(new Article("TV Motivation","https://quip.com/aOmeAYDt4aS7",900,["design"],"education"));
-	articleItems.push(new Article("TV Tone Climate","https://quip.com/uBnEAD6PciuT",900,["design"],"education"));
-	articleItems.push(new Article("TV Encouragement","https://quip.com/fWjlAthqaEBz",900,["design"],"education"));
-	articleItems.push(new Article("TV Curiosity","https://quip.com/T51MAzif1sFY",900,["design"],"education"));
-	articleItems.push(new Article("TV Variety","https://quip.com/ACObAXqK23Cs",900,["design"],"education"));
-	articleItems.push(new Article("TV Autonomy","https://quip.com/n0sTAadafJq0",900,["design"],"education"));
-	articleItems.push(new Article("TV Relevance","https://quip.com/ZUGyAhbd0hbf",980,["design"],"education"));
-	articleItems.push(new Article("TV Interactivity","https://quip.com/4We3AWUSe95s",980,["design"],"education"));
+
+	articleItems.push(new Article("TV TEC Variety","https://quip.com/ELc4AXdUJSWN",940,["design"],"education"));
+	articleItems.push(new Article("TV Attrition","https://quip.com/X0adAbOTpyIr",940,["design"],"education"));
+	articleItems.push(new Article("TV Motivation","https://quip.com/aOmeAYDt4aS7",940,["design"],"education"));
+	articleItems.push(new Article("TV Tone Climate","https://quip.com/uBnEAD6PciuT",940,["design"],"education"));
+	articleItems.push(new Article("TV Encouragement","https://quip.com/fWjlAthqaEBz",940,["design"],"education"));
+	articleItems.push(new Article("TV Curiosity","https://quip.com/T51MAzif1sFY",940,["design"],"education"));
+	articleItems.push(new Article("TV Variety","https://quip.com/ACObAXqK23Cs",940,["design"],"education"));
+	articleItems.push(new Article("TV Autonomy","https://quip.com/n0sTAadafJq0",940,["design"],"education"));
+	articleItems.push(new Article("TV Relevance","https://quip.com/ZUGyAhbd0hbf",940,["design"],"education"));
+	articleItems.push(new Article("TV Interactivity","https://quip.com/4We3AWUSe95s",940,["design"],"education"));
+	articleItems.push(new Article("TV Engagement","https://quip.com/0KcaAgvmJStz",940,["design"],"education"));
+	articleItems.push(new Article("TV Tension","https://quip.com/uMwmAJD4OplJ",940,["design"],"education"));
 
 	articleItems.push(new Article("Designing Theory","https://quip.com/APlaA8Pavvl2",950,["design"],"education"));
 	articleItems.push(new Article("Learning for Use","https://quip.com/66XRApttF1ZN",950,["design"],"education"));
