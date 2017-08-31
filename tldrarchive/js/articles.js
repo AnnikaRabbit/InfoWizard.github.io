@@ -103,6 +103,8 @@
 	articleItems.push(new Article("TV Interactivity","https://quip.com/4We3AWUSe95s",940,["design"],"education"));
 	articleItems.push(new Article("TV Engagement","https://quip.com/0KcaAgvmJStz",940,["design"],"education"));
 	articleItems.push(new Article("TV Tension","https://quip.com/uMwmAJD4OplJ",940,["design"],"education"));
+	articleItems.push(new Article("TV Yield Products","https://quip.com/3oMUAZ2s2Ul0",940,["design"],"education"));
+	articleItems.push(new Article("TV Supporting Change","https://quip.com/vwwKAJFa36sX",940,["design"],"education"));
 
 	articleItems.push(new Article("Designing Theory","https://quip.com/APlaA8Pavvl2",950,["design"],"education"));
 	articleItems.push(new Article("Learning for Use","https://quip.com/66XRApttF1ZN",950,["design"],"education"));
