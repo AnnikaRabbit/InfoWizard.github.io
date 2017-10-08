@@ -70,6 +70,11 @@
 	articleItems.push(new Article("Cultures of Play","https://quip.com/ewjsAyMYpM0F",1005,["phd-education"],"games"));
 	articleItems.push(new Article("Science Discourse: AR","https://quip.com/LGXEAwayJIyo",1005,["phd-education"],"games"));
 	articleItems.push(new Article("Gamification (3D Lab Questing)","https://quip.com/aSbBAgUj8MJj",1005,["phd-education"],"games"));
+	//Design
+	articleItems.push(new Article("DBR in MUVEs","https://quip.com/NuhXApqrMPbF",1000,["phd-design"],"education"));
+	articleItems.push(new Article("Educational Frames","https://quip.com/YYJaAGyHk4NM",1000,["phd-design"],"education"));
+	articleItems.push(new Article("Social Structuring","https://quip.com/Gj0YAt7AxR8d",1000,["phd-design"],"education"));
+	articleItems.push(new Article("Design Roles","https://quip.com/KpP5AQwlS0TN",1000,["phd-design"],"education"));
 	//Games
 	articleItems.push(new Article("Man, Play & Games","https://quip.com/3bRaAXZujGpY",1000,["phd-games"],"games"));
 	articleItems.push(new Article("Homo Ludens","https://quip.com/S8lGAbB8NYvx",1000,["phd-games"],"games"));
@@ -93,10 +98,6 @@
 	articleItems.push(new Article("Yu-kai Design Document","https://quip.com/hbT7AdIi28A9",800,["core-drives"],"games"));
 
 	//EDUCATION Dev
-	articleItems.push(new Article("Affinity Spaces","https://quip.com/YzyYAlouEKbD",900,["games"],"education"));
-	articleItems.push(new Article("Co Design Innovation","https://quip.com/Hxa3AleUDHFW",800,["design"],"education"));
-	articleItems.push(new Article("DBR with Hive","https://quip.com/jXcfAJox0ayu",810,["design"],"education"));
-
 	articleItems.push(new Article("TV TEC Variety","https://quip.com/ELc4AXdUJSWN",940,["design"],"education"));
 	articleItems.push(new Article("TV Attrition","https://quip.com/X0adAbOTpyIr",940,["design"],"education"));
 	articleItems.push(new Article("TV Motivation","https://quip.com/aOmeAYDt4aS7",940,["design"],"education"));
@@ -112,6 +113,9 @@
 	articleItems.push(new Article("TV Yield Products","https://quip.com/3oMUAZ2s2Ul0",940,["design"],"education"));
 	articleItems.push(new Article("TV Supporting Change","https://quip.com/vwwKAJFa36sX",940,["design"],"education"));
 
+	articleItems.push(new Article("Affinity Spaces","https://quip.com/YzyYAlouEKbD",900,["games"],"education"));
+	articleItems.push(new Article("Co Design Innovation","https://quip.com/Hxa3AleUDHFW",800,["design"],"education"));
+	articleItems.push(new Article("DBR with Hive","https://quip.com/jXcfAJox0ayu",810,["design"],"education"));
 	articleItems.push(new Article("Designing Theory","https://quip.com/APlaA8Pavvl2",950,["design"],"education"));
 	articleItems.push(new Article("Learning for Use","https://quip.com/66XRApttF1ZN",950,["design"],"education"));
 	articleItems.push(new Article("Design Possibilities","https://quip.com/AY9DAebCqzws",800,["design"],"education"));
@@ -135,15 +139,6 @@
 	articleItems.push(new Article("MathWorlds","https://quip.com/dbzuAEThNncE",750,["design"],"education"));
 	articleItems.push(new Article("Thinker Tools","https://quip.com/d0tuAoZOnsHu",800,["design"],"education"));
 	articleItems.push(new Article("Understanding by Design","https://quip.com/iBTfAFq3GSrK",991,["design"],"education"));
-
-	//
-	////PhD
-	//
-	articleItems.push(new Article("DBR in MUVEs","https://quip.com/NuhXApqrMPbF",1000,["phd","design"],"education"));
-	articleItems.push(new Article("Educational Frames","https://quip.com/YYJaAGyHk4NM",1000,["phd","design"],"education"));
-	articleItems.push(new Article("Social Structuring","https://quip.com/Gj0YAt7AxR8d",1000,["phd","design"],"education"));
-	articleItems.push(new Article("Design Roles","https://quip.com/KpP5AQwlS0TN",1000,["phd","design"],"education"));
-
 
 	//BUSINESS
 	articleItems.push(new Article("Y Moon: Strengths","https://quip.com/E6m1AKQ4j93x",800,["business"],"business"));
@@ -390,6 +385,10 @@
 	articleItems.push(new Article("Competing Genders","https://quip.com/ktZTA9DSY5zk",900,["Diversity"],"Diversity"));
 	articleItems.push(new Article("I am Women","https://quip.com/GeWPAVRARvKO",900,["Diversity"],"Diversity"));
 	articleItems.push(new Article("Racism and Prejudice","https://quip.com/5huhA5exwbtA",700,["Diversity"],"Diversity"));
+
+	//Misc research methods
+	articleItems.push(new Article("AT: Heart Failure","https://quip.com/lhAsAROecgbd",760,["Methods"],"Methods"));
+
 
 	//Fiction
 	articleItems.push(new Article("Evicted","https://quip.com/G6RWAvQtSjbK",700,["Community"],"Books"));
