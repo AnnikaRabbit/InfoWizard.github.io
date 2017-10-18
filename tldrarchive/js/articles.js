@@ -54,7 +54,7 @@
 	articleItems.push(new Article("Player Types","https://quip.com/YbSUAIjosWYL",1005,["phd-development"],"games"));
 	articleItems.push(new Article("Define Gamification","https://quip.com/AncmAl5ApFMU",1000,["phd-development"],"games"));
 	articleItems.push(new Article("Instructions in Games","https://quip.com/UfaxAU8dlsEf",1000,["phd-development"],"games"));
-	//Education
+	//Gamification (incl education)
 	articleItems.push(new Article("Design: Supercharged","https://quip.com/alioAYLSX3lv",1010,["phd-education"],"games"));
 	articleItems.push(new Article("GBL Frameworks","https://quip.com/HYbzAstRfd8f",1000,["phd-education"],"games"));
 	articleItems.push(new Article("Game Design Learning","https://quip.com/KzolAyMm7qaL",1000,["phd-education"],"games"));
@@ -70,6 +70,7 @@
 	articleItems.push(new Article("Cultures of Play","https://quip.com/ewjsAyMYpM0F",1005,["phd-education"],"games"));
 	articleItems.push(new Article("Science Discourse: AR","https://quip.com/LGXEAwayJIyo",1005,["phd-education"],"games"));
 	articleItems.push(new Article("Gamification (3D Lab Questing)","https://quip.com/aSbBAgUj8MJj",1005,["phd-education"],"games"));
+    articleItems.push(new Article("Games & Motivation","https://quip.com/hxZsAfVxRyfw",1010,["phd-education"],"games"));
 	//Design
 	articleItems.push(new Article("DBR in MUVEs","https://quip.com/NuhXApqrMPbF",1000,["phd-design"],"education"));
 	articleItems.push(new Article("Educational Frames","https://quip.com/YYJaAGyHk4NM",1000,["phd-design"],"education"));
@@ -80,7 +81,6 @@
 	articleItems.push(new Article("Homo Ludens","https://quip.com/S8lGAbB8NYvx",1000,["phd-games"],"games"));
 	//TA
 	articleItems.push(new Article("Active Learning (meta study)","https://quip.com/KO2qAxih1rfC",900,["phd-teaching"],"education"));
-
 
 	//Core-drives
 	articleItems.push(new Article("Accomplishment","https://quip.com/QhhzAai1oAe8",800,["core-drives"],"games"));
@@ -389,10 +389,8 @@
 	//Misc research methods
 	articleItems.push(new Article("AT: Heart Failure","https://quip.com/lhAsAROecgbd",760,["Methods"],"Methods"));
 
-
 	//Fiction
 	articleItems.push(new Article("Evicted","https://quip.com/G6RWAvQtSjbK",700,["Community"],"Books"));
-
 
 	//TLDR
 	articleItems.push(new Article("TLDR Archive","https://quip.com/QDiJAu9KsTa7",2000,["tldr"],"tldr"));
