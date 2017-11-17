@@ -1,0 +1,311 @@
+
+
+
+
+html {
+  width:100vw;
+  height:100vh;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  width:100vw;
+  height:100vh;
+  background: url(../images/section_background.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: black;
+
+  /*background: url(../images/section_background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: black;*/
+}
+
+.condense_font {
+  -webkit-transform:scale(.55,1); /* Safari and Chrome */
+      -moz-transform:scale(.55,1); /* Firefox */
+      -ms-transform:scale(.55,1); /* IE 9 */
+      -o-transform:scale(.55,1); /* Opera */
+      transform:scale(.55,1); /* W3C */
+}
+
+/* NAV BAR */
+#home_navigation {
+  z-index: 100;
+  position: absolute;
+  right: 3vw;
+  top: 7vw;
+}
+.single_line_list {
+  display:flex;
+  list-style:none;
+}
+#home_navigation ul {
+  margin: 0;
+  padding: 0;
+}
+#home_navigation li {
+  font-size: 3vw;
+  margin-right:4vw;
+}
+#home_navigation a {
+  color: white;
+  font-family: "Saira Extra Condensed";
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+#home_navigation a:hover {
+  color: rgb(143,219,225);
+}
+
+/* DESIGN CONTAINER*/
+#outer_container {
+  z-index: 0;
+  position: absolute;
+  top: 18vw;
+  left: 6.5vw;
+  width: 87vw;
+  height: auto; /*set to auto*/
+  border: 0px solid white;
+  border-radius: 20px;
+  margin-bottom: 3.5vw;
+  overflow: hidden;
+}
+
+/* FLAIR */
+#signature {
+  z-index: 1;
+  position: absolute;
+  position: absolute;
+  width: 22vw;
+  height: 22vw;
+  top: -7vw;
+  left: -7vw;
+}
+
+/* TEXTURES */
+.blue_texture {
+  background: url(../images/blue_texture.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.black_texture {
+  background: url(../images/black_texture.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.white_texture {
+  background: url(../images/white_texture.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.white_texture:nth-of-type(odd) {
+  background: url(../images/white_texture_alt.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.dark_font{
+  color: rgb(22,30,58) !important;
+}
+
+/* */
+.introduction {
+  position: relative;
+  padding: 0 0 2.5vw 0;
+  width: 100%;
+}
+.main_title {
+  margin: 0;
+  padding: 6vw 0 5vw 0;
+  position: relative;
+  width:100%;
+  color: white;
+  font-family: "Saira Extra Condensed";
+  font-weight: 600;
+  font-size: 4.4vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+.content_paragraph {
+  margin: 0;
+  padding: 0 0 2.5vw 0;
+  position: relative;
+  width:70%;
+  left:15%;
+  color: white;
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 2vw;
+}
+.content_paragraph a {
+  color: rgb(197, 55, 87);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content_list {
+  margin: 0;
+  padding: 0 0 2.5vw 0;
+  position: relative;
+  width:70%;
+  left:20%;
+  color: white;
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 1.9vw;
+}
+
+.content_title {
+  margin: 0;
+  padding: 6vw 0 2.5vw 0;
+  position: relative;
+  left: 15.25%;
+  color: white;
+  font-family: "Saira Extra Condensed";
+  font-weight: 600;
+  font-size: 4.4vw;
+  text-transform: uppercase;
+}
+
+.visual {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.visual_break {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.visual_break img {
+  position: relative;
+  top: 12.5%;
+  height: 75%;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.visual_break figcaption {
+  display: inline-block;
+  position: absolute;
+  color: ;
+  bottom: 3.6vw;
+  left: 17.5%;
+  font-size: 1.8vw;
+  font-style: italic;
+}
+
+.visual_break a {
+  margin: 0;
+  color: rgba(107, 206, 216, .6);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  padding: 0 0 2.5vw 0;
+}
+
+.sub_content_title {
+  margin: 0;
+  padding: 0 0 2.5vw 0;
+  position: relative;
+  left: 12.75%;
+  color: white;
+  font-family: "Saira Extra Condensed";
+  font-weight: 600;
+  font-size: 3.2vw;
+}
+
+.sub_content_title a {
+  color: rgb(197, 55, 87);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.multi_media_layout_3 {
+  position: relative;
+  margin: 0 0 4vw 0;
+  left: 6vw;
+  width: 77vw; /*container width 87vw*/
+}
+
+.multi_media_layout_3 img {
+  margin: 0;
+  position: relative;
+  padding-right: 2vw;
+  display: inline-block;
+  object-fit: cover;
+  object-position: left;
+  width: calc(71vw / 3);
+  height: calc(71vw / 3);
+  vertical-align: top;
+}
+
+.multi_media_layout_3 figcaption {
+  display: inline-block;
+  position: absolute;
+  bottom: -2vw;
+  font-size: 1.5vw;
+  font-style: italic;
+}
+
+.multi_media_layout_2 {
+  position: relative;
+  margin: 0 0 4vw 0;
+  left: 15vw;
+  width: 60vw; /*container width 87vw*/
+}
+
+.multi_media_layout_2 img {
+  margin: 0;
+  position: relative;
+  padding-right: 3vw;
+  display: inline-block;
+  object-fit: cover;
+  object-position: left;
+  width: calc(54vw / 2);
+  height: calc(54vw / 2);
+  vertical-align: top;
+}
+
+.multi_media_layout_2 figcaption {
+  display: inline-block;
+  position: absolute;
+  bottom: -2vw;
+  font-size: 1.5vw;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

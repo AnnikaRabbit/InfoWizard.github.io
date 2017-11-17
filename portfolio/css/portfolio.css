@@ -1,237 +1,174 @@
 
 
-body, html, h4, p {
-  margin: 0;
-  padding: 0;
+
+
+html {
+  width:100vw;
+  height:100vh;
 }
 
 body {
+  margin: 0;
   position: relative;
-}
-
-#background {
-  position: fixed;
   width:100vw;
-  height: auto;
-  transition: 0s linear;
-  transition-property: top;
+  height:100vh;
+  background: url(../images/home_background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: black;
 }
 
-#splash {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  filter:blur();
+.condense_font {
+  -webkit-transform:scale(.55,1); /* Safari and Chrome */
+      -moz-transform:scale(.55,1); /* Firefox */
+      -ms-transform:scale(.55,1); /* IE 9 */
+      -o-transform:scale(.55,1); /* Opera */
+      transform:scale(.55,1); /* W3C */
 }
 
-#myName {
+/* NAV BAR */
+#home_navigation {
+  z-index: 100;
   position: absolute;
-  top:20vh;
-  left:50%;
-  width:50vw;
-  transform: translateX(-50%);
+  right: 3vw;
+  top: 7vw;
+}
+.single_line_list {
+  display:flex;
+  list-style:none;
+}
+#home_navigation ul {
+  margin: 0;
+  padding: 0;
+}
+#home_navigation li {
+  font-size: 3vw;
+  margin-right:4vw;
+}
+#home_navigation a {
+  color: white;
+  font-family: "Saira Extra Condensed";
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+#home_navigation a:hover {
+  color: rgb(143,219,225);
 }
 
-#heroFlavor {
+/* DESIGN CONTAINER*/
+#outer_container {
+  z-index: 0;
   position: absolute;
-  top:40vh;
-  left:50%;
-  width:50vw;
-  transform: translateX(-50%);
+  top: 3.5vw;
+  left: 3.5vw;
+  width: 93vw;
+  height: auto; /*set to auto*/
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-bottom: 3.5vw;
 }
 
-#breakIndicator {
+/* FLAIR */
+#signature {
+  z-index: 1;
   position: absolute;
-  bottom:3vh;
-  left:47.5%;
-  width:5vw;
-  transform: translateX(-50%);
+  position: absolute;
+  width: 22vw;
+  height: 22vw;
+  top: -7vw;
+  left: -7vw;
 }
 
-/*** FEATURED DESIGN PROJECTS ***/
-
-#expIcon {
-  position: relative;
-  width:30%;
-  margin:10vw 0 0 0;
+/* TEXTURES */
+.white_texture_alt {
+  background: url(../images/white_texture_alt.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.dark_font{
+  color: rgb(22,30,58) !important;
 }
 
-#expFeatured {
+/* FRONT PAGE SECTIONAL */
+.portfolio_item {
   position: relative;
-  width: 100vw;
-}
-
-.projectBanner {
-  position: relative;
-  width: 100vw;
-  background: rgba(255,255,255,.2);
-  margin-top: 5vw;
-}
-
-.projectContent {
-  position: relative;
-  display: inline-block;
-  height: 80%;
-  width: 80vw;
-  top:10%;
-  left:50%;
-  transform: translateX(-50%);
-}
-
-.projectText {
-  position: relative;
-  display: inline-block;
-  left:0;
-  width:50vw;
-  background: rgba(255,255,255,.8);
-  margin:5vw 0;
+  left:15%;
+  width: 70%;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  overflow: hidden;
   border-radius: 10px;
 }
-
-.projectText p {
-  font-size: 1.9vw;
-  padding:1vw 2vw 2vw 2vw;
-  font-family: Asul;
+.first_item {
+  margin-top: 15vw;
 }
-.projectText h4 {
-  text-align: center;
-  font-size: 2.3vw;
-  padding:1vw 0 0 0;
-  font-family: Roboto;
+.section_border {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
-.projectImage {
+.section_icon {
   position: absolute;
-  display: inline-block;
-  height:auto;
-  width: 20vw;
   top:50%;
-  right:0;
+  left:6%;
+  width: 20%;
+  height: auto;
   transform: translateY(-50%);
 }
-
-.projectImage:hover {
-  filter:hue-rotate(180deg);
+.section_title {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 26%;
+  color: white;
+  font-family: "Saira Extra Condensed";
+  font-weight: 600;
+  font-size: 4.4vw;
+  text-transform: uppercase;
+}
+#information_experiments .section_title {
+  left: 28%;
+}
+#designing_to_learn .section_title {
+  left: 28%;
+}
+#Asset_development .section_title {
+  left: 28%;
+}
+.section_description {
+  position: absolute;
+  top: 43%;
+  left: 28%;
+  color: white;
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 1.9vw;
+}
+.section_read_more {
+  position: absolute;
+  top: 62%;
+  left: 28%;
+  color: rgb(197, 55, 87);
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 2.1vw;
+  text-decoration: none;
   cursor: pointer;
 }
 
-/*** MINOR DESIGN PROJECTS ***/
 
-#expMini {
-  position: relative;
-  width:100vw;
-  filter:blur();
-}
 
-#miniTitle {
-  position: relative;
-  width:60vw;
-  left:20vw;
-  margin: 15vw 0 5vw 0;
-}
 
-#miniContainer {
-  position: relative;
-  width:95vw;
-  left:2.5vw;
-  margin-top: 5vw;
-}
 
-.miniProject {
-  position: relative;
-  display: inline-block;
-  width:25vw;
-  margin-left: 5vw;
-  margin-bottom: 5vw;
-}
 
-.miniProject h4 {
-  position: absolute;
-  bottom: 5%;
-  left:50%;
-  transform: translateX(-50%);
-  padding:1vw;
-  border-radius: 7px;
-  background: rgba(255,255,255,.85);
-  white-space: nowrap;
-  font-family: Roboto;
-}
 
-.miniImage {
-  width:100%;
-}
 
-.miniImage:hover {
-  filter:hue-rotate(180deg);
-}
 
-/*** EDUCATION BACKGROUND ***/
 
-#eduIcon {
-  position: relative;
-  width:30%;
-  margin:10vw 0 0 0;
-}
-
-#edu {
-  position: relative;
-  width: 100vw;
-  margin-bottom: 5vw;
-}
-
-.eduImage {
-  position: absolute;
-  display: inline-block;
-  height:auto;
-  width: 20vw;
-  top:50%;
-  right:0;
-  transform: translateY(-50%);
-}
-
-/*** SKILLS BACKGROUND ***/
-#skillsIcon {
-  position: relative;
-  width:30%;
-  margin:10vw 0 0 0;
-}
-
-#skills {
-  position: relative;
-  width: 100vw;
-  margin-bottom: 10vw;
-}
-
-.skillsText {
-  position: relative;
-  display: inline-block;
-  left:50%;
-  width:60vw;
-  margin:5vw 0;
-  padding:3vw;
-  transform: translateX(-50%);
-  background: rgba(255,255,255,.8);
-  border-radius: 10px;
-}
-
-.skillsText p {
-  font-size: 1.9vw;
-  padding:2vw 2vw 2vw 2vw;
-  font-family: Asul;
-}
-.skillsText h4 {
-  text-align: center;
-  font-size: 2.3vw;
-  padding:1vw 0 0 0;
-  font-family: Roboto;
-}
-
-.skillsText ul {
-  position: relative;
-  display: inline-block;
-  padding:0 2vw;
-  list-style-type: none;
-}
-
-.skillsText li {
-  padding:.5vw 2vw;
-}
+/**/
