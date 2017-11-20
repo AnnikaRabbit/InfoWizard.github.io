@@ -99,9 +99,28 @@ body {
 /* SPLASH */
 #splash {
   position: relative;
-  width: 50vw;
+  width: 30vw;
   height: auto;
-  left: 25vw;
+  left: 35vw;
+}
+
+.content_paragraph {
+  margin: 0;
+  padding: 0 0 2.5vw 0;
+  position: relative;
+  width:70%;
+  left:15%;
+  color: black;
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 2vw;
+}
+
+#momentofzen {
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  left: 30vw;
 }
 
 

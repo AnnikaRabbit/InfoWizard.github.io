@@ -204,13 +204,13 @@ body {
   transform: translateX(-50%);
 }
 .visual_break figcaption {
-  display: inline-block;
+  display: block;
   position: absolute;
-  color: ;
+  width: 100%;
   bottom: 3.6vw;
-  left: 17.5%;
   font-size: 1.8vw;
   font-style: italic;
+  text-align: center;
 }
 
 .visual_break a {
