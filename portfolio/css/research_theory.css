@@ -1,0 +1,50 @@
+
+
+.increased_spacing li {
+  padding: 0 0 1vw 0;
+}
+
+li .format {
+  font-weight: bold;
+}
+
+p .format {
+  font-weight: bold;
+}
+
+p span {
+  position: absolute;
+  right:105%;
+  top:43%;
+  padding:0;
+  line-height: 0;
+  color: rgba(197, 55, 87,.75);
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1.4vw;
+  transform: translateY(-50%);
+}
+
+.comment {
+  padding: 0 0 3vw 0;
+  width: 60%;
+  left: 20%;
+  font-family: "Nunito";
+  letter-spacing: -.03vw;
+  line-height: 2.75vw;
+  font-weight: 300;
+  font-size: 1.85vw;
+}
+
+.comment span {
+  position: absolute;
+  right:105%;
+  top:43%;
+  padding:0;
+  line-height: 0;
+  color: rgba(197, 55, 87,.75);
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1.4vw;
+  transform: translateY(-50%);
+}

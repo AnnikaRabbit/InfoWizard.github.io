@@ -20,6 +20,11 @@ body {
   background-color: black;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .condense_font {
   -webkit-transform:scale(.55,1); /* Safari and Chrome */
       -moz-transform:scale(.55,1); /* Firefox */
@@ -52,11 +57,14 @@ body {
   font-family: "Saira Extra Condensed";
   font-weight: 600;
   text-transform: uppercase;
-  text-decoration: none;
-  cursor: pointer;
 }
 #home_navigation a:hover {
   color: rgb(143,219,225);
+  text-decoration: underline;
+}
+
+.active_page {
+  text-decoration: underline;
 }
 
 /* DESIGN CONTAINER*/
@@ -81,6 +89,19 @@ body {
   height: 22vw;
   top: -7vw;
   left: -7vw;
+}
+
+#handcrafted {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: .5vw 2vw .5vw 2vw;
+  background: white;
+  border-radius: 5px;
+  color: rgba(0,0,0,.5);
+  left:50%;
+  transform: translate(-50%, 50%);
+  font-family: Snell Roundhand, cursive;
 }
 
 /* TEXTURES */
@@ -135,10 +156,13 @@ body {
 #information_experiments .section_title {
   left: 28%;
 }
-#designing_to_learn .section_title {
+#research_theory .section_title {
   left: 28%;
 }
-#Asset_development .section_title {
+#research_experiments .section_title {
+  left: 28%;
+}
+#job_ready .section_title {
   left: 28%;
 }
 .section_description {
@@ -152,14 +176,15 @@ body {
 }
 .section_read_more {
   position: absolute;
-  top: 62%;
+  top: 54%;
+  background: rgba(255,255,255,.5);
+  padding: 0 1vw 0 1vw;
   left: 28%;
-  color: rgb(197, 55, 87);
+  border-radius: 5px;
+  color: rgba(197, 55, 87,.75);
   font-family: "Nunito";
   font-weight: 300;
   font-size: 2.1vw;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 
