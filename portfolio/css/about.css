@@ -1,18 +1,10 @@
 
-
-
-
-html {
-  width:100vw;
-  height:100vh;
-}
-
 body {
   margin: 0;
   position: relative;
   width:100vw;
   height:100vh;
-  background: white;
+  /*background: white;*/
   /*background: url(../images/home_background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -21,43 +13,20 @@ body {
   background-color: black;*/
 }
 
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.condense_font {
-  -webkit-transform:scale(.55,1); /* Safari and Chrome */
-      -moz-transform:scale(.55,1); /* Firefox */
-      -ms-transform:scale(.55,1); /* IE 9 */
-      -o-transform:scale(.55,1); /* Opera */
-      transform:scale(.55,1); /* W3C */
-}
-
 /* NAV BAR */
 #home_navigation {
   z-index: 100;
   position: absolute;
   right: 3vw;
-  top: 7vw;
+  top: 12vw;
 }
 .single_line_list {
   display:flex;
   list-style:none;
 }
-#home_navigation ul {
-  margin: 0;
-  padding: 0;
-}
-#home_navigation li {
-  font-size: 3vw;
-  margin-right:4vw;
-}
+
 #home_navigation a {
   color: rgb(107, 206, 216);
-  font-family: "Saira Extra Condensed";
-  font-weight: 600;
-  text-transform: uppercase;
 }
 #home_navigation a:hover {
   color: rgb(143,219,225);
@@ -72,63 +41,28 @@ a {
 #outer_container {
   z-index: 0;
   position: absolute;
-  top: 3.5vw;
-  left: 3.5vw;
-  width: 93vw;
+  top: 30vw;
+  left: 0vw;
+  width: 100%;
   height: auto; /*set to auto*/
   background-color: white;
-  border-radius: 40px;
-  margin-bottom: 3.5vw;
+  border-radius: 0px;
+  margin-bottom: 5vw;
+  padding-top: 15vw;
 }
-
-/* FLAIR */
-#signature {
-  z-index: 1;
-  position: absolute;
-  position: absolute;
-  width: 22vw;
-  height: 22vw;
-  top: -7vw;
-  left: -7vw;
-}
-
-/* TEXTURES */
-.white_texture_alt {
-  background: url(../images/white_texture_alt.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.dark_font{
-  color: rgb(22,30,58) !important;
-}
-
 /* SPLASH */
 #splash {
   position: relative;
   width: 30vw;
   height: auto;
   left: 35vw;
+  top: 15vw;
+  z-index: 100;
 }
 
-.content_paragraph {
-  margin: 0;
-  padding: 0 0 2.5vw 0;
-  position: relative;
-  width:70%;
-  left:15%;
-  color: black;
-  font-family: "Nunito";
-  font-weight: 300;
-  font-size: 2vw;
-}
-
-#momentofzen {
-  position: relative;
-  width: 40vw;
-  height: 40vw;
-  left: 30vw;
+.qoute {
+  color: rgb(107, 206, 216) !important;
+  color: rgba(197, 55, 87,.75) !important;
 }
 
 
