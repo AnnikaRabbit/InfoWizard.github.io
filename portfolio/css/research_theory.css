@@ -6,10 +6,7 @@
 
 li .format {
   font-weight: bold;
-}
-
-p .format {
-  font-weight: bold;
+  color: rgba(197, 55, 87,.75);
 }
 
 p span {
@@ -23,6 +20,11 @@ p span {
   font-style: italic;
   font-size: 1.4vw;
   transform: translateY(-50%);
+}
+
+p .format {
+  font-weight: bold;
+  top:35%;
 }
 
 .comment {

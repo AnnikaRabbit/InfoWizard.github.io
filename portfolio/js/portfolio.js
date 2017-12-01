@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -23,5 +22,41 @@ $(document).ready(function(){
     } // End if
   });
 
+  // var topNode;
+  //
+  // window.onscroll=function() {
+  //    var timer;
+  //    (function(){
+  //       clearTimeout(timer);
+  //       timer= setTimeout(
+  //                function() {
+  //                  var testNode;
+  //                  topNode= null;
+  //                  for(var x = 0 ; x < document.body.offsetWidth ; x++) {
+  //                    testNode= document.elementFromPoint(x,2);
+  //                    try {
+  //                      if(!topNode || testNode.offsetTop>topNode.offsetTop) {
+  //                        topNode = testNode;
+  //                      }
+  //                    }
+  //                    catch(TypeError){}
+  //                  }
+  //                },
+  //                100
+  //              )
+  //     }
+  //    )();
+  //  }
+  //
+  //  window.onresize=function() {
+  //    var timer;
+  //    (function(){
+  //       clearTimeout(timer);
+  //       if(topNode) {
+  //         timer= setTimeout(function(){topNode.scrollIntoView(true)},10);
+  //       }
+  //     }
+  //    )();
+  //  }
 
 });
