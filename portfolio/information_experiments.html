@@ -14,6 +14,8 @@
 <head>
 <body>
 
+  <img id="signature" src="images/signature.png"/>
+
   <nav id="home_navigation">
     <ul class="single_line_list">
       <li><a href="index.html">Portfolio</a></li>
@@ -21,7 +23,24 @@
     </ul>
   </nav>
 
+  <nav id="page_navigation">
+    <img id="index_icon" class="transition_function_swoosh" src="images/index_icon.png" />
+    <ul class="vertical_branching_list transition_function_swoosh">
+      <li><a href="#home_navigation">Top of page</a></li>
+      <li><a href="#01">1. Purpose of my work</a></li>
+      <li><a href="#02">2. TLDR Project</a></li>
+      <li><a href="#03">3. Outline of projects</a></li>
+      <li><a href="#04">4. Design concerns</a></li>
+      <li><a href="#05">5. Design goals</a></li>
+      <li><a href="#06">6. Addressing design concerns</a></li>
+      <li><a href="#07">7. The Postmortem</a></li>
+      <li id="close_navigation">Close</li>
+    </ul>
+  </nav>
+
   <main id="outer_container">
+
+    <div id="container_banner"><h1>Information Experiments</h1></div>
 
     <!--Hullo Earf-->
     <section class="content white_texture">
@@ -45,7 +64,7 @@
 
     <!-- Purpose of my work -->
     <section class="content white_texture dark_font">
-      <h5 class="content_title dark_font">Purpose of my work</h5>
+      <h5 id="01" class="content_title dark_font">Purpose of my work</h5>
       <p>Since the dawn of recorded time, people have constructed, accessed, and shared information. Today more than ever, experts are needed to design systems that afford navigation of information seas and help communities of knowledge flourish.</p>
       <p>In developing my own expertise as a PhD, I have experimented with information concepts that organize my thoughts about knowledge storage, retrieval, and interaction.</p>
     </section>
@@ -60,9 +79,9 @@
 
     <!--description of creative direction-->
     <section class="content white_texture dark_font">
-      <h5 class="content_title dark_font">One archive to rule them all... <br>and in the darkness bind them</h5>
+      <h5 id="02" class="content_title dark_font">One archive to rule them all... <br>and in the darkness bind them</h5>
       <p><a href="https://nicholaspersa.github.io/tldrarchive/" target="_blank">TLDR Archive</a>  is a basic and experimental extension of my cognition. I use the program as a repository for my academic readings. This collection of knowledge is part of who I am as a professional; it is a breadcrumb trail to my little wooden head.</p>
-      <p>Unlike a traditional file structure, I can access all of my files from one perspective, search through topical tags, dive deeply into each resource, and visualize information along multiple dimensions. The experience of the system is designed to be open, with knowledge living on one plane. My most relevant information is the most accessible, but connections to irrelevant data are still possible—like cognition.</p>
+      <p>Unlike a traditional file structure, I can access all of my files from one perspective, search through topical tags, dive deeply into each resource, and visualize information along multiple dimensions. The experience of the system is designed to be open. All of the knowledge lives on one plane. My most relevant information is the most accessible, but connections to irrelevant data are still possible—like cognition.</p>
       <p>TLDR Archive organizes large bodies of personal knowledge for reference by myself and others. I access this information when conducting and writing research. I rely on it for memory, carrying conversations, and organizing connections between things I have read. I can traverse subject areas and organize related content in short order.</p>
       <p>Beyond my own benefit, TLDR Archive is a gateway for novice professionals to learn about my domain knowledge and develop their own specializations. What could be gained for tapping into the cognitive storage of our role models?</p>
 
@@ -70,7 +89,7 @@
 
     <!--outline projects-->
     <section class="content white_texture dark_font">
-      <h5 class="content_title dark_font">Outline of projects</h5>
+      <h5 id="03" class="content_title dark_font">Outline of projects</h5>
       <p>Digital-human cognitive extension is young in its exploration. I have designed and built three projects to explore the topic.<br><br><em>[Click titles below to view live sites]</em></p>
 
       <h6 class="sub_content_title dark_font"><a href="https://nicholaspersa.github.io/tldrarchive/" target="_blank">TLDR Archive</a></h6>
@@ -88,7 +107,7 @@
 
     <!--design concerns-->
     <section class="content white_texture dark_font">
-      <h5 class="content_title dark_font">Design concerns</h5>
+      <h5 id="04" class="content_title dark_font">Design concerns</h5>
 
       <h6 class="sub_content_title dark_font">File Storage</h6>
       <p>Traditional file organization follows a deep tree hierarchy—a file in a folder in a folder in a folder. Storing files in this way makes accessing them a complex activity that requires attention, memory, time, and sequences of physical input.</p>
@@ -109,7 +128,7 @@
 
     <!-- Design goals -->
     <section class="content white_texture dark_font">
-      <h5 class="content_title dark_font">Design Goals</h5>
+      <h5 id="05" class="content_title dark_font">Design Goals</h5>
 
       <h6 class="sub_content_title dark_font">Interface</h6>
       <p>A single interface separates the user from a system of stored information. Tools provide filters to locate files and establish contextual relationships in the surrounding information. Files are not static, but allow the user to add data properties and adjust them on-demand. The design of the data attributes creates the organizational structure for the files.</p>
@@ -136,7 +155,7 @@
 
     <!-- Addressing design concerns -->
     <section class="content white_texture dark_font">
-      <h5 class="content_title dark_font">Addressing design concerns</h5>
+      <h5 id="06" class="content_title dark_font">Addressing design concerns</h5>
 
       <h6 class="sub_content_title dark_font">TLDR Archive</h6>
       <p>Everything I have read for my PhD is here. My brain has leaked onto the web. When I am talking with colleagues and writing papers, I come here and look through content. I go deeper into the system when I need more information. At the top level, I can skim around all that I know and make connections to other knowledge.</p>
@@ -165,7 +184,7 @@
 
     <!-- Postmortem -->
     <section class="content white_texture dark_font">
-      <h5 class="content_title dark_font">The Postmortem</h5>
+      <h5 id="07" class="content_title dark_font">The Postmortem</h5>
       <h6 class="sub_content_title dark_font">File Storage & Access</h6>
       <p>TLDR Archive is clean and quickly traversed during search operations. Diving into file content is equally simple. The powerful Quip backend affords complex search queries on the content inside of files, rather than only on titles or surface tags. TLDR can be accessed on any web connected device by any user.</p>
       <p>GameMaker's Toolkit is valuable, but not needed by my work routines. I have little sense of the interactive experience. However, as a game developer I can see value in breaking down information and being able to reference it later.</p>
@@ -185,8 +204,6 @@
 
     </section>
   </main>
-
-  <img id="signature" src="images/signature.png"/>
 
 </body>
 </html>

@@ -1,4 +1,29 @@
 $(document).ready(function(){
+
+  var medium_delay = 150;
+  var short_delay = 500;
+
+  $("#index_icon").hover(
+    function() {
+      // $(this).addClass("transition_delay_short");
+      // $("#page_navigation ul").addClass("transition_delay_medium");
+
+      $(this).addClass("hover_shrink_effect");
+      setTimeout(function(){$("#page_navigation ul").addClass("hover_enlarge_effect");}, medium_delay);
+
+      // $(this).removeClass("transition_delay_short");
+      //
+      // $("#page_navigation ul").removeClass("transition_delay_medium");
+
+    }, function() {
+      //$( this ).removeClass( "hover" );
+    }
+  );
+  $("#close_navigation").click(function(){
+    $("#page_navigation ul").removeClass( "hover_enlarge_effect" );
+    $("#index_icon").removeClass("hover_shrink_effect");
+
+  })
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 

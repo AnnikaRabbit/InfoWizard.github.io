@@ -1,26 +1,21 @@
 html {
-  width:100vw;
-  height:100vh;
+  /*width:calc(100vw - 17px);*/
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
   margin: 0;
   position: relative;
-  width:100vw;
+  /*left:-8.5px;*/
+  width:100%;
   height:100vh;
-  background: url(../images/section_background.jpg);
-  background-size: cover;
-  -webkit-background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: black;
-  /*background: url(../images/section_background.jpg) no-repeat center center fixed;
+  background: url(../images/home_background_nostars.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: black;*/
+  background-color: white;
 }
 
 a {
@@ -59,29 +54,133 @@ a {
   text-decoration: underline;
 }
 
+#page_navigation {
+  position: fixed;
+  left:5vw;
+  top:18vw;
+  margin: 0;
+  padding: 0;
+  z-index: 101;
+}
+
+#page_navigation a, #close_navigation {
+  color: rgba(255,255,255,.86);
+}
+
+#page_navigation ul {
+  position: relative;
+  width:0;
+  height:0;
+  left:-7vw;
+  font-family: "Nunito";
+  letter-spacing: -.03vw;
+  line-height: 2.75vw;
+  font-weight: 300;
+  font-size: 1.85vw;
+  z-index: 100;
+  border-radius: 0 10px 10px 0;
+  list-style: none;
+  background: rgba(0,0,0,.9);
+  padding: 0;
+  margin:0;
+}
+
+#page_navigation li {
+  cursor: pointer;
+  padding: .35vw 0;
+}
+
+#page_navigation li {
+  display: none;
+}
+
+#page_navigation a:hover, #close_navigation:hover {
+  color: rgba(197, 55, 87,.75);
+}
+
+#close_navigation {
+  position: absolute;
+  top:0;
+  right:0;
+  padding:1vw 2vw 1vw 1vw !important;
+}
+
+#index_icon {
+  position: absolute;
+  left:-9.5vw;
+  width:10vw;
+  height:10vw;
+  z-index: 0;
+}
+
+.hover_enlarge_effect {
+  width: auto !important;
+  height: auto !important;
+  padding: 4vw !important;
+  left: -5vw !important;
+}
+
+.hover_enlarge_effect li {
+  display: block !important;
+}
+
+.hover_shrink_effect {
+  transform: scale(.7) !important;
+  left:-15vw !important;
+}
+
+.transition_function_swoosh {
+  -webkit-transition: all 500ms cubic-bezier(0.000, 0.905, 0.195, 0.960);
+   -moz-transition: all 500ms cubic-bezier(0.000, 0.905, 0.195, 0.960);
+     -o-transition: all 500ms cubic-bezier(0.000, 0.905, 0.195, 0.960);
+        transition: all 500ms cubic-bezier(0.000, 0.905, 0.195, 0.960); /* custom */
+}
+
 /* CONTENT CONTAINER*/
 #outer_container {
   z-index: 0;
-  position: absolute;
+  position: relative;
   top: 18vw;
   left: 6.5vw;
   width: 87vw;
   height: auto; /*set to auto*/
   border: 0px solid white;
   border-radius: 20px;
-  margin-bottom: 3.5vw;
+  margin-bottom: 6.5vw;
   overflow: hidden;
+}
+
+#container_banner {
+  position: absolute;
+  z-index: 100;
+  /*left: -21vw;
+  top: -5vw;
+  width:50vw;
+  background: rgba(197, 55, 87,.75);
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10vw 0 3vw 0;
+  transform: rotate(-45deg);*/
+  width:100%;
+  top:3vw;
+}
+#container_banner h1 {
+  font-size: 2vw;
+  padding: 0;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "Saira Extra Condensed";
+  font-weight: 600;
 }
 
 /* FLAIR */
 #signature {
   z-index: 1;
   position: absolute;
-  position: absolute;
   width: 22vw;
   height: 22vw;
   top: -7vw;
-  left: -7vw;
+  left: -6.5vw;
 }
 
 /*TEXTURES*/
