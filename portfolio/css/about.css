@@ -12,10 +12,15 @@
     z-index: 999;
 }
 
+#loading_material {
+  display: none;
+  width:100vw;
+  height:100vh;
+}
+
 body {
   margin: 0;
   position: relative;
-  display: none;
   width:100vw;
   height:100vh;
   /*background: white;*/

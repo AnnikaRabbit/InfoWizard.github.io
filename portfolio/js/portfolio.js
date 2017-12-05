@@ -6,7 +6,7 @@ $(document).ready(function(){
 	  $('#preload_screen').fadeOut(2100,function(){
       $(this).remove();
     });
-    $("body").fadeIn(2000);
+    $("#loading_material").fadeIn(2000);
    });
 
   //CONTENT NAVIGATION ANIMATIONS
