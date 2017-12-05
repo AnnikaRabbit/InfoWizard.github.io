@@ -8,6 +8,23 @@
       transform:scale(.55,1); /* W3C */
 }
 
+.content_accent {
+  padding: 4vw 0 !important;
+  margin: 0vw 0 3vw 0;
+  display: block;
+  border-top: solid .3vw rgba(197, 55, 87,.75);
+  border-bottom: solid .3vw rgba(197, 55, 87,.75);
+  color: rgba(197, 55, 87,.75);
+  font-size: 2.5vw;
+}
+.middle {
+  margin-top: 3vw;
+}
+.trailing {
+  margin-top: 3vw;
+  margin-bottom: 0;
+}
+
 
 
 /**/

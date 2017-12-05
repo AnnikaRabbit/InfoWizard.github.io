@@ -197,16 +197,16 @@ a {
 }
 
 #electron_1 {
-  -webkit-animation: spin1 60s infinite linear;
-  animation: spin1 60s infinite linear;
+  -webkit-animation: spin1 15s infinite linear;
+  animation: spin1 15s infinite linear;
 }
 #electron_2 {
-  -webkit-animation: spin2 70s infinite linear;
-  animation: spin2 70s infinite linear;
+  -webkit-animation: spin2 15s infinite linear;
+  animation: spin2 15s infinite linear;
 }
 #electron_3 {
-  -webkit-animation: spin3 60s infinite linear;
-  animation: spin3 60s infinite linear;
+  -webkit-animation: spin3 15s infinite linear;
+  animation: spin3 15s infinite linear;
 }
 
 @-moz-keyframes spin1 {

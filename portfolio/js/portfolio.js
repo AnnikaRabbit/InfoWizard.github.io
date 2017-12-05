@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
+  //CONTENT NAVIGATION ANIMATIONS
   var medium_delay = 150;
   var short_delay = 500;
-
   $("#index_icon").hover(
     function() {
       // $(this).addClass("transition_delay_short");
@@ -24,6 +24,7 @@ $(document).ready(function(){
     $("#index_icon").removeClass("hover_shrink_effect");
 
   })
+  
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
