@@ -1,7 +1,21 @@
 
+#preload_screen {
+    margin: 0;
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    background: url(../images/home_background_nostars_reduced.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 999;
+}
+
 body {
   margin: 0;
   position: relative;
+  display: none;
   width:100vw;
   height:100vh;
   /*background: white;*/

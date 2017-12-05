@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+  //PRE LOAD SCREEN
+  $(window).on("load", function(){
+
+	  $('#preload_screen').fadeOut(2100,function(){
+      $(this).remove();
+    });
+    $("body").fadeIn(2000);
+   });
+
   //CONTENT NAVIGATION ANIMATIONS
   var medium_delay = 150;
   var short_delay = 500;
@@ -24,7 +33,7 @@ $(document).ready(function(){
     $("#index_icon").removeClass("hover_shrink_effect");
 
   })
-  
+
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
