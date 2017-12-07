@@ -1,82 +1,22 @@
 
-#preload_screen {
-    margin: 0;
-    position: fixed;
-    width:100vw;
-    height:100vh;
-    background: url(../images/home_background_nostars_reduced.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    z-index: 999;
-}
-
-#loading_material {
-  display: none;
-  width:100vw;
-  height:100vh;
-}
-
-body {
-  margin: 0;
-  position: relative;
-  width:100vw;
-  height:100vh;
-  /*background: white;*/
-  /*background: url(../images/home_background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: black;*/
-}
-
-/* NAV BAR */
-#home_navigation {
-  z-index: 100;
-  position: absolute;
-  right: 3vw;
-  top: 12vw;
-}
-.single_line_list {
-  display:flex;
-  list-style:none;
-}
-
-#home_navigation a {
-  color: rgb(107, 206, 216);
-  color: white;
-}
-#home_navigation a:hover {
-  color: rgb(143,219,225);
-  text-decoration: underline;
-}
-
-.active_page {
-  text-decoration: underline;
-}
-
 /* DESIGN CONTAINER*/
-#outer_container {
-  z-index: 0;
+#content_container {
   position: absolute;
-  top: 30vw;
+  top: 18vw;
   left: 0vw;
   width: 100%;
-  height: auto; /*set to auto*/
   background-color: white;
   border-radius: 0px;
   margin-bottom: 0;
   padding-top: 15vw;
 }
 /* SPLASH */
-#splash {
+#portrait_me {
   position: relative;
   width: 30vw;
   height: auto;
   left: 35vw;
-  top: 15vw;
+  top: 3vw;
   z-index: 100;
 }
 
@@ -85,23 +25,15 @@ body {
   color: rgba(197, 55, 87,.75) !important;
 }
 
-.content_accent {
-  padding: 4vw 0 !important;
-  margin: 0vw 0 3vw 0;
-  display: block;
-  border-top: solid .3vw rgba(197, 55, 87,.75);
-  border-bottom: solid .3vw rgba(197, 55, 87,.75);
-  color: rgba(197, 55, 87,.75);
-  font-size: 2.5vw;
+@media only screen and (max-width: 640px) {
+  #content_container {
+    position: absolute;
+    top: 25vw;
+  }
+  #portrait_me {
+    top:11vw;
+  }
 }
-.middle {
-  margin-top: 3vw;
-}
-.trailing {
-  margin-top: 3vw;
-  margin-bottom: 0;
-}
-
 
 
 

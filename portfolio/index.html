@@ -4,7 +4,10 @@
   <title>Information Wizard: Nicholas Persa</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+  <link rel="stylesheet" type="text/css" href="css/homepage.css">
+
   <link href="https://fonts.googleapis.com/css?family=Nunito:300,400|Roboto:500|Saira+Extra+Condensed:600" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -20,102 +23,93 @@
     gtag('config', 'UA-110799503-1');
   </script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The collected works and experiences of Nicholas Persa. Persa is working on his PhD at the University of California, Irvine.">
   <meta name="keywords" content="Portfolio, UCI, Irvine, California, CA, Design, Interaction, UX, User experience, Games, Video Games, Job, Hire, Research, UI, Interfaces">
   <meta name="author" content="Nicholas Persa">
+
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 </head>
 
 <body>
+
   <div id="preload_screen"></div>
+  <div id="page_wrapper">
 
-  <div id="loading_material">
-  <img id="signature" src="images/signature.png"/>
+    <h2 id="motto">Interaction Design & UX Research</h2>
+    <a href="index.html"><img id="signature" src="images/signature.png"/></a>
+    <nav id="main_navigation">
+      <ul>
+        <li><a href="index.html" class="active_page">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
 
-  <nav id="home_navigation">
-    <ul class="single_line_list">
-      <li><a href="index.html" class="active_page">Portfolio</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
+    <main id="content_container">
+      <!--style element-->
 
-  <!-- <section id="cartographic_splash">
-    <p>Hello.</p>
-  </section> -->
+      <section class="portfolio_item first_item" id="information_experiments">
+        <img class="section_border" src="images/glazed_box.png"/>
+        <a href="information_experiments.html"><div class="link_region">
+          <img class="section_icon" src="images/icons/bulb.png"/>
+          <img id="halo_sm" class="halo" src="images/icons/halo_sm.png"/>
+          <img id="halo_md" class="halo" src="images/icons/halo_md.png"/>
 
-  <main id="outer_container">
-    <!--style element-->
+          <h5 class="section_title">Information Experiments</h5>
+          <p class="section_description">A design series in information retrieval and storage</p>
+          <p class="section_read_more">Read More</p>
+        </div></a>
+      </section>
 
-    <!-- <section id="greetings">
-      <h1>Hello</h1>
-      <p>How many of <em>these</em> have you seen? What else is on your schedule for the day? Are you feeling rushed? Are you focused? What expectations did you bring with you?</p>
-      <p>Within this design, is my story. The knowledge here icaptures my stress, my challenges, my victories, my celebrations.</p>
-      <p>Jump into my world with a relaxing beverage, comfy chair, and curiosity about how I live my life.</p>
-    </section> -->
+      <section class="portfolio_item" id="job_ready">
+        <!-- change section ids -->
+        <img class="section_border" src="images/glazed_box.png"/>
+        <!-- Asset Development -->
+        <!-- <a href="#job_ready"> -->
+          <div class="link_region">
+          <img class="section_icon" src="images/construction_icon.png"/>
+          <h5 class="section_title">Job Ready</h5>
+          <p class="section_description">Job readiness app prototype and user study</p>
+          <p class="section_read_more">Under construction</p>
+        </div>
+      <!-- </a> -->
+      </section>
 
-    <section class="portfolio_item first_item" id="information_experiments">
-      <img class="section_border" src="images/glazed_box.png"/>
-      <a href="information_experiments.html"><div class="link_region">
-        <img class="section_icon" src="images/icons/bulb.png"/>
-        <img id="halo_sm" class="halo" src="images/icons/halo_sm.png"/>
-        <img id="halo_md" class="halo" src="images/icons/halo_md.png"/>
+      <section class="portfolio_item" id="research_theory">
+        <!-- change section ids -->
+        <img class="section_border" src="images/glazed_box.png"/>
+        <!-- Learning through Design -->
+        <a href="research_theory.html"><div class="link_region">
+          <img class="section_icon" src="images/icons/nucleus.png"/>
+          <img id="electron_1" class="atom" src="images/icons/electron.png"/>
+          <img id="electron_2" class="atom" src="images/icons/electron.png"/>
+          <img id="electron_3" class="atom" src="images/icons/electron.png"/>
 
-        <h5 class="section_title">Information Experiments</h5>
-        <p class="section_description">A design series in information retrieval and storage</p>
-        <p class="section_read_more">Read More</p>
-      </div></a>
-    </section>
+          <h5 class="section_title">Research: Theory</h5>
+          <p class="section_description">Academic writings on theory and domain knowledge</p>
+          <p class="section_read_more">Read More</p>
+        </div></a>
+      </section>
 
-    <section class="portfolio_item" id="job_ready">
-      <!-- change section ids -->
-      <img class="section_border" src="images/glazed_box.png"/>
-      <!-- Asset Development -->
-      <!-- <a href="#job_ready"> -->
-        <div class="link_region">
-        <img class="section_icon" src="images/construction_icon.png"/>
-        <h5 class="section_title">Job Ready</h5>
-        <p class="section_description">Job readiness app prototype and user study</p>
-        <p class="section_read_more">Under construction</p>
-      </div>
-    <!-- </a> -->
-    </section>
+      <section class="portfolio_item" id="research_experiments">
+        <!-- change section ids -->
+        <img class="section_border" src="images/glazed_box.png"/>
+        <!-- Asset Development -->
+        <a href="research_experiments.html"><div class="link_region">
+          <img class="section_icon" src="images/icons/beaker.png"/>
+          <img id="bubble_1" class="bubble" src="images/icons/bubble.png"/>
+          <img id="bubble_2" class="bubble" src="images/icons/bubble.png"/>
+          <img id="bubble_3" class="bubble" src="images/icons/bubble.png"/>
 
-    <section class="portfolio_item" id="research_theory">
-      <!-- change section ids -->
-      <img class="section_border" src="images/glazed_box.png"/>
-      <!-- Learning through Design -->
-      <a href="research_theory.html"><div class="link_region">
-        <img class="section_icon" src="images/icons/nucleus.png"/>
-        <img id="electron_1" class="atom" src="images/icons/electron.png"/>
-        <img id="electron_2" class="atom" src="images/icons/electron.png"/>
-        <img id="electron_3" class="atom" src="images/icons/electron.png"/>
+          <h5 class="section_title">Research: Experiments</h5>
+          <p class="section_description">Academic experiments on learning and education</p>
+          <p class="section_read_more">Read More</p>
+        </div></a>
+      </section>
 
-        <h5 class="section_title">Research: Theory</h5>
-        <p class="section_description">Academic writings on theory and domain knowledge</p>
-        <p class="section_read_more">Read More</p>
-      </div></a>
-    </section>
+    <h2 id="handcrafted">Handcrafted</h2>
 
-    <section class="portfolio_item" id="research_experiments">
-      <!-- change section ids -->
-      <img class="section_border" src="images/glazed_box.png"/>
-      <!-- Asset Development -->
-      <a href="research_experiments.html"><div class="link_region">
-        <img class="section_icon" src="images/icons/beaker.png"/>
-        <img id="bubble_1" class="bubble" src="images/icons/bubble.png"/>
-        <img id="bubble_2" class="bubble" src="images/icons/bubble.png"/>
-        <img id="bubble_3" class="bubble" src="images/icons/bubble.png"/>
-
-        <h5 class="section_title">Research: Experiments</h5>
-        <p class="section_description">Academic experiments on learning and education</p>
-        <p class="section_read_more">Read More</p>
-      </div></a>
-    </section>
-
-  <p id="handcrafted">Handcrafted</p>
-
-  </main>
-</div>
+    </main>
+  </div>
 
 </body>
 </html>

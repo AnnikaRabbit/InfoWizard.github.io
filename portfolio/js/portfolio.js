@@ -1,15 +1,15 @@
 $(document).ready(function(){
 
   //CONTENT NAVIGATION ANIMATIONS
-  var medium_delay = 150;
-  var short_delay = 500;
+  var medium_delay = 500;
+  var short_delay = 150;
   $("#index_icon").hover(
     function() {
       // $(this).addClass("transition_delay_short");
       // $("#page_navigation ul").addClass("transition_delay_medium");
 
       $(this).addClass("hover_shrink_effect");
-      setTimeout(function(){$("#page_navigation ul").addClass("hover_enlarge_effect");}, medium_delay);
+      setTimeout(function(){$("#page_navigation ul").addClass("hover_enlarge_effect");}, short_delay);
 
       // $(this).removeClass("transition_delay_short");
       //
@@ -19,6 +19,7 @@ $(document).ready(function(){
       //$( this ).removeClass( "hover" );
     }
   );
+  
   $("#close_navigation").click(function(){
     $("#page_navigation ul").removeClass( "hover_enlarge_effect" );
     $("#index_icon").removeClass("hover_shrink_effect");
@@ -48,42 +49,6 @@ $(document).ready(function(){
     } // End if
   });
 
-  // var topNode;
-  //
-  // window.onscroll=function() {
-  //    var timer;
-  //    (function(){
-  //       clearTimeout(timer);
-  //       timer= setTimeout(
-  //                function() {
-  //                  var testNode;
-  //                  topNode= null;
-  //                  for(var x = 0 ; x < document.body.offsetWidth ; x++) {
-  //                    testNode= document.elementFromPoint(x,2);
-  //                    try {
-  //                      if(!topNode || testNode.offsetTop>topNode.offsetTop) {
-  //                        topNode = testNode;
-  //                      }
-  //                    }
-  //                    catch(TypeError){}
-  //                  }
-  //                },
-  //                100
-  //              )
-  //     }
-  //    )();
-  //  }
-  //
-  //  window.onresize=function() {
-  //    var timer;
-  //    (function(){
-  //       clearTimeout(timer);
-  //       if(topNode) {
-  //         timer= setTimeout(function(){topNode.scrollIntoView(true)},10);
-  //       }
-  //     }
-  //    )();
-  //  }
 
 });
 
@@ -91,8 +56,9 @@ $(document).ready(function(){
 //PRE LOAD SCREEN
 $(window).on("load", function(){
 
+  $("#page_wrapper").fadeIn(1000);
   $('#preload_screen').fadeOut(2100,function(){
     $(this).remove();
   });
-  $("#loading_material").fadeIn(2000);
+
  });
