@@ -6,7 +6,7 @@
 		this.tags = tags;
 		this.section = section;
 	}
-	
+
 	Article.prototype.getTitle = function (){
 		return this.title
 	};
@@ -25,7 +25,7 @@
 	Article.prototype.getInfo = function (){
 		return [this.title, this.link, this.weight, this.tags, this.section];
 	};
-	
+
 	var articleItems = [];
 
 	//GAME Development
@@ -54,6 +54,8 @@
 	articleItems.push(new Article("Player Types","https://quip.com/YbSUAIjosWYL",1005,["phd-development"],"games"));
 	articleItems.push(new Article("Define Gamification","https://quip.com/AncmAl5ApFMU",1000,["phd-development"],"games"));
 	articleItems.push(new Article("Instructions in Games","https://quip.com/UfaxAU8dlsEf",1000,["phd-development"],"games"));
+	articleItems.push(new Article("Norton Design Case","",1010,["phd-development"],"games"));
+
 	//Gamification (incl education)
 	articleItems.push(new Article("Design: Supercharged","https://quip.com/alioAYLSX3lv",1010,["phd-education"],"games"));
 	articleItems.push(new Article("GBL Frameworks","https://quip.com/HYbzAstRfd8f",1000,["phd-education"],"games"));
@@ -71,17 +73,22 @@
 	articleItems.push(new Article("Science Discourse: AR","https://quip.com/LGXEAwayJIyo",1005,["phd-education"],"games"));
 	articleItems.push(new Article("Gamification (3D Lab Questing)","https://quip.com/aSbBAgUj8MJj",1005,["phd-education"],"games"));
     articleItems.push(new Article("Games & Motivation","https://quip.com/hxZsAfVxRyfw",1010,["phd-education"],"games"));
+
 	//Design
 	articleItems.push(new Article("DBR in MUVEs","https://quip.com/NuhXApqrMPbF",1000,["phd-design"],"education"));
 	articleItems.push(new Article("Educational Frames","https://quip.com/YYJaAGyHk4NM",1000,["phd-design"],"education"));
 	articleItems.push(new Article("Social Structuring","https://quip.com/Gj0YAt7AxR8d",1000,["phd-design"],"education"));
 	articleItems.push(new Article("Design Roles","https://quip.com/KpP5AQwlS0TN",1000,["phd-design"],"education"));
+
 	//Games
 	articleItems.push(new Article("Man, Play & Games","https://quip.com/3bRaAXZujGpY",1000,["phd-games"],"games"));
 	articleItems.push(new Article("Homo Ludens","https://quip.com/S8lGAbB8NYvx",1000,["phd-games"],"games"));
+	articleItems.push(new Article("Rules of Play","https://quip.com/iHIfAuIDALhs",1010,["phd-games"],"games"));
+
 	//TA
 	articleItems.push(new Article("Active Learning (meta study)","https://quip.com/KO2qAxih1rfC",900,["phd-teaching"],"education"));
 
+	//NON PHD LABEL//
 	//Core-drives
 	articleItems.push(new Article("Accomplishment","https://quip.com/QhhzAai1oAe8",800,["core-drives"],"games"));
 	articleItems.push(new Article("Which Way to Win","https://quip.com/pg3cAKnl4OTb",800,["core-drives"],"games"));
@@ -211,7 +218,7 @@
 	articleItems.push(new Article("Activity Systems Analysis","https://quip.com/yDauAwpInYRM",800,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Activity System Actors","https://quip.com/lcPUA89dUeVV",400,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Learning via Resistance","https://quip.com/HoxpAtbfiMkk",700,["sociocultural"],"sociocultural"));
-	articleItems.push(new Article("Systems & Activity Theory","https://quip.com/ht0VAX4dLrYf",990,["sociocultural"],"sociocultural"));
+	articleItems.push(new Article("Systems & Activity Theory","https://quip.com/ht0VAX4dLrYf",1000,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("CoP Prelude","https://quip.com/ZnY5ADRRjkNQ",690,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Practices of Meaning","https://quip.com/cCUNARLznotb",790,["sociocultural"],"sociocultural"));
 	articleItems.push(new Article("Cultural Activity Theory","https://quip.com/1OMpAjyaSP7u",700,["sociocultural"],"sociocultural"));
@@ -399,17 +406,3 @@
 	articleItems.push(new Article("Augmenting Intellect","https://quip.com/lkZbAKCZSWql",2000,["tldr"],"tldr"));
 	articleItems.push(new Article("Crowdwork Future [TLDR]","https://quip.com/eGUBApQh3oaO",2000,["tldr"],"tldr"));
 	articleItems.push(new Article("Creative Communities","https://quip.com/OxGTA2ao0baI",2000,["tldr"],"tldr"));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
