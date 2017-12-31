@@ -85,8 +85,13 @@
 	articleItems.push(new Article("Homo Ludens","https://quip.com/S8lGAbB8NYvx",1000,["phd-games"],"games"));
 	articleItems.push(new Article("Rules of Play","https://quip.com/iHIfAuIDALhs",1010,["phd-games"],"games"));
 
-	//TA
+	//Teaching (assistants)
 	articleItems.push(new Article("Active Learning (meta study)","https://quip.com/KO2qAxih1rfC",900,["phd-teaching"],"education"));
+
+	//Data science
+	articleItems.push(new Article("Anarchy in Sports","https://quip.com/Y1RAAkSkAQsZ",1000,["phd-data"],"data"));
+    articleItems.push(new Article("Hearthstone Analytics","https://docs.google.com/document/d/1KE_95VdeMjz4kt0KzlrTI7VE9fpx0FXhKDMWnb5Y2gY/edit?usp=sharing",1010,["phd-data"],"data"));
+
 
 	//NON PHD LABEL//
 	//Core-drives
