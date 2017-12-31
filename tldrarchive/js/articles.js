@@ -75,6 +75,7 @@
     articleItems.push(new Article("Games & Motivation","https://quip.com/hxZsAfVxRyfw",1010,["phd-education"],"games"));
 
 	//Design
+    articleItems.push(new Article("Eudaimonic Design","https://quip.com/0992AL9wNpHj",1010,["phd-design"],"games"));
 	articleItems.push(new Article("DBR in MUVEs","https://quip.com/NuhXApqrMPbF",1000,["phd-design"],"education"));
 	articleItems.push(new Article("Educational Frames","https://quip.com/YYJaAGyHk4NM",1000,["phd-design"],"education"));
 	articleItems.push(new Article("Social Structuring","https://quip.com/Gj0YAt7AxR8d",1000,["phd-design"],"education"));
