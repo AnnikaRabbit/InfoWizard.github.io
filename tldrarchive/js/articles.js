@@ -72,26 +72,32 @@
 	articleItems.push(new Article("Cultures of Play","https://quip.com/ewjsAyMYpM0F",1005,["phd-education"],"games"));
 	articleItems.push(new Article("Science Discourse: AR","https://quip.com/LGXEAwayJIyo",1005,["phd-education"],"games"));
 	articleItems.push(new Article("Gamification (3D Lab Questing)","https://quip.com/aSbBAgUj8MJj",1005,["phd-education"],"games"));
-    articleItems.push(new Article("Games & Motivation","https://quip.com/hxZsAfVxRyfw",1010,["phd-education"],"games"));
+  articleItems.push(new Article("Games & Motivation","https://quip.com/hxZsAfVxRyfw",1010,["phd-education"],"games"));
 
 	//Design
-    articleItems.push(new Article("Eudaimonic Design","https://quip.com/0992AL9wNpHj",1010,["phd-design"],"games"));
+  articleItems.push(new Article("Eudaimonic Design","https://quip.com/0992AL9wNpHj",1010,["phd-design"],"games"));
 	articleItems.push(new Article("DBR in MUVEs","https://quip.com/NuhXApqrMPbF",1000,["phd-design"],"education"));
 	articleItems.push(new Article("Educational Frames","https://quip.com/YYJaAGyHk4NM",1000,["phd-design"],"education"));
 	articleItems.push(new Article("Social Structuring","https://quip.com/Gj0YAt7AxR8d",1000,["phd-design"],"education"));
 	articleItems.push(new Article("Design Roles","https://quip.com/KpP5AQwlS0TN",1000,["phd-design"],"education"));
+	articleItems.push(new Article("DBR Literature Review","https://quip.com/KJJ9A6T4Z9cx",1000,["phd-design"],"education"));
 
 	//Games
 	articleItems.push(new Article("Man, Play & Games","https://quip.com/3bRaAXZujGpY",1000,["phd-games"],"games"));
 	articleItems.push(new Article("Homo Ludens","https://quip.com/S8lGAbB8NYvx",1000,["phd-games"],"games"));
 	articleItems.push(new Article("Rules of Play","https://quip.com/iHIfAuIDALhs",1010,["phd-games"],"games"));
+	articleItems.push(new Article("Well Played: MTG","https://quip.com/X2eFApBbpJmX",1000,["phd-games"],"games"));
 
 	//Teaching (assistants)
 	articleItems.push(new Article("Active Learning (meta study)","https://quip.com/KO2qAxih1rfC",900,["phd-teaching"],"education"));
 
 	//Data science
 	articleItems.push(new Article("Anarchy in Sports","https://quip.com/Y1RAAkSkAQsZ",1000,["phd-data"],"data"));
-    articleItems.push(new Article("Hearthstone Analytics","https://docs.google.com/document/d/1KE_95VdeMjz4kt0KzlrTI7VE9fpx0FXhKDMWnb5Y2gY/edit?usp=sharing",1010,["phd-data"],"data"));
+  articleItems.push(new Article("Hearthstone Analytics","https://docs.google.com/document/d/1KE_95VdeMjz4kt0KzlrTI7VE9fpx0FXhKDMWnb5Y2gY/edit?usp=sharing",1010,["phd-data"],"data"));
+
+	//methods
+	articleItems.push(new Article("Multi-site Enthography","https://quip.com/VQtKAQt9ypiY",1005,["phd-method"],"method"));
+
 
 
 	//NON PHD LABEL//
