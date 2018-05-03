@@ -87,6 +87,10 @@
 	articleItems.push(new Article("Homo Ludens","https://quip.com/S8lGAbB8NYvx",1000,["phd-games"],"games"));
 	articleItems.push(new Article("Rules of Play","https://quip.com/iHIfAuIDALhs",1010,["phd-games"],"games"));
 	articleItems.push(new Article("Well Played: MTG","https://quip.com/X2eFApBbpJmX",1000,["phd-games"],"games"));
+	articleItems.push(new Article("Trust Spectrum","https://quip.com/Ndb8AlN4iqRR",1010,["phd-games"],"games"));
+
+	//Educationa and Theory
+	articleItems.push(new Article("Activity Theory in Learning Tech","https://quip.com/iVMIAhEFJ21Y",1010,["phd-theory"],"AT"));
 
 	//Teaching (assistants)
 	articleItems.push(new Article("Active Learning (meta study)","https://quip.com/KO2qAxih1rfC",900,["phd-teaching"],"education"));
