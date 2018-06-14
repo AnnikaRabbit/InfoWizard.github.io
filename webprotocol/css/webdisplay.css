@@ -1,0 +1,882 @@
+
+
+
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height:100vh;
+  width:100vw;
+  background: #EBEBEB;
+  overflow-x: hidden;
+}
+
+/* Section headers */
+h1 {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  top:5%;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2vw;
+}
+
+/* Do not navigate away */
+h2 {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  top: 2%;
+  font-size: 1vw;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 400;
+  z-index: 2000;
+  color: rgba(0,0,0,.5);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+#adminPause {
+  position: fixed;
+  margin: 0;
+  padding: 1vw 1vw;
+  box-sizing: border-box;
+  background: rgba(1,1,1,.0);
+  border: .1vw solid #ccc;
+  z-index: 3000;
+  bottom: 0;
+}
+#password {
+  width: 4vw;
+  height: 2vw;
+  font-size: 1vw;
+  box-sizing: border-box;
+  background: rgba(1,1,1,.0);
+  border: .1vw solid #ccc;
+  vertical-align: top;
+}
+.adminPause {
+  width: 4vw;
+  height: 2vw;
+  font-size: .8vw;
+  font-family: Montserrat;
+  font-style: italic;
+  color: black;
+  background: none;
+  text-transform: uppercase;
+  border: .1vw solid #ccc;
+  vertical-align: top;
+}
+
+section {
+  position: absolute;
+  display: none;
+  left: 200%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.contentBox {
+  position: relative;
+  left: 25vw;
+  top: 50%;
+  width: 50vw;
+  height: 50vw;
+  transform: translateY(-50%);
+}
+
+#optionsPane {
+  position: absolute;
+  display: block;
+  left:0;
+  width:100vw;
+  height:100vh;
+  z-index: 1000;
+}
+.optionButton {
+  position: relative;
+  top: 30%;
+  left:5vw;
+  display: inline-block;
+  vertical-align: top;
+}
+.optionButton:nth-of-type(1){
+}
+.optionButton:nth-of-type(2){
+}
+.optionButton:nth-of-type(3){
+}
+.optionButton img {
+  position: absolute;
+}
+.optionButton, .optionButton img {
+  width: 20vw;
+  height: 10vw;
+}
+.optionButton select {
+  position: relative;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  border: 0;
+  background: transparent;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+.optionButton p {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  bottom: 10%;
+  text-align: center;
+  font-size: 1.1vw;
+  color: white;
+  font-family: Montserrat;
+  text-transform: uppercase;
+}
+.optionButton input {
+  position: absolute;
+  margin: 0;
+  width: 80%;
+  font-size: 1.5vw;
+  left: 50%;
+  top: 40%;
+  background: #EBEBEB;
+  transform: translate(-50%, -50%);
+  border: .1vw solid #ccc;
+}
+#optionsPane button {
+  position: relative;
+  margin: 0;
+  width: 15vw;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+}
+#optionsPane button {
+  font-size: 1.2vw !important;
+}
+
+#baselineStressPane {
+  position: absolute;
+  width:100vw;
+  height:100vh;
+  z-index: 1000;
+}
+
+#baselineStressPane .surveyText {
+  position: absolute;
+  font-family: Lato;
+  font-size: 1.9vw;
+  width: 100%;
+  top: 42%;
+  text-align: center;
+  margin: 0;
+}
+#baselineSurvey {
+  position: absolute;
+  left: 50%;
+  top:50%;
+}
+#nextBSP {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+}
+
+#cameraCalibrationPane {
+  position: absolute;
+  width:100vw;
+  height:100vh;
+  z-index: 1000;
+}
+#cameraCalibrationPane p {
+  position: absolute;
+  font-family: Lato;
+  font-size: 1.9vw;
+  width: 100%;
+  top: 38%;
+  text-align:center;
+}
+#nextCCP {
+  position: absolute;
+  left: 50%;
+  top: 57%;
+}
+
+#baselineEssayPane {
+  position: absolute;
+  width:100vw;
+  height:100vh;
+  z-index: 1000;
+}
+.essayText {
+  position: absolute;
+  left: 23vw;
+  background: white;
+  top:10%;
+  width:54vw;
+  height:80vh;
+  font-size: 1.6vw;
+  padding: 2vw;
+}
+
+.reminders {
+  position: absolute;
+  width: 20vw;
+  top: 13%;
+  left: 0.5vw;
+}
+
+.reminders p, .reminders h6 {
+  position: relative;
+  font-family: Lato;
+  width:100%;
+  font-size: 1.3vw;
+  margin-left: 1vw;
+}
+.reminders h6 {
+  font-size: 1.4vw;
+  text-align: center;
+  margin: 0;
+  font-weight: normal;
+  font-family: Montserrat;
+  font-style: oblique;
+}
+#baselineEssayPane .instructions {
+  position: absolute;
+  display: block;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,1);
+  z-index: 1500;
+}
+
+#baselineEssayPane .instructions p {
+  position: relative;
+  font-family: Lato;
+  width:46vw;
+  left:27vw;
+  top:23%;
+  font-size: 1.5vw;
+  margin-left: 1vw;
+}
+.dropdown {
+  padding-top: 2vw;
+}
+
+#baselineEssayPane .instructions h6 {
+  position: relative;
+  width: 46vw;
+  left:27vw;
+  top:23%;
+  font-size: 1.7vw;
+  text-align: center;
+  margin: 0;
+  font-weight: normal;
+  font-family: Montserrat;
+  font-style: oblique;
+  padding-top: 2vw;
+}
+#baselineEssayPane .instructions button {
+  position: relative;
+  left: 50%;
+  display: block;
+  top: 32%;
+  transform: translate(-50%,-50%);
+}
+
+#timerPane {
+  position: fixed;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 1500;
+  pointer-events: none;
+}
+#timerPane div {
+  position: absolute;
+  padding: 2vw;
+  width: 18.6vw;
+  height: 5vw;
+  right: 0;
+  top:0;
+  /* bottom: 80%; */
+  border: .1vw solid #ebebeb;
+  background: white;
+  /* transform: translateY(100%); */
+}
+#stopTimer{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  font-family: Montserrat;
+  font-style: italic;
+  font-size: 3vw;
+  margin: 0;
+}
+#redirect {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  font-family: Montserrat;
+  font-style: italic;
+  font-size: 1.7vw;
+  margin: 0;
+}
+
+#timeExpired {
+  position: absolute;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,.8);
+  z-index: 1500;
+}
+#timeExpired p {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  font-weight: normal;
+  font-family: Montserrat;
+  font-style: initial;
+  font-size: 1.6vw;
+}
+#timeExpired button {
+  position: absolute;
+  left:50%;
+  top:65%;
+  transform: translate(-50%,-50%);
+}
+
+#stressConditionPane {
+  position: absolute;
+  width:100vw;
+  height:100vh;
+  z-index: 1000;
+}
+#stressConditionPane .surveyText {
+  position: absolute;
+  font-family: Lato;
+  font-size: 1.9vw;
+  width: 100%;
+  top: 45%;
+  text-align: center;
+}
+#stressConditionPane p.afterSurvey {
+  top: 33%;
+}
+#stressConditionPane img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 8%;
+}
+#cwtDemo {
+  display: none;
+}
+#stressLink {
+  position: absolute;
+  left: 50%;
+  top: 62%;
+}
+#nextSCP {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+}
+
+#dualEssayPane {
+  position: absolute;
+  width:100vw;
+  height:100vh;
+  z-index: 1000;
+}
+
+#dualEssayPane .instructions {
+  position: absolute;
+  display: block;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,1);
+  z-index: 1500;
+}
+
+#dualEssayPane .instructions p {
+  position: relative;
+  font-family: Lato;
+  width: 48vw;
+  left: 26vw;
+  top: 36%;
+  font-size: 1.5vw;
+  margin-left: 1vw;
+}
+#dualEssayPane .instructions h6 {
+  position: relative;
+  width: 46vw;
+  left:27vw;
+  top:10%;
+  font-size: 1.7vw;
+  text-align: center;
+  margin: 0;
+  font-weight: normal;
+  font-family: Montserrat;
+  font-style: oblique;
+  padding-top: 2vw;
+}
+#videoInstructions {
+  position: relative;
+  width: 36vw;
+  height: 20.25vw;
+  top: 20%;
+  left: 32vw;
+  background: black;
+}
+#dualEssayPane .instructions button {
+  position: relative;
+  left: 50%;
+  display: block;
+  top: 40%;
+}
+#presentationType {
+  margin-bottom: 5vw;
+}
+#emailNotification {
+  position: absolute;
+  display: none;
+  right: -200%;
+  top: 9vw;
+  width: 23vw;
+  height: 8vw;
+  cursor: pointer;
+  /* transform: translateY(-100%); */
+  z-index: 1500;
+}
+#emailNotification img {
+  width: 100%;
+  height: 100%;
+}
+#sender {
+  position: absolute;
+  left: 33%;
+  top: 3%;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 1.3vw;
+}
+#title {
+  position: absolute;
+  left: 33%;
+  top: 26%;
+  font-family: Lato;
+  font-weight: normal;
+  font-size: 1.3vw;
+}
+#newEmail {
+  position: absolute;
+  right: 11%;
+  top: 26%;
+  margin: 0;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.5vw;
+  font-style: italic;
+}
+#openInbox {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 9%;
+  margin: 0;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  font-style: italic;
+  font-size: 1vw;
+}
+
+#emailPane {
+  position: absolute;
+  width:100vw;
+  height:100vh;
+  z-index: 1000;
+}
+#topper {
+  position: relative;
+  width:100%;
+  height: auto;
+  -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+#sidebar {
+  position: relative;
+  display: inline-block;
+  width:15vw;
+  height: auto;
+  vertical-align: top;
+  -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+#emailContainer {
+  position: relative;
+  width: 84vw;
+  display: inline-block;
+  height: 42.5vw;
+  background: #ebebeb;
+  vertical-align: top;
+}
+.scheduleLink  {
+  color: blue;
+}
+.email {
+  position: relative;
+  height: 3vw;
+  width: 100%;
+  cursor: pointer;
+}
+
+.unreadEmail {
+  font-weight: bold;
+  background: #FFF;
+}
+
+.notActive {
+  display: none !important;
+}
+
+.email p {
+  font-family: Lato;
+  font-size: 1.4vw;
+  margin: 0;
+}
+.email p:nth-of-type(1) {
+  left: 12%;
+  top: 20%;
+  position: absolute;
+}
+.email p:nth-of-type(2) {
+  left: 32%;
+  top: 20%;
+  position: absolute;
+}
+.email p:nth-of-type(3) {
+  position: absolute;
+  right: 2%;
+  top: 20%;
+}
+.email p:nth-of-type(4) {
+  display: none;
+}
+.email img {
+  position: absolute;
+  left: 2%;
+  top: 15%;
+  height: 66% !important;
+  width: auto !important;
+}
+
+#emailMessage {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 85vw;
+  height: 42.5vw;
+  background: white;
+}
+#emailMessage p {
+  font-family: Lato;
+  font-size: 1.4vw;
+}
+.emailSender {
+  position: relative;
+  top: 9%;
+  left: 8%;
+}
+.emailTitle {
+  position: absolute;
+  top: -1%;
+  left: 2%;
+  font-size: 1.5vw !important;
+  font-weight: bold;
+}
+.emailTime {
+  position: absolute;
+  top: 9%;
+  right: 5%;
+}
+.emailContent{
+  position: relative;
+  top: 25%;
+  width: 70%;
+  left: 8%;
+}
+.emailReceiver {
+  position: absolute;
+  top: 14%;
+  left: 8%;
+  font-size: 1.2vw !important;
+  color: #bebebe;
+}
+.emailLines:first-of-type {
+  width: 82%;
+  position: absolute;
+  border-top: .1vw solid #bebebe;
+  top: 10%;
+  z-index: 1500;
+}
+.emailLines:nth-of-type(2) {
+  width: 82%;
+  position: relative;
+  border-top: .1vw solid #bebebe;
+  top: 30%;
+  z-index: 1500;
+}
+#markUnread {
+  position: absolute;
+  top: 13%;
+  left: 64%;
+  font-size: 1vw;
+  padding: .6vw;
+}
+#reply2Email {
+  position: absolute;
+  width: 5.05vw;
+  height: 2.7vw;
+  top: 12.9%;
+  right: 19%;
+  outline:0;
+  background: url(../images/replyButton.png) no-repeat center center;
+  background-size: 10 100%;
+  background-color: #ebebeb;
+  border: .1vw solid darkgrey;
+  z-index: 1500;
+}
+.tooltip {
+  visibility: hidden;
+  background-color: hsl(0,0%,38%);
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1vw;
+  padding: 1vw;
+  border-radius: 3px;
+  position: absolute;
+  top: -3.5vw;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1500;
+}
+.tooltip::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -.5vw;
+  border-width: .5vw;
+  border-style: solid;
+  border-color: hsl(0,0%,38%) transparent transparent transparent;
+}
+#reply2Email:hover .tooltip {
+  visibility: visible;
+}
+#sendEmail {
+  position: relative;
+  display: none;
+  top: 27%;
+  left: 8%;
+  padding: .7vw 2vw;
+  background: #4B8DF9;
+  color: white;
+  font-family: Montserrat;
+  font-size: 1vw;
+  border: .1vw #3079ED solid;
+}
+#responseField {
+  position: relative;
+  display: none;
+  left: 8%;
+  top: 37%;
+  width: 55vw;
+  height: 32.5vw;
+  margin-bottom: 5vw;
+  font-size: 1.5vw;
+  padding: 2vw;
+}
+#messageSentNotification {
+  position: relative;
+  text-align: center;
+  display: none;
+  opacity: 0;
+  left: 30%;
+  top: -34%;
+  width: 19vw;
+  border-radius: 3px;
+  height: 5vw;
+  padding: 2vw;
+  background: #4B8DF9;
+  pointer-events: none;
+}
+#messageSentNotification p {
+  position: relative;
+  top:13%;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.3vw;
+}
+#messageFailedNotification {
+  position: relative;
+  text-align: center;
+  display: none;
+  opacity: 0;
+  left: 30%;
+  top: -34%;
+  width: 19vw;
+  border-radius: 3px;
+  height: 5vw;
+  padding: 2vw;
+  background: #DE5145;
+  border: .1vw solid #9E251C;
+  pointer-events: none;
+}
+#messageFailedNotification p {
+  position: relative;
+  top:13%;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.3vw;
+}
+
+#nasaPane {
+  position: absolute;
+  width:100vw;
+  height:100vh;
+  z-index: 1000;
+}
+
+#nasaPane .surveyText {
+  position: absolute;
+  font-family: Lato;
+  font-size: 1.9vw;
+  width: 100%;
+  top: 38%;
+  text-align: center;
+}
+#nextNP {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+}
+#combinedSurvey {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+}
+
+#thankYou {
+  position: absolute;
+  width:100vw;
+  height:100vh;
+  z-index: 1000;
+}
+#thankYou p {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  font-weight: normal;
+  font-family: Montserrat;
+  font-style: initial;
+  font-size: 1.6vw;
+}
+
+
+/* General styles */
+.whiteBacker {
+  position: fixed;
+  left:0;
+  top:0;
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  z-index: 0;
+}
+
+.pCentered {
+  text-align: center !important;
+}
+.disabled{
+  display: none !important;
+}
+
+.innerShadow {
+  -moz-box-shadow:    inset 0 0 2px rgba(0,0,0,.3);
+   -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.3);
+   box-shadow:         inset 0 0 2px rgba(0,0,0,.3);
+}
+
+.instructionFont {
+  font-family: Lato;
+}
+
+.redWhiteButton {
+  padding: 1vw 1vw;
+  box-sizing: border-box;
+  background: #DE5145;
+  border: .1vw solid #9E251C;
+  font-size: 1.5vw;
+  font-family: Montserrat;
+  font-style: italic;
+  color: white;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}
+.hollowBlackButton {
+  padding: 1vw 1vw;
+  box-sizing: border-box;
+  background: rgba(1,1,1,.0);
+  border: .1vw solid black;
+  font-size: 1.5vw;
+  font-family: Montserrat;
+  font-style: italic;
+  color: black !important;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}

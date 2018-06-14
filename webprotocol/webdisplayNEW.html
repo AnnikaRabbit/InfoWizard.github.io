@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Display</title>
+    <link rel="stylesheet" href="css/webdisplay.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="js/zipcelx.js"></script>
+    <script src="js/webdisplay.js"></script>
+    <script src="js/anime.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <h2>Do not close or leave this website</h2>
+    <div id="adminPause">
+      <input id="password" type="password" name="password"><!--
+      --><button class="adminPause" type="button">Admin</button>
+    </div>
+
+    <!-- module screens -->
+    <section id="optionsPane">
+
+      <div class="contentBox">
+
+        <div id="participantName" class="optionButton">
+          <img src="images/blueButton.png" />
+          <p>Participant Name</p>
+          <input id="dataName" type="text" name="participantName">
+        </div>
+
+        <div id="participantID" class="optionButton">
+          <img src="images/blueButton.png" />
+          <p>T-ID</p>
+          <input id="dataID" type="text" name="participantID">
+        </div>
+
+        <div id="stressCondition" class="optionButton">
+          <img src="images/blueButton.png" />
+          <p>Condition</p>
+          <select id="dataStress" name="stressCondition">
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+
+        <div id="emailCondition" class="optionButton">
+          <img src="images/blueButton.png" />
+          <p>Condition</p>
+          <select id="dataEmail" name="emailCondition">
+            <option value="batch">Batch</option>
+            <option value="intermittent">Intermittent</option>
+          </select>
+        </div>
+
+        <button id="confirmSettings" class="redWhiteButton sceneController" type="button">Confirm Settings</button>
+      </div>
+
+      <h1>Initialization</h1>
+    </section>
+
+    <section id="baselineStressPane">
+
+      <div class="contentBox">
+
+        <p class="surveyText beforeSurvey">Click below to launch the survey</p>
+        <a id="baselineSurvey" class="beforeSurvey subSceneController" href="" target="_blank"><p class="redWhiteButton">Take Survey</p></a>
+
+        <p class="surveyText afterSurvey disabled">Please click next to move on</p>
+        <button id="nextBSP" class="next redWhiteButton afterSurvey disabled" type="button">Next</button>
+
+      </div>
+
+      <h1>Phase 2</h1>
+    </section>
+
+    <section id="cameraCalibrationPane">
+
+      <div class="contentBox">
+
+        <p>Please look at this screen while the camera calibrates</p>
+        <button id="nextCCP" class="next hollowBlackButton" type="button">Wait for experimenter instruction</button>
+
+      </div>
+
+      <h1>Camera Calibration</h1>
+    </section>
+
+    <section id="baselineEssayPane">
+
+      <textarea id="baselineEssay" spellcheck="false" class="essayText">
+      </textarea>
+
+      <div class="reminders">
+        <h6>Topic Reminder</h6>
+        <p>The best way for a society to prepare its young people for leadership in government, industry, or other fields is by instilling in them a sense of cooperation, not competition.</p>
+        <p><b>Note: </b>copying and pasting in the essay window are disabled.</p>
+      </div>
+
+      <div id="baslineEssayInstructions" class="instructions">
+        <div class="whiteBacker"></div>
+        <p class="pCentered">You will have 5 minutes to write about the topic below</p>
+        <h6>Essay Topic</h6>
+        <p>The best way for a society to prepare its young people for leadership in government, industry, or other fields is by instilling in them a sense of cooperation, not competition.</p>
+        <p class="pCentered dropdown">Do you agree or disagree? Explain your reasoning in detail.</p>
+        <button id="instructionsPhase3" class="redWhiteButton sceneController" type="button">Start</button>
+        <h1>Phase 3</h1>
+      </div>
+
+    </section>
+
+    <section id="stressConditionPane">
+
+      <div class="contentBox">
+
+        <img id="cwtDemo" src="images/cwtDemo.png" class="beforeSurvey" />
+        <p id="stressText" class="surveyText beforeSurvey">Click below to start the next task</p>
+        <a id="stressLink" class="beforeSurvey subSceneController" href="" target="_blank"><p id="stressTask" class="redWhiteButton">Begin Task</p></a>
+
+        <p class="surveyText afterSurvey disabled">Please click next to move on</p>
+        <button id="nextSCP" class="next redWhiteButton afterSurvey disabled" type="button">Next</button>
+
+      </div>
+
+      <h1>Phase 4</h1>
+    </section>
+
+    <section id="dualEssayPane">
+
+      <textarea id="dualEssay" spellcheck="false" class="essayText">
+      </textarea>
+
+      <div class="reminders">
+        <h6>Writing Guide</h6>
+        <p><b>Paragraph 1: </b>Explain what The Technological Singularity is in your own words</p>
+        <p><b>Paragraph 2: </b>Explain and discuss the view of your first Singularity theorist</p>
+        <p><b>Paragraph 3: </b>Explain and discuss the view of your second Singularity theorist</p>
+        <p><b>Paragraph 4: </b>Explain and discuss your own view of the Singularity</p>
+        <p><b>Paragraph 5: </b>Conclude your essay summarizing the views of the theorists and your own</p>
+        <p><b>Note: </b>copying and pasting in the essay window are disabled.</p>
+      </div>
+
+      <div id="dualEssayInstructions" class="instructions">
+        <div class="whiteBacker"></div>
+        <p>You will have 50 minutes to write. You will be given a topic. you can research the topic on the web. Please do not watch videos on this topic, but rather use written documents on the subject.</p>
+        <p id="presentationType">At the end of the session, you will give an oral presentation of the content in your essay, to a remotely located panel of <b>experts who will determine the accuracy of your essay</b>.</p>
+        <h1>Phase 5</h1>
+        <button id="instructionsPhase5" class="redWhiteButton sceneController" type="button">Start</button>
+      </div>
+
+      <div id="emailNotification">
+        <p id="newEmail"></p>
+        <p id="openInbox">Click to open inbox</p>
+        <img src="images/emailNotification.png" />
+      </div>
+    </section>
+
+    <section id="nasaPane">
+      <div class="whiteBacker"></div>
+
+      <div class="contentBox">
+
+        <p class="surveyText beforeSurvey">Click below to start the survey</p>
+        <a id="combinedSurvey" class="beforeSurvey subSceneController" href="https://drive.google.com/open?id=1Cn63tQ2-V9uY3cV9RrA3O-jXHN9YnnJd" target="_blank"><p class="redWhiteButton">Start Survey</p></a>
+
+        <p class="surveyText afterSurvey disabled">Please click next to move on</p>
+        <button id="nextNP" class="next redWhiteButton afterSurvey disabled" type="button">Next</button>
+      </div>
+
+      <h1>Phase 6</h1>
+    </section>
+
+    <section id="thankYou"><p>The session is complete. Please notify the researcher.</p></section>
+
+    <!-- overlay screens -->
+    <section id="timerPane">
+      <div id="countdownTimer">
+        <p id="redirect"></p>
+        <p id="stopTimer"></p>
+      </div>
+    </section>
+    <section id="timeExpired">
+      <div class="contentBox">
+        <p class="pCentered">Please click next to move on</p>
+        <button class="next redWhiteButton expire" type="button">next</button>
+      </div>
+    </section>
+    <!--transition screens for dual module-->
+    <section id="emailPane">
+      <div class="whiteBacker"></div>
+      <img id="topper" src="images/topper.svg" />
+      <img id="sidebar" src="images/sidebar.svg" />
+      <div id="emailContainer">
+        <div id="emailList">
+          <div id="email1" data-emailid="1" class="email innerShadow unreadEmail notActive">
+            <p class="bannerSender">Jacob Fennelbroth</p>
+            <p class="bannerTitle">Traveling Tips</p>
+            <p class="bannerTime">-:-- XM</p>
+            <p class="content">I need to plan a demestic trip soon, and it will be my first domestic flight in the US, as I am a new international student. What advice would you give me regarding the travel? and do you have personal experiences with traveling domestically that you can share?</p>
+            <img src="images/emailDetail.png" />
+          </div>
+          <div id="email2" data-emailid="2" class="email innerShadow unreadEmail notActive">
+            <p class="bannerSender">Kount Kristo</p>
+            <p class="bannerTitle">College, Career, and Finances</p>
+            <p class="bannerTime">-:-- XM</p>
+            <p class="content">Several years ago, I had to delay my college education for financial reasons and get a job to support myself. Now, I am considering reapplying to school to complete my education and progress in my career. I am skeptical about going to a 4 year undergrad program as a 40 year old but I have to do it. I am undecided between the state university and a smaller community college. Can you share any advice or tell me what it's like for others who have decided to continue their education? Any advice/information to help me make a decision would be great help.</p>
+            <img src="images/emailDetail.png" />
+          </div>
+          <div id="email3" data-emailid="3" class="email innerShadow unreadEmail notActive">
+            <p class="bannerSender">Mustafa Akulker</p>
+            <p class="bannerTitle">How well can we all be?</p>
+            <p class="bannerTime">-:-- XM</p>
+            <p class="content">To help us collect some information to design an emotional wellbeing program, could you please answer the following questions: If someone you cared about lied to you, would you be angry? Why or why not? Have you ever lied to someone you care about? Is it reasonable to expect other people to be honest with you, in all circumstances? What are the exceptions?</p>
+            <img src="images/emailDetail.png" />
+          </div>
+          <div id="email4" data-emailid="4" class="email innerShadow unreadEmail notActive">
+            <p class="bannerSender">Marcus Lance</p>
+            <p class="bannerTitle">Career options and internships</p>
+            <p class="bannerTime">-:-- XM</p>
+            <p class="content">I am planning on applying for a summer internship at a tech company. I am a sophomore and wondering when is a good time to start applying for summer internships. What qualifications do you think a tech company would usually look for in an intern? Would you mind sharing any experiences or advice?</p>
+            <img src="images/emailDetail.png" />
+          </div>
+          <div id="email5" data-emailid="5" class="email innerShadow unreadEmail notActive">
+            <p class="bannerSender">Jamall Johnson</p>
+            <p class="bannerTitle">Finding a Balance</p>
+            <p class="bannerTime">-:-- XM</p>
+            <p class="content">My friend always says I never take the time to have fun because I'm working all the time. Is that bad? What do you think? I am looking for advice regarding work/study balance, so I thought I would reach out to you.</p>
+            <img src="images/emailDetail.png" />
+          </div>
+          <div id="email6" data-emailid="6" class="email innerShadow unreadEmail notActive">
+            <p class="bannerSender">Petre Hinkledge</p>
+            <p class="bannerTitle">I need help scheduling a meeting</p>
+            <p class="bannerTime">-:-- XM</p>
+            <p class="content">Please find a time for a student, administrator, and professor to have an hour long meeting, in a conference room that can seat 3 people.  Peoples’ schedules are presented on the first tab of the <a class="scheduleLink" href="https://docs.google.com/spreadsheets/d/1hxb90saIMA8X-FLB6AfNL2ciAycjqZ63OOW-TUpZ9oE/edit?usp=sharing" target="_blank">linked spreadsheet</a>, and room availability is in the second.<br><br>People have two types of availability: completely free (shown in white) and possible commitments (shown in yellow) which can be moved if necessary. You may not schedule a meeting in unavailable time slots (shown in red). Scheduling decisions should minimize the number of possible commitments rescheduled, and prioritize the schedule of the professor, then the administrator, then, lastly, the student.<br><br>Reply to this email with the meeting start time and room you select.</p>
+            <img src="images/emailDetail.png" />
+          </div>
+          <div id="email7" data-emailid="7" class="email innerShadow unreadEmail notActive">
+            <p class="bannerSender">Svetlana Romanoff</p>
+            <p class="bannerTitle">Planning a Meeting</p>
+            <p class="bannerTime">-:-- XM</p>
+            <p class="content">Please find a time for a student, administrator, and professor to have an hour long meeting, in a conference room that can seat 3 people.  Peoples’ schedules are presented on the first tab of the <a class="scheduleLink" href="https://docs.google.com/spreadsheets/d/12e4cPXjPb38qW5Z5dFPIPzsyoPxwOpgkynaMeGf4-Ds/edit?usp=sharing" target="_blank">linked spreadsheet</a>, and room availability is in the second.<br><br>People have two types of availability: completely free (shown in white) and possible commitments (shown in yellow) which can be moved if necessary. You may not schedule a meeting in unavailable time slots (shown in red). Scheduling decisions should minimize the number of possible commitments rescheduled, and prioritize the schedule of the professor, then the administrator, then, lastly, the student.<br><br>Reply to this email with the meeting start time and room you select.</p>
+            <img src="images/emailDetail.png" />
+          </div>
+          <div id="email8" data-emailid="8" class="email innerShadow unreadEmail notActive">
+            <p class="bannerSender">Jarla Knovak</p>
+            <p class="bannerTitle">What time will work?</p>
+            <p class="bannerTime">-:-- XM</p>
+            <p class="content">Please find a time for a student, administrator, and professor to have an hour long meeting, in a conference room that can seat 3 people.  Peoples’ schedules are presented on the first tab of the <a class="scheduleLink" href="https://docs.google.com/spreadsheets/d/1sAfk7hkGytoK8LmofIfm-jlQ_BQPq7Rrg0uHpwmNh1g/edit?usp=sharing" target="_blank">linked spreadsheet</a>, and room availability is in the second.<br><br>People have two types of availability: completely free (shown in white) and possible commitments (shown in yellow) which can be moved if necessary. You may not schedule a meeting in unavailable time slots (shown in red). Scheduling decisions should minimize the number of possible commitments rescheduled, and prioritize the schedule of the professor, then the administrator, then, lastly, the student.<br><br>Reply to this email with the meeting start time and room you select.</p>
+            <img src="images/emailDetail.png" />
+          </div>
+
+          <!-- <div id="email6" data-emailid="6" class="email innerShadow unreadEmail notActive">
+            <p class="bannerSender">Bethany Rose</p>
+            <p class="bannerTitle">Managing Social Media Time</p>
+            <p class="bannerTime">-: XM</p>
+            <p class="content">We are preparing a pamphlet for our employees on how to develop healthy habits for using social media and trying to come up with ideas on how to cut down on social media and what to do instead. Could you please give us some ideas about it?</p>
+            <img src="images/emailDetail.png" />
+          </div>
+          <div id="email7" data-emailid="7" class="email innerShadow unreadEmail notActive">
+            <p class="bannerSender">Hanyu Wang</p>
+            <p class="bannerTitle">Summer Work</p>
+            <p class="bannerTime">-: XM</p>
+            <p class="content">I am a sophomore and wondering when is a good time to start applying for summer internships at your company. Would you mind sharing any experiences or advice?</p>
+            <img src="images/emailDetail.png" />
+          </div>
+          <div id="email8" data-emailid="8" class="email innerShadow unreadEmail notActive">
+            <p class="bannerSender">Jennifer Wu</p>
+            <p class="bannerTitle">Class Report on Collaboration</p>
+            <p class="bannerTime">-: XM</p>
+            <p class="content">I am an intern at the marketing department. I am writing a report for my class on experiences gained through collaborating on group assignments and their reflection onto professional life. As a human resources expert, could you please explain whether there is such a link, and how important it is in professional life to collaborate in teams?</p>
+            <img src="images/emailDetail.png" />
+          </div>
+          <div id="email9" data-emailid="9" class="email innerShadow unreadEmail notActive">
+            <p class="bannerSender">Ola Dejoachim</p>
+            <p class="bannerTitle">Did they get the thing I sent them?</p>
+            <p class="bannerTime">-: XM</p>
+            <p class="content">I sent an email to the sales department manager asking for some information but I haven't received a reply. Can you tell me what would be the best way to contact someone else who can help me? Are managers in the department usually too busy to reply to emails?</p>
+            <img src="images/emailDetail.png" />
+          </div>
+          <div id="email10" data-emailid="10" class="email innerShadow unreadEmail notActive">
+            <p class="bannerSender">Samar Dara</p>
+            <p class="bannerTitle">Making a path through the chaos</p>
+            <p class="bannerTime">-: XM</p>
+            <p class="content">I have a very packed schedule this month. I am doing two big projects and there will be three audits soon. Do you have any advice for how I can do better time management? I know that you run several projects in parallel, so I thought I would reach out to ask for tips.</p>
+            <img src="images/emailDetail.png" />
+          </div> -->
+        </div>
+        <div id="emailMessage">
+            <p class="emailSender"></p>
+            <p class="emailTitle"></p>
+            <p class="emailTime"></p>
+            <p class="emailContent"></p>
+            <p id="emailReceiver" class="emailReceiver">to Flash Gordon</p>
+            <div class="emailLines"></div>
+            <div class="emailLines"></div>
+            <button id="markUnread" type="button" class="hollowBlackButton">Mark as Unread</button>
+            <button id="reply2Email" type="button" class="hollowBlackButton"><span class="tooltip">Reply</span></button>
+            <textarea id="responseField" spellcheck="false"></textarea>
+            <button id="sendEmail" type="button">Send</button>
+            <div id="messageSentNotification"><p>Your message has been sent</p></div>
+            <div id="messageFailedNotification"><p>Cannot send empty email</p></div>
+        </div>
+      </div>
+      <div id="graphics"></div>
+      <div id="disabledOverlay"></div>
+    </section>
+
+  </body>
+
+</html>
